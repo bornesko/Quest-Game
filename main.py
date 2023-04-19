@@ -1,17 +1,19 @@
 import PySimpleGUI as sg
 
 ######Slide0################################################################################################################
+imgS01=sg.Image('TestImage.png')
 fontS01 = ("MS Serif", 15)
 fontS02= ("MS Serif", 35)
 txtS01= sg.Text('Welcome to ####', font=fontS02)
 txtS02= sg.Text('Please enter your name!')
 inpS01= sg.Input('',size= (30,None), key = 'INP_S01')
 btnS01= sg.Button('Continue', key = 'BTN_S01')
-layout_frS0= [[txtS01], [txtS02,inpS01], [btnS01]]
+layout_frS0= [[imgS01],[txtS01], [txtS02,inpS01], [btnS01]]
 frmS0= sg.Frame('', layout_frS0,font=fontS01,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS0')
 ############################################################################################################################
 
 #############SLIDE 1###########################################################################################################################
+imgS11= sg.Image('TestImage.png')
 fontS11 = ('MS Serif', 15) 
 txtS11 = sg.Text(
 """
@@ -24,7 +26,7 @@ free his land of this curse. Invigorated, countless young men and women depart f
 """, font = fontS11)
 btnS11 = sg.Button('OFF TO AN ADVENTURE!', key='BTN_S11', font = fontS11)
 
-layout_S1 = [[txtS11], [btnS11]]
+layout_S1 = [[imgS11],[txtS11], [btnS11]]
 frame_S1 = sg.Frame ('', layout_S1, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRM_S1')
 ################################################################################################################################################
 
