@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-txt1 = sg.Text
+txt1 = sg.Text jfnksdfnkj
 
 layout = [[]]
 
