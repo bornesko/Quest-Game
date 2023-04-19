@@ -25,20 +25,21 @@ free his land of this curse. Invigorated, countless young men and women depart f
 btnS11 = sg.Button('OFF TO AN ADVENTURE!', key='BTN_S11', font = fontS11)
 
 layout_S1 = [[txtS11], [btnS11]]
-frame_S1 = sg.Frame ('', layout_S1, visible = False, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRM_S1')
+frame_S1 = sg.Frame ('', layout_S1, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRM_S1')
 ################################################################################################################################################
 
 
-layout = [[frmS0],[frame_S1]]
+layout = [[frmS0, frame_S1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
 
 while True:
     event, values = window.read()
-    
+    if event == 'BTN_S01':
+        window['FRMS0'].update(visible = False)
     #Cambia este if por elif.
-    if event == sg.WIN_CLOSED or event == 'BTN_SALIR':
+    elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
         break
 
 window.close()
