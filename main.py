@@ -67,5 +67,16 @@ while True:
     #Cambia este if por elif.
     elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
         break
-
+'''
+while True:
+    event, values = window.read()
+    if event== 'BTN_S21':
+        btnS22.update(visible=False)
+        txtS22.update(visible=True)
+        btnS23.update(visible= True)
+    elif event== 'BTN_S22':
+        btnS21.update(visible=False)
+        txtS23.update(visible=True)
+        btnS23.update(visible= True)
+        '''
 window.close()
