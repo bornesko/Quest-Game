@@ -26,8 +26,8 @@ free his land of this curse. Invigorated, countless young men and women depart f
 """, font = fontS11)
 btnS11 = sg.Button('OFF TO AN ADVENTURE!', key='BTN_S11', font = fontS11)
 
-layout_S1 = [[imgS11],[txtS11], [btnS11]]
-frame_S1 = sg.Frame ('', layout_S1, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRM_S1')
+layout_frS1 = [[imgS11],[txtS11], [btnS11]]
+frmS1 = sg.Frame ('', layout_frS1, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRMS1')
 ################################################################################################################################################
 
 ######Slide2################################################################################################################
@@ -53,7 +53,7 @@ layout_frS2= [[imgS21], [txtS21], [btnS21,btnS22], [txtS22,txtS23], [btnS23]]
 frmS2= sg.Frame('', layout_frS2,font=fontS21,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS2')
 ############################################################################################################################
 
-layout = [[frmS0, frame_S1,frmS2]]
+layout = [[frmS0, frmS1,frmS2]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -62,6 +62,8 @@ while True:
     event, values = window.read()
     if event == 'BTN_S01':
         window['FRMS0'].update(visible = False)
+    elif event == 'BTN_S11':
+        window['FRMS1'].update(visible = False)
     #Cambia este if por elif.
     elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
         break
