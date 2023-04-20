@@ -53,30 +53,33 @@ layout_frS2= [[imgS21], [txtS21], [btnS21,btnS22], [txtS22,txtS23], [btnS23]]
 frmS2= sg.Frame('', layout_frS2,font=fontS21,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS2')
 ############################################################################################################################
 
-layout = [[frmS0, frmS1,frmS2]]
+layout = [[frmS0, frmS1, frmS2]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
 
 while True:
     event, values = window.read()
+# If statement for the button to continue to slide 1
     if event == 'BTN_S01':
         window['FRMS0'].update(visible = False)
+        
+# If statement for the button to continue to slide 2
     elif event == 'BTN_S11':
         window['FRMS1'].update(visible = False)
-    #Cambia este if por elif.
-    elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
-        break
-'''
-while True:
-    event, values = window.read()
-    if event== 'BTN_S21':
+
+# If statement for slide 2 - for the different options inside the slide with the different text
+    elif event == 'BTN_S21':
         btnS22.update(visible=False)
         txtS22.update(visible=True)
         btnS23.update(visible= True)
-    elif event== 'BTN_S22':
+    elif event == 'BTN_S22':
         btnS21.update(visible=False)
         txtS23.update(visible=True)
         btnS23.update(visible= True)
-        '''
+    
+#End
+    elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
+        break
+
 window.close()
