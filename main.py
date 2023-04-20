@@ -30,8 +30,30 @@ layout_S1 = [[imgS11],[txtS11], [btnS11]]
 frame_S1 = sg.Frame ('', layout_S1, size=(1920,1080), background_color = '#4B3619', element_justification = 'c', key = 'FRM_S1')
 ################################################################################################################################################
 
+######Slide2################################################################################################################
+imgS21= sg.Image('TestImage.png')
+fontS21 = ("MS Serif", 15)
+fontS22= ("MS Serif", 35)
+txtS21= sg.Text('“Can I get you something, young traveler”? asks Sheamus the Bartender. On the opposite side of the bar sits a young boy dressed in plain farmers’ clothes and a bright smile on his face.')
+btnS21= sg.Button('I don’t have so much gold on me, but I was wondering if you knew the easiest way to the Hadesvale woods', key = 'BTN_S21')
+btnS22= sg.Button('I am just a boy passing by looking for adventure', key = 'BTN_S22')
+txtS22= sg.Text(
+    '''
+“I don’t know why so many of you youngsters which to go to that retched place nowadays, but it’s just down the road.
+I’ll get you a drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar'
+''', visible= False)
+txtS23= sg.Text(
+    '''
+“Ah there’s many of you these days, I am assuming you’ll be heading to Hadesvale, well it’s just down the road.
+I’ll get you a drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar.
+''',visible= False )
+btnS23= sg.Button('Continue', visible= False, key= 'BTN_S23')
 
-layout = [[frmS0, frame_S1]]
+layout_frS2= [[imgS21], [txtS21], [btnS21,btnS22], [txtS22,txtS23], [btnS23]]
+frmS2= sg.Frame('', layout_frS2,font=fontS21,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS2')
+############################################################################################################################
+
+layout = [[frmS0, frame_S1,frmS2]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
