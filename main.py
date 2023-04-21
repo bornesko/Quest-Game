@@ -2,12 +2,12 @@ import PySimpleGUI as sg
 import random
 ######Slide0################################################################################################################
 imgS01=sg.Image('TestImage.png')
-fontS01 = ("MS Serif", 15)
+fontS01 = ("MS Serif", 12)
 fontS02= ("MS Serif", 35)
-txtS01= sg.Text('Welcome to ####', font=fontS02)
-txtS02= sg.Text('Please enter your name!')
+txtS01= sg.Text('Welcome to ####', font=fontS02, background_color= '#4B3619')
+txtS02= sg.Text('Please enter your name!', font=fontS01, background_color= '#4B3619')
 inpS01= (sg.Input('',size= (30,None), key = 'INP_S01'))
-btnS01= sg.Button('Continue', key = 'BTN_S01')
+btnS01= sg.Button('Continue',font=fontS01, key = 'BTN_S01')
 layout_frS0= [[imgS01],[txtS01], [txtS02,inpS01], [btnS01]]
 frmS0= sg.Frame('', layout_frS0,font=fontS01,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS0')
 ############################################################################################################################
