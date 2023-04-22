@@ -151,7 +151,34 @@ layout_frS6= [[imgS61], [txtS61], [btnS61,btnS62]]
 frmS6= sg.Frame('', layout_frS6,font=fontS61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMS6')
 ############################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6]]
+#############SLIDE B1###########################################################################################################################
+fontB11 = ('MS Serif', 12) 
+imgB11 = sg.Image ('TestImage.png')
+txtB11 = sg.Text(
+"""
+“You decide to stand your ground and face the person or thing approaching! My heart races, almost bursting out of my chest, as the light draws
+nearer. Suddenly, I notice the outline of the figure a WAGON! As it approaches, I see an old man sitting at the front, staring at me intensely.
+He yells out “What be your purpose wandering around these woods so late?"
+""", font = fontB11, visible = True, background_color = '#4B3619')
+btnB11 = sg.Button('I won’t lie to you Mister I have come seeking adventure and wish to find whatever lies deep in this forest', font = fontB11, key='BTN_B11')
+btnB12 = sg.Button('I come from a nearby farm, I don’t want any trouble I’ll be heading back soon', font = fontB11, key = 'BTN_B12')
+txtB12 = sg.Text(
+"""
+Haha you are the first honest man I’ve come across in a while. I like you boy, but if you plan to enter the Woods, I would suggest following this
+path for about another 200 paces and look for a small opening in the bottom of the shrub. From there you should find a path deeper into the woods.
+I will warn you though that place is evil, not that I care I have some sheep to tend to. Farewell!
+""", font = fontB11, visible = False, background_color = '#4B3619')
+txtB13 = sg.Text(
+"""
+Why is he looking at me like that “Hmm if you say so boy I have no time to waste on someone like you. The man keep riding off and with a sick feeling
+in my stomach I decide to run into the forest, I no longer wanted to risk being seen on the road.
+""", font = fontB11, visible = False, background_color = '#4B3619')
+
+layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
+frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
+################################################################################################################################################
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -210,15 +237,29 @@ while True:
         btnS41.update(visible = False)
         txtS43.update(visible = True)
         btnS43.update(visible = True)
+        
 # If statement for the button to continue to slide 5
     elif event == 'BTN_S43':
         window['FRMS4'].update(visible= False)
         window['FRMS5'].update(visible= True)
+        
 # If statement for the button to continue to slide 6
     elif event == 'BTN_S51':
         window['FRMS5'].update(visible= False)
         window['FRMS6'].update(visible= True)
 
+#If statement for the B-branch
+    elif event == 'BTN_S62':
+        window['FRMS6'].update(visible= False)
+        window['FRMB1'].update(visible=True)
+
+#If statement for the B-1 slide
+    elif event == 'BTN_B11':
+        btnB12.update(visible = False)
+        txtB12.update(visible = True)
+    elif event == 'BTN_B12':
+        btnB11.update(visible = False)
+        txtB13.update(visible = True)
 #End
     elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN':
         break
