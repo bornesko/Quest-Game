@@ -68,13 +68,61 @@ inpS31= sg.Input('',size= (30,None), key = 'INP_S31')
 
 btnS31= sg.Button('PLAY!', key = 'BTN_S31')
 btnS32= sg.Button('Continue', visible= False, key = 'BTN_S32')
+btnS33= sg.Button('Continue', visible= False, key = 'BTN_S33')
+
 random_number= random.randint(0,10000)
 
-layout_frS3= [[imgS31], [txtS31], [txtS32], [txtS33], [inpS31], [btnS31,btnS32]]
+layout_frS3= [[imgS31], [txtS31], [txtS32], [txtS33], [inpS31], [btnS31,btnS32,btnS33]]
 frmS3= sg.Frame('', layout_frS3,font=fontS31,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS3')
 ############################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3]]
+#############SLIDE 4###########################################################################################################################
+fontS41 = ('MS Serif', 15) 
+imgS41 = sg.Image ('TestImage.png')
+txtS41 = sg.Text(
+"""
+“Damn I almost had you there.” The dark figure lets out a low and maniacal laugh. “Excellent, here take this kings letter and be on your way, fool!”
+He struts away leaving the tavern, as I look towards his direction the Bartender interrupts me. “Sorry for the wait lad, here is your ale, oh what do you have in your hand.
+That looks like an Aeluminar summoning letter, I didn’t take you for a Knight?”. I look at the beautifully ornate letter in wonder before stuffing it into my backpack. 
+""", font = fontS41, visible = True)
+btnS41 = sg.Button('Looks may deceive a person', font = fontS41, key='BTN_S41')
+btnS42 = sg.Button('A man just gave handed it to me, but maybe it will be useful later on', font = fontS41, key = 'BTN_S42')
+txtS42 = sg.Text(
+"""
+With those clothes you aren’t fooling anybody HAHAHA, well small knight if you plan on leaving today you might want to start heading out before nightfall!
+""", font = fontS41, visible = False)
+txtS43 = sg.Text(
+"""
+Strange… I would be careful who I show that letter to, enemies of the kingdom lurk in every corner and only Holy knights of Aeluminar can possess items brandishing the sacred
+symbol, but enough talk if you plan on leaving today you might want to start heading out before nightfall.
+""", font = fontS41, visible = False)
+btnS43 = sg.Button('Head out in search of adventure!', font = fontS41, visible = False, key = 'BTN_S43')
+
+layout_S4 = [[imgS41], [txtS41], [btnS41, btnS42], [txtS42, txtS43], [btnS43]]
+frmS4 = sg.Frame ('', layout_S4, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', visible = False, key = 'FRMS4')
+################################################################################################################################################
+
+#############SLIDE 4_WIN###########################################################################################################################
+fontS41_win = ('MS Serif', 35)
+fontS42_win = ('MS Serif', 15)
+imgS41_win = sg.Image ('TestImage.png')
+txtS41_win = sg.Text(
+"""
+LUCKY ENDING!
+""", font = fontS41_win)
+txtS42_win = sg.Text(
+"""
+Through sheer luck, you’ve managed to trick the mysterious man and taken enough of his gold for 3 lifetimes.
+You travel back to your farm and enjoy the rest of your life in humble luxury. 
+""", font = fontS42_win)
+btnS41_win = sg.Button('EXIT', font = fontS42_win, key='BTN_S41_WIN')
+
+
+layout_S4_win = [[imgS41_win], [txtS41_win], [txtS42_win], [btnS41_win]]
+frmS4_win = sg.Frame ('', layout_S4_win, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMS4_WIN')
+################################################################################################################################################
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -108,17 +156,34 @@ while True:
         guess_number= int(values['INP_S31'])
         if guess_number== random_number:
             sg.popup("You guessed it!")
+            btnS31.update(visible=False)
+            btnS33.update(visible=True)
         else:
             sg.popup("Wrong, good try though!:")
-        btnS31.update(visible=False)
-        btnS32.update(visible=True)
+            btnS31.update(visible=False)
+            btnS32.update(visible=True)
         
 # If statement for the button to continue to slide 4
     elif event=='BTN_S32':
         window['FRMS3'].update(visible = False)
+        window['FRMS4'].update(visible = True)
+    
+    elif event == 'BTN_S33':
+        window['FRMS3'].update(visible = False)
+        window['FRMS4_WIN'].update(visible = True)
+
+#If statement for the Slide 4 different options
+    elif event == 'BTN_S41':
+        btnS42.update(visible = False)
+        txtS42.update(visible = True)
+        btnS43.update(visible = True)
+    elif event == 'BTN_S42':
+        btnS41.update(visible = False)
+        txtS43.update(visible = True)
+        btnS43.update(visible = True)
     
 #End
-    elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
+    elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN':
         break
 
 window.close()
