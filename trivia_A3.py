@@ -43,12 +43,12 @@ btnSA312 = sg.Button('D) Sapphire', font = fontSA31, visible = False, key = 'BTN
 #Fourth Question
 txtSA34 = sg.Text(
 """
-4) What is the name of the king guards?
+4) What is the smallest bone in the human body?
 """, font = fontSA31, visible = False, background_color = '#4B3619')
-btnSA313 = sg.Button('A) Iluminati', font = fontSA31, visible = False, key='BTN_SA313')
-btnSA314 = sg.Button('B) Aeluminar', font = fontSA31, visible = False, key = 'BTN_SA314')
-btnSA315 = sg.Button('C) Lucians', font = fontSA31, visible = False, key = 'BTN_SA315')
-btnSA316 = sg.Button('D) Aeloria', font = fontSA31, visible = False, key = 'BTN_SA316')
+btnSA313 = sg.Button('A) The Femur', font = fontSA31, visible = False, key='BTN_SA313')
+btnSA314 = sg.Button('B) The Stapes', font = fontSA31, visible = False, key = 'BTN_SA314')
+btnSA315 = sg.Button('C) The Tibia', font = fontSA31, visible = False, key = 'BTN_SA315')
+btnSA316 = sg.Button('D) The Patella', font = fontSA31, visible = False, key = 'BTN_SA316')
 ##########################################################################
 
 txtSA35 = sg.Text('', font = fontSA31, visible = False, background_color = '#4B3619')
@@ -59,7 +59,7 @@ btnSA317 = sg.Button('Continue', font = fontSA31, visible = False, key = 'BTN_SA
 
 
 
-layout_frSA3 = [[imgSA31], [txtSA30], [txtSA31, txtSA32, txtSA33, txtSA34], [btnSA31, btnSA32, btnSA35, btnSA36, btnSA39, btnSA310, btnSA313, btnSA314], [btnSA33, btnSA34, btnSA37, btnSA38, btnSA311, btnSA312, btnSA315, btnSA316], [txtSA35], [txtSA36], [btnSA317, btnSA318]]
+layout_frSA3 = [[imgSA31], [txtSA30], [txtSA31, txtSA32, txtSA33, txtSA34], [btnSA31, btnSA32, btnSA35, btnSA36, btnSA39, btnSA310, btnSA313, btnSA314], [btnSA33, btnSA34, btnSA37, btnSA38, btnSA311, btnSA312, btnSA315, btnSA316], [txtSA35], [txtSA36], [btnSA317]]
 frmSA3 = sg.Frame ('', layout_frSA3, visible = True, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSA3')
 ################################################################################################################################################
 
