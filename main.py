@@ -6,7 +6,7 @@ fontS01 = ("MS Serif", 12)
 fontS02= ("MS Serif", 35)
 txtS01= sg.Text('Welcome to ####', font=fontS02, background_color= '#4B3619')
 txtS02= sg.Text('Please enter your name!', font=fontS01, background_color= '#4B3619')
-inpS01= sg.Input('',size= (30,None), key = 'INP_S01')
+inpS01= sg.Input('',size= (30,None), font=fontS01, key = 'INP_S01')
 btnS01= sg.Button('Continue',font=fontS01, key = 'BTN_S01')
 layout_frS0= [[imgS01],[txtS01], [txtS02,inpS01], [btnS01]]
 frmS0= sg.Frame('', layout_frS0,font=fontS01,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS0')
@@ -64,7 +64,7 @@ Hadesvale by tonight! It’s a simple game choose a number between 1 and 10000 a
 paper you’ll win”.I smirk to myself I was going to do that anyway.''', background_color = '#4B3619',font=fontS31)
 txtS32=sg.Text('', background_color = '#4B3619', font=fontS31)
 txtS33=sg.Text('Choose your Number wisely!', background_color = '#4B3619', font=fontS31)
-inpS31= sg.Input('',size= (30,None), key = 'INP_S31')
+inpS31= sg.Input('',size= (30,None), font=fontS31, key = 'INP_S31')
 
 btnS31= sg.Button('PLAY!', font=fontS31, key = 'BTN_S31')
 btnS32= sg.Button('Continue', font=fontS31, visible= False, key = 'BTN_S32')
@@ -220,6 +220,56 @@ layout_frSAA1= [[imgSAA11,imgSAA12], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA
 frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA1')
 ############################################################################################################################
 
+######SlideAB1###############################################################################################################
+imgSAB11= sg.Image('TestImage.png', key= 'IMG_SAB11')
+imgSAB12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB12')
+fontSAB11 = ("MS Serif", 12)
+fontSAB12= ("MS Serif", 35)
+txtSAB11= sg.Text("""
+“Hihihi stupid, stupid boy come here.” The overgrown mushroom lunges at me with murderous intent. I try to run, but it is too late.
+I feel a sharp pain as its teeth sink into the side of my body. I yell out in terror, as the mushroom deals me a terrible blow. It
+jumps backwards getting ready for another attack. In the next moment however, the ground under me breaks throwing me down a hill I
+only noticed now. I tumble for what seems like a minute before finally ending on the bottom.  """,font=fontSAB11, background_color = '#4B3619', key= 'TXT_SAB11')
+txtSAB12= sg.Text("""
+I sprint as far away as possible from this area. Looking around I no longer see any mushrooms, I hope that creature won’t follow me.
+I can’t take any more of these wounds, but I am this far already might as well keep going. I hurry along determined to make it, as I
+run into the forest it slowly starts to open into a plateau of grass, I see the high beautiful full moon in front of me. A calmness
+takes me over and just as a smile starts to form dark red eyes stare at me from across the field.""",font=fontSAB11, visible=False, background_color = '#4B3619', key= 'TXT_SAB12')
+txtSAB13= sg.Text("""
+I decide to stay and not risk the noise. However, just as I take my next breath the mushroom leaps from the top of the hill, its
+monstrous fangs sinking into my neck. Blood sprays everywhere and as I try to reach out my power fades. “Damn I should have ran…” """,font=fontSAB11, visible=False, background_color = '#4B3619', key= 'TXT_SAB13')
+
+btnSAB11= sg.Button('Run away as far away as possible', font=fontSAB11, key = 'BTN_SAB11')
+btnSAB12= sg.Button('Stay and be quiet', font=fontSAB11, key= 'BTN_SAB12')
+btnSAB13= sg.Button('Continue', font=fontSAB11, visible=False, key= 'BTN_SAB13')
+btnSAB14= sg.Button('Continue', font=fontSAB11, visible=False, key= 'BTN_SAB14')
+
+
+
+layout_frSAB1= [[imgSAB11,imgSAB12], [txtSAB11], [btnSAB11,btnSAB12], [txtSAB12,txtSAB13], [btnSAB13,btnSAB14]]
+frmSAB1= sg.Frame('', layout_frSAB1,font=fontSAB11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAB1')
+############################################################################################################################
+
+#############SLIDE AB3- Bad Ending###########################################################################################################################
+fontSAB31 = ('MS Serif', 35)
+fontSAB32 = ('MS Serif', 15)
+imgSAB31 = sg.Image ('TestImage.png')
+txtSAB31 = sg.Text(
+"""
+BAD ENDING!
+""", background_color = '#4B3619', font = fontSAB31)
+txtSAB32 = sg.Text(
+"""
+In the end, the nightmares of Hadesvale were too powerful. The forest becomes
+your grave and you are forgotten as the world descends into darkness.  
+""", background_color = '#4B3619', font = fontSAB32)
+btnSAB31 = sg.Button('EXIT', font = fontSAB32, key='BTN_SAB31')
+
+
+layout_SAB3 = [[imgSAB31], [txtSAB31], [txtSAB32], [btnSAB31]]
+frmSAB3 = sg.Frame ('', layout_SAB3, size=(1920,1080), element_justification = 'c', visible= False, background_color = '#4B3619', key = 'FRMSAB3')
+################################################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -247,7 +297,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAB1, frmSAB3, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -343,6 +393,11 @@ while True:
     elif event == 'BTN_SA23':
         window['FRMSA2'].update(visible = False)
         import trivia_A3
+        from trivia_A3 import points
+        if points < 3:
+            window['FRMSAB1'].update(visible = True)
+        else:
+            window['FRMSAA1'].update(visible = True)
 # If statement for the slide AA1
     elif event == 'BTN_SA318':
         window['FRMSAA1'].update(visible = True)
@@ -353,6 +408,22 @@ while True:
         window['IMG_SAA11'].update(visible= False)
         window['IMG_SAA12'].update(visible= True)
         window['BTN_SAA12'].update(visible= True)
+# If statement for the slide AB1 actions
+    elif event == 'BTN_SAB11':
+        window['BTN_SAB12'].update(visible= False)
+        window['TXT_SAB12'].update(visible= True)
+        window['IMG_SAB11'].update(visible= False)
+        window['IMG_SAB12'].update(visible= True)
+        window['BTN_SAB13'].update(visible= True)
+    elif event == 'BTN_SAB12':
+        window['BTN_SAB11'].update(visible= False)
+        window['TXT_SAB13'].update(visible= True)
+        window['BTN_SAB14'].update(visible= True)
+
+# If statement for the slide AB3 actions
+    elif event == 'BTN_SAB14':
+        window['FRMSAB1'].update(visible= False)
+        window['FRMSAB3'].update(visible= True)
 
 
 
@@ -370,7 +441,7 @@ while True:
         btnB11.update(visible = False)
         txtB13.update(visible = True)
 #End
-    elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN':
+    elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN' or event == 'BTN_SAB31':
         break
 
 window.close()
