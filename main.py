@@ -151,6 +151,28 @@ layout_frS6= [[imgS61], [txtS61], [btnS61,btnS62]]
 frmS6= sg.Frame('', layout_frS6,font=fontS61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMS6')
 ############################################################################################################################
 
+######SlideA1################################################################################################################
+imgSA11= sg.Image('TestImage.png')
+fontSA11 = ("MS Serif", 12)
+fontSA12= ("MS Serif", 35)
+txtSA11= sg.Text("""
+As I run into the forest, I don’t look back jumping past fallen branches as darkness surrounds me.
+My heart still pounding from the strange situation on the road. As I get deeper into the forest, I
+notice the ground is covered in fungi and mushrooms. The bright florescent tops start to light up
+the forest floor and the sudden stillness gives me an eerie feeling. If the situation were not so
+terrifying I would stay to admire the beautiful colours. As I make my way deeper into the forest,
+I see a small shape in the distance, but not for long as it scurries away into the darkness. I begin
+to feel nervous, unsure if I made the correct decision entering the forest here. I see it again, but
+this time closer, the outline is about the half the size of me, but it manages to disappear again
+before I can get a good look. “Hihihih, another foolish boy stumbles into my domain.” Whatever I saw
+is now standing behind me.""",font=fontSA11, background_color = '#4B3619')
+btnSA11= sg.Button('Turn Around', font=fontSA11, key = 'BTN_SA11')
+
+
+layout_frSA1= [[imgSA11], [txtSA11], [btnSA11]]
+frmSA1= sg.Frame('', layout_frSA1,font=fontSA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSA1')
+############################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -178,7 +200,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -250,6 +272,12 @@ while True:
     elif event == 'BTN_S51':
         window['FRMS5'].update(visible= False)
         window['FRMS6'].update(visible= True)
+
+# If statement for the A-branch
+    elif event == 'BTN_S61':
+        window['FRMS6'].update(visible= False)
+        window['FRMSA1'].update(visible=True) 
+    
 
 #If statement for the B-branch
     elif event == 'BTN_S62':
