@@ -126,7 +126,7 @@ frmS4_win = sg.Frame ('', layout_S4_win, visible = False, size=(1920,1080), elem
 imgS51= sg.Image('TestImage.png')
 fontS51 = ("MS Serif", 12)
 fontS52= ("MS Serif", 35)
-txtS51= sg.Text('Brave {character_NAME} heads out following the directions of the path leading to the forest.', background_color = '#4B3619', font=fontS51)
+txtS51= sg.Text('', background_color = '#4B3619', font=fontS51)
 txtS52= sg.Text(
     '''Although I had just left, the only Tavern for 100 miles there was still a long road ahead. As
 the sun starts to set, I see the forest in the distance, a great expanse of trees covers the land for
@@ -244,6 +244,7 @@ while True:
     elif event == 'BTN_S43':
         window['FRMS4'].update(visible= False)
         window['FRMS5'].update(visible= True)
+        txtS51.update(f'Brave {character_name} heads out following the directions of the path leading to the forest.')
         
 # If statement for the button to continue to slide 6
     elif event == 'BTN_S51':
