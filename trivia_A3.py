@@ -54,11 +54,9 @@ btnSA316 = sg.Button('D) Aeloria', font = fontSA31, visible = False, key = 'BTN_
 txtSA35 = sg.Text('', font = fontSA31, visible = False, background_color = '#4B3619')
 txtSA36 = sg.Text('', font = fontSA31, visible = False, background_color = '#4B3619')
 
-#Bad Button
+#Button
 btnSA317 = sg.Button('Continue', font = fontSA31, visible = False, key = 'BTN_SA317')
 
-#Good Button
-btnSA318 = sg.Button('Continue', font = fontSA31, visible = False, key = 'BTN_SA318')
 
 
 layout_frSA3 = [[imgSA31], [txtSA30], [txtSA31, txtSA32, txtSA33, txtSA34], [btnSA31, btnSA32, btnSA35, btnSA36, btnSA39, btnSA310, btnSA313, btnSA314], [btnSA33, btnSA34, btnSA37, btnSA38, btnSA311, btnSA312, btnSA315, btnSA316], [txtSA35], [txtSA36], [btnSA317, btnSA318]]
@@ -180,7 +178,7 @@ while True:
             btnSA317.update(visible = True)
         elif points >= 3:
             txtSA36.update('You Win!', visible = True)
-            btnSA318.update(visible = True)
+            btnSA317.update(visible = True)
         
 #Question 4 Wrong Path
     elif event == 'BTN_SA313' or event == 'BTN_SA315' or event == 'BTN_SA316':
@@ -200,10 +198,10 @@ while True:
             btnSA317.update(visible = True)
         elif points >= 3:
             txtSA36.update('You Win!', visible = True)
-            btnSA318.update(visible = True)
+            btnSA317.update(visible = True)
             
     #Cambia este if por elif.
-    elif event == sg.WIN_CLOSED or event == 'BTN_SA318' or event == 'BTN_SA317':
+    elif event == sg.WIN_CLOSED or event == 'BTN_SA317':
         break    
         
 window.close()
