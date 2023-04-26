@@ -62,7 +62,7 @@ txtS31= sg.Text(
 but if you win I’ll give you 1000 pieces of gold.Lose however and you must take my place in the kings draft and travel to
 Hadesvale by tonight! It’s a simple game choose a number between 1 and 10000 and if you guess the number I will write on this
 paper you’ll win”.I smirk to myself I was going to do that anyway.''', background_color = '#4B3619',font=fontS31)
-txtS32=sg.Text(f'My name is {inpS01} and I accept your offer!', background_color = '#4B3619', font=fontS31)
+txtS32=sg.Text('', background_color = '#4B3619', font=fontS31)
 txtS33=sg.Text('Choose your Number wisely!', background_color = '#4B3619', font=fontS31)
 inpS31= sg.Input('',size= (30,None), key = 'INP_S31')
 
@@ -188,6 +188,7 @@ while True:
 # If statement for the button to continue to slide 1
     if event == 'BTN_S01':
         window['FRMS0'].update(visible = False)
+        character_name = str(values['INP_S01'])
         
 # If statement for the button to continue to slide 2
     elif event == 'BTN_S11':
@@ -205,6 +206,7 @@ while True:
         
 # If statement for the button to continue to slide 3
     elif event=='BTN_S23':
+        txtS32.update(f'My name is {character_name} and I accept your offer!')
         window['FRMS2'].update(visible= False)
         
 # If statement for slide 3 - for the different options inside the slide with the different text       
