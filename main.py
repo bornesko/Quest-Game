@@ -173,6 +173,31 @@ layout_frSA1= [[imgSA11], [txtSA11], [btnSA11]]
 frmSA1= sg.Frame('', layout_frSA1,font=fontSA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSA1')
 ############################################################################################################################
 
+#############SLIDE A2###########################################################################################################################
+fontSA21 = ('MS Serif', 12) 
+imgSA21 = sg.Image ('TestImage.png')
+txtSA21 = sg.Text(
+"""
+A grotesque half mushroom half man creature stands before me, with a distorted smile looking upon me. “Oh how lucky I am that none of my brothers
+found you first, I always knew our great mother ### loved me more.” 
+""", font = fontSA21, visible = True, background_color = '#4B3619')
+btnSA21 = sg.Button('What are you?', font = fontSA21, key='BTN_SA21')
+btnSA22 = sg.Button('Get away from me!', font = fontSA21, key = 'BTN_SA22')
+txtSA22 = sg.Text(
+"""
+“Hihihi, as sons and daughters of the great #### we stand guard here to await anyone foolish enough to enter this area, if you are able to beat me in
+a game you will progress if not I will get to eat you hihihi.”
+""", font = fontSA21, visible = False, background_color = '#4B3619')
+txtSA23 = sg.Text(
+"""
+“Did no one ever teach you manners boy, you’ll play a game with me now. If you lose I’ll have you for my dinner hihihi.”
+""", font = fontSA21, visible = False, background_color = '#4B3619')
+btnSA23 = sg.Button('PLAY!', font = fontSA21, visible = False, key = 'BTN_SA23')
+
+layout_frSA2 = [[imgSA21], [txtSA21], [btnSA21, btnSA22], [txtSA22, txtSA23], [btnSA23]]
+frmSA2 = sg.Frame ('', layout_frSA2, visible = True, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSA2')
+################################################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -200,7 +225,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -273,13 +298,27 @@ while True:
         window['FRMS5'].update(visible= False)
         window['FRMS6'].update(visible= True)
 
-# If statement for the A-branch
+####################If statement for the A-branch#########################################
     elif event == 'BTN_S61':
         window['FRMS6'].update(visible= False)
-        window['FRMSA1'].update(visible=True) 
-    
+        window['FRMSA1'].update(visible=True)
 
-#If statement for the B-branch
+# If statement for the button to contunue to Slide A2
+    elif event == 'BTN_SA11':
+        window['FRMSA1'].update(visible = False)
+        window['FRMSA2'].update(visible = True)
+
+# If statment for the Slide A2 actions
+    elif event == 'BTN_SA21':
+        btnSA22.update(visible = False)
+        txtSA22.update(visible = True)
+        btnSA23.update(visible = True)
+    elif event == 'BTN_SA22':
+        btnSA21.update(visible = False)
+        txtSA23.update(visible = True)
+        btnSA23.update(visible = True)
+
+##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
         window['FRMS6'].update(visible= False)
         window['FRMB1'].update(visible=True)
@@ -291,6 +330,7 @@ while True:
     elif event == 'BTN_B12':
         btnB11.update(visible = False)
         txtB13.update(visible = True)
+    
 #End
     elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN':
         break
