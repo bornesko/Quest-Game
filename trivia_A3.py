@@ -203,7 +203,7 @@ while True:
             btnSA318.update(visible = True)
             
     #Cambia este if por elif.
-    elif event == sg.WIN_CLOSED or event == 'BTN_SALIR':
+    elif event == sg.WIN_CLOSED or event == 'BTN_SA318' or event == 'BTN_SA317':
         break    
         
 window.close()

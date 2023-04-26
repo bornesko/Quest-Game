@@ -195,7 +195,7 @@ txtSA23 = sg.Text(
 btnSA23 = sg.Button('PLAY!', font = fontSA21, visible = False, key = 'BTN_SA23')
 
 layout_frSA2 = [[imgSA21], [txtSA21], [btnSA21, btnSA22], [txtSA22, txtSA23], [btnSA23]]
-frmSA2 = sg.Frame ('', layout_frSA2, visible = True, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSA2')
+frmSA2 = sg.Frame ('', layout_frSA2, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSA2')
 ################################################################################################################################################
 
 #############SLIDE B1###########################################################################################################################
@@ -317,7 +317,10 @@ while True:
         btnSA21.update(visible = False)
         txtSA23.update(visible = True)
         btnSA23.update(visible = True)
-
+    
+    elif event == 'BTN_SA23':
+        window['FRMSA2'].update(visible = False)
+        import trivia_A3
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
         window['FRMS6'].update(visible= False)
@@ -330,7 +333,6 @@ while True:
     elif event == 'BTN_B12':
         btnB11.update(visible = False)
         txtB13.update(visible = True)
-    
 #End
     elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN':
         break
