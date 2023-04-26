@@ -198,6 +198,28 @@ layout_frSA2 = [[imgSA21], [txtSA21], [btnSA21, btnSA22], [txtSA22, txtSA23], [b
 frmSA2 = sg.Frame ('', layout_frSA2, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSA2')
 ################################################################################################################################################
 
+######SlideAA1###############################################################################################################
+imgSAA11= sg.Image('TestImage.png', key= 'IMG_SAA11')
+imgSAA12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA12')
+fontSAA11 = ("MS Serif", 12)
+fontSAA12= ("MS Serif", 35)
+txtSAA11= sg.Text("""
+I won! “That’s not possible I’ve never lost before. No come here I don’t care if I’ve lost I’ll eat you anyway.”
+Suddenly the skin of the disgusting mushroom man starts to bubble and he lets out a horrifying shriek. As he steps
+closer to me, while reaching out his body starts to expand into a bubble that explodes open flinging his entrails everywhere. """,font=fontSAA11, background_color = '#4B3619', key= 'TXT_SAA11')
+txtSAA12= sg.Text("""
+On the ground where he was standing a few seconds ago a puddle only remains with the number 48 etched into the ground.
+Hmm this seems important I had better remember it for later. With a face full of confidence, I march foreword into the
+unknown dangers ahead of me.""",font=fontSAA11, visible=False, background_color = '#4B3619', key= 'TXT_SAA12')
+btnSAA11= sg.Button('Observe', font=fontSAA11, key = 'BTN_SAA11')
+btnSAA12= sg.Button('Continue on', font=fontSAA11, visible=False, key= 'BTN_SAA12')
+
+
+
+layout_frSAA1= [[imgSAA11,imgSAA12], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA12]]
+frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA1')
+############################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -225,7 +247,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -317,10 +339,24 @@ while True:
         btnSA21.update(visible = False)
         txtSA23.update(visible = True)
         btnSA23.update(visible = True)
-    
+# Import triva A3 
     elif event == 'BTN_SA23':
         window['FRMSA2'].update(visible = False)
         import trivia_A3
+# If statement for the slide AA1
+    elif event == 'BTN_SA318':
+        window['FRMSAA1'].update(visible = True)
+        
+# If statement for the slide AA1 actions
+    elif event == 'BTN_SAA11':
+        window['TXT_SAA12'].update(visible= True)
+        window['IMG_SAA11'].update(visible= False)
+        window['IMG_SAA12'].update(visible= True)
+        window['BTN_SAA12'].update(visible= True)
+
+
+
+
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
         window['FRMS6'].update(visible= False)
