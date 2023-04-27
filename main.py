@@ -220,6 +220,59 @@ layout_frSAA1= [[imgSAA11,imgSAA12], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA
 frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA1')
 ############################################################################################################################
 
+######SlideAA2###############################################################################################################
+imgSAA21= sg.Image('TestImage.png')
+imgSAA22= sg.Image('TestImage.png')
+fontSAA21 = ("MS Serif", 12)
+fontSAA22= ("MS Serif", 35)
+
+txtSAA21= sg.Text("""
+Filled with courage I continue to march into the wilderness. Over bushes and roots, I climb always pushing forward.
+After what feels like an eternity I finally make it onto more stable ground. Walking becomes a little bit easier now
+and I actually begin to pick up some pace. “Just keep going,” I tell myself now more determined than ever. As I walk
+forward, I realize the reality of my situation in that I will most likely have to keep facing these creatures. Already
+the scenery around me starts to change, the forest in this area looks recently burned and the bark of the giant trees
+have scorch marks surrounding them. My stomach starts to turn “This might be the worst one so far,” I think to myself
+as I keep walking. With every step, the heat seems to increase until I can barely move forward. “You there not another
+step.” “Yes you better not move.” “Stay or we will swallow you whole.” """,font=fontSAA21, background_color = '#4B3619')
+btnSAA21= sg.Button('Look to the side', font=fontSAA21, key = 'BTN_SAA21')
+
+
+
+
+layout_frSAA2= [[imgSAA21], [txtSAA21], [btnSAA21]]
+frmSAA2= sg.Frame('', layout_frSAA2,font=fontSAA21,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA2')
+###############################################################################################################################################
+
+
+######SlideAA3###############################################################################################################
+imgSAA31= sg.Image('TestImage.png')
+imgSAA32= sg.Image('TestImage.png')
+fontSAA31 = ("MS Serif", 12)
+fontSAA32= ("MS Serif", 35)
+
+txtSAA31= sg.Text("""
+As I turn to the side, I see the monstrosity in front of me. A three-headed hound surrounded in flames walks up to me.
+It leaves giant scorch marks with every step.
+
+“How dare you try to pass us without completing your challenge.”
+
+“You hav…”
+
+“Quiet idiot I always speak second, as was being said you have to complete 3 riddles. One you may get wrong, but any
+more and you’ll be our dinner.”
+
+“Exactly fool, our dinner!”
+ """,font=fontSAA31, background_color = '#4B3619')
+btnSAA31= sg.Button('Play!', font=fontSAA31, key = 'BTN_SAA31')
+
+
+
+
+layout_frSAA3= [[imgSAA31], [txtSAA31], [btnSAA31]]
+frmSAA3= sg.Frame('', layout_frSAA3,font=fontSAA31,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA3')
+###########################################################################################################################################################################################
+
 ######SlideAB1###############################################################################################################
 imgSAB11= sg.Image('TestImage.png', key= 'IMG_SAB11')
 imgSAB12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB12')
@@ -318,7 +371,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAB1, frmSAB3, frmSAB4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAB1, frmSAB3, frmSAB4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -429,6 +482,20 @@ while True:
         window['IMG_SAA11'].update(visible= False)
         window['IMG_SAA12'].update(visible= True)
         window['BTN_SAA12'].update(visible= True)
+
+
+# If statement for the slide AA2
+    elif event == 'BTN_SAA12' or event == 'BTN_SAB41':
+        window['FRMSAA1'].update(visible= False)
+        window['FRMSAB4'].update(visible= False)
+        window['FRMSAA2'].update(visible= True)
+
+# If statement for the slide AA3
+    elif event == 'BTN_SAA21':
+        window['FRMSAA2'].update(visible= False)
+        window['FRMSAA3'].update(visible= True)
+
+
 # If statement for the slide AB1 actions
     elif event == 'BTN_SAB11':
         window['BTN_SAB12'].update(visible= False)
@@ -456,7 +523,6 @@ while True:
     elif event == 'BTN_SAB14':
         window['FRMSAB1'].update(visible= False)
         window['FRMSAB3'].update(visible= True)
-
 
 
 
