@@ -249,7 +249,6 @@ btnSAB14= sg.Button('Continue', font=fontSAB11, visible=False, key= 'BTN_SAB14')
 layout_frSAB1= [[imgSAB11,imgSAB12], [txtSAB11], [btnSAB11,btnSAB12], [txtSAB12,txtSAB13], [btnSAB13,btnSAB14]]
 frmSAB1= sg.Frame('', layout_frSAB1,font=fontSAB11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAB1')
 ############################################################################################################################
-
 #############SLIDE AB3- Bad Ending###########################################################################################################################
 fontSAB31 = ('MS Serif', 35)
 fontSAB32 = ('MS Serif', 15)
@@ -419,6 +418,17 @@ while True:
         window['BTN_SAB11'].update(visible= False)
         window['TXT_SAB13'].update(visible= True)
         window['BTN_SAB14'].update(visible= True)
+# If statement for the slide AB2
+    elif event == 'BTN_SAB13':
+        window['FRMSAB1'].update(visible= False)
+        import Story_obstacle
+        from Story_obstacle import correct
+        if correct:
+            window['FRMSAB1'].update(visible= True)
+        else:
+            window['FRMSAB3'].update(visible= True)
+            
+
 
 # If statement for the slide AB3 actions
     elif event == 'BTN_SAB14':
