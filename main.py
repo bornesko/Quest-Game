@@ -259,8 +259,8 @@ It leaves giant scorch marks with every step.
 
 “You hav…”
 
-“Quiet idiot I always speak second, as was being said you have to complete 3 riddles. One you may get wrong, but any
-more and you’ll be our dinner.”
+“Quiet idiot I always speak second, as was being said you have to complete 3 riddles where each answer consists of 1 word.
+One you may get wrong, but anymore and you’ll be our dinner.”
 
 “Exactly fool, our dinner!”
  """,font=fontSAA31, background_color = '#4B3619')
@@ -495,6 +495,16 @@ while True:
         window['FRMSAA2'].update(visible= False)
         window['FRMSAA3'].update(visible= True)
 
+# If statement for the slide AA4- Riddle
+    elif event == 'BTN_SAA31':
+        window['FRMSAA3'].update(visible= False)
+        import riddle_1
+        from riddle_1 import riddle_points
+        if riddle_points >= 2:
+            window['FRMS0'].update(visible= True)
+        elif riddle_points <= 2 and points < 3:
+            window['FRMSAB3'].update(visible= True)
+            
 
 # If statement for the slide AB1 actions
     elif event == 'BTN_SAB11':
@@ -523,6 +533,7 @@ while True:
     elif event == 'BTN_SAB14':
         window['FRMSAB1'].update(visible= False)
         window['FRMSAB3'].update(visible= True)
+
 
 
 
