@@ -269,6 +269,28 @@ layout_SAB3 = [[imgSAB31], [txtSAB31], [txtSAB32], [btnSAB31]]
 frmSAB3 = sg.Frame ('', layout_SAB3, size=(1920,1080), element_justification = 'c', visible= False, background_color = '#4B3619', key = 'FRMSAB3')
 ################################################################################################################################################
 
+######SlideAB4###############################################################################################################
+imgSAB41= sg.Image('TestImage.png', key= 'IMG_SAB41')
+imgSAB42= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB42')
+fontSAB41 = ("MS Serif", 12)
+fontSAB42= ("MS Serif", 35)
+txtSAB41= sg.Text("""
+“No!!! you fool” The enraged werewolf leaps at me with bloodshot eyes. However, before it reaches me the
+ground beneath it breaks open pulling it deep into the ground! “No no I almost had him it’s not fair.” His
+claws grab onto the ground, but as he is pulled deeper his claws are thrust with him into the depths. His
+shrieks echo in the night until everything falls silent. I slowly make my way up to the hole. The outline
+forms the number 48. I will try to remember that for later, but for now, I want to leave this place as fast
+as possible.   """,font=fontSAB41, background_color = '#4B3619')
+
+btnSAB41= sg.Button('Continue on', font=fontSAB41, key = 'BTN_SAB41')
+
+
+
+
+layout_frSAB4= [[imgSAB41], [txtSAB41], [btnSAB41]]
+frmSAB4= sg.Frame('', layout_frSAB4,font=fontSAB41,  element_justification='c', size=(1920,1080), visible=False,  background_color = '#4B3619', key= 'FRMSAB4')
+############################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -296,7 +318,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAB1, frmSAB3, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAB1, frmSAB3, frmSAB4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -424,7 +446,7 @@ while True:
         import Story_obstacle
         from Story_obstacle import correct
         if correct:
-            window['FRMSAB1'].update(visible= True)
+            window['FRMSAB4'].update(visible= True)
         else:
             window['FRMSAB3'].update(visible= True)
             
