@@ -36,7 +36,7 @@ radioSAB24 = sg.Radio('The gardener- Thomas', font = fontSAB22, visible=False, b
 radioSAB25 = sg.Radio('The wife- Elizabeth', font = fontSAB22,visible=False, background_color = '#4B3619', group_id= 'RadGroup', key= 'RB5')
 
 txtSAB23= sg.Text("""
-“Wrong little one…” as I desperately try to flee, the long claws of the demonic wolf swipe at me severing my head in one go.
+“Wrong little one…” as I desperately try to flee, the long claws of the demonic wolf swipe at me severing my head in an instant.
 """, visible=False, background_color = '#4B3619', font = fontSAB22, key= 'TXT_SAB23') 
 btnSAB22 = sg.Button('Answer', visible= False, font=fontSAB22, key= 'BTN_SAB22')
 btnSAB23 = sg.Button('Continue', visible= False, font=fontSAB22, key= 'BTN_SAB23')
