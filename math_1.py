@@ -21,7 +21,7 @@ btn_math_5 = sg.Button ('0', font = font_math_1, size=(15,1), key = 'BTN_MT_5')
 btn_math_6 = sg.Button ('9', font = font_math_1, size=(15,1), key = 'BTN_MT_6')
 
 ###################### Question 3 ##########################
-txt_math_3 = sg.Text ('When I was four years old, my sister was half my age. Now, I am 18. How old is my sister now?\n\n', font = font_math_1, background_color = '#4B3619')
+txt_math_3 = sg.Text ('When I was four years old, my sister was half my age. Now, I am 18. How old is my sister now?', font = font_math_1, background_color = '#4B3619')
 btn_math_7 = sg.Button ('16', font = font_math_1, size=(15,1), key = 'BTN_MT_7')
 btn_math_8 = sg.Button ('20', font = font_math_1, size=(15,1), key = 'BTN_MT_8')
 btn_math_9 = sg.Button ('18', font = font_math_1, size=(15,1), key = 'BTN_MT_9')
@@ -30,10 +30,10 @@ layout_fr_math_1 = [[txt_explanation_1], [txt_math_1], [txt_math_2], [txt_math_3
 frm_math_1 = sg.Frame('', layout_fr_math_1, visible = True, element_justification = 'l', background_color = '#4B3619', key = 'FRM_MT_1')
 
 layout_fr_math_2 = [[txt_explanation_2], [btn_math_1, btn_math_2, btn_math_3],[txt_empty_space], [btn_math_4, btn_math_5, btn_math_6], [txt_empty_space_1], [btn_math_7, btn_math_8, btn_math_9]]
-frm_math_2 = sg.Frame('', layout_fr_math_2, visible = True, size=(500,284), element_justification = 'l', background_color = '#4B3619', key = 'FRM_RD_2')
+frm_math_2 = sg.Frame('', layout_fr_math_2, visible = True, size=(500,244), element_justification = 'l', background_color = '#4B3619', key = 'FRM_RD_2')
 
 ####################### Secret Question ###########################
-txt_math_4 = sg.Text ('\n\nSecret Question: Third Answer + Second Answer - First Answer = ?', font = font_math_1, background_color = '#4B3619')
+txt_math_4 = sg.Text ('\nSecret Question: Third Answer + Second Answer - First Answer = ?', font = font_math_1, background_color = '#4B3619')
 inp_math_1 = sg.Input('', size = (30,None), font = font_math_1, key = 'INP_MT_1')
 btn_math_10 = sg.Button('Check', font = font_math_1, key = 'BTN_MT_10')
 btn_math_11 = sg.Button('Continue', font = font_math_1, visible = False, key = 'BTN_MT_11')
