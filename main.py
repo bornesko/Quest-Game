@@ -208,7 +208,7 @@ I won! “That’s not possible I’ve never lost before. No come here I don’t
 Suddenly the skin of the disgusting mushroom man starts to bubble and he lets out a horrifying shriek. As he steps
 closer to me, while reaching out his body starts to expand into a bubble that explodes open flinging his entrails everywhere. """,font=fontSAA11, background_color = '#4B3619', key= 'TXT_SAA11')
 txtSAA12= sg.Text("""
-On the ground where he was standing a few seconds ago a puddle only remains with the number 48 etched into the ground.
+On the ground where he was standing a few seconds ago a puddle only remains with the number 83 etched into the ground.
 Hmm this seems important I had better remember it for later. With a face full of confidence, I march foreword into the
 unknown dangers ahead of me.""",font=fontSAA11, visible=False, background_color = '#4B3619', key= 'TXT_SAA12')
 btnSAA11= sg.Button('Observe', font=fontSAA11, key = 'BTN_SAA11')
@@ -416,6 +416,43 @@ layout_frSAB4= [[imgSAB41], [txtSAB41], [btnSAB41]]
 frmSAB4= sg.Frame('', layout_frSAB4,font=fontSAB41,  element_justification='c', size=(1920,1080), visible=False,  background_color = '#4B3619', key= 'FRMSAB4')
 ############################################################################################################################
 
+######SlideAC1###############################################################################################################
+imgSAC11= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC11')
+imgSAC12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC12')
+fontSAC11 = ("MS Serif", 12)
+fontSAC12= ("MS Serif", 35)
+
+txtSAC11= sg.Text("""
+Before I can even react, the hound leaps towards me. Each head biting down on
+a different part of me, I feel horrifying pain, as I am torn limb from limb…
+ """,font=fontSAC11, background_color = '#4B3619', visible=False, key = 'TXT_SAC11')
+btnSAC11= sg.Button('Continue', font=fontSAC11, visible=False, key = 'BTN_SAC11')
+
+txtSAC12= sg.Text("""
+The hound leaps towards me, but miraculously enough I dodge right as it descends
+upon me. In an effort to escape I slide underneath it and run towards the dense
+crop of trees. However, in a split second it is already behind me, I jump for the
+trees and as I scramble up to keep running, I hear a loud thud behind me and the
+shaking of a tree.
+
+“You foolish oaf you’ve done it again.”
+“Idiot we should have torn you off our body a long time ago.”
+“Sorry, I didn’t meant to hit the tree.”
+I don’t take a single moment to listen to the conversation and run as fast as I can.
+“Look now he’s going to get awa…”
+
+The voices trail off in the distance as I run downhill now. For what seems like at
+least 10 min, I don’t stop running. By the end I stop to catch my breath, finally
+it seems like I am out of the danger zone, the trees around here are no longer scorched.
+Determined as ever I wander off into my destiny.
+""",font=fontSAC11, visible= False, background_color = '#4B3619', key = 'TXT_SAC12')
+btnSAC12= sg.Button('Head out!', font=fontSAC11, visible= False, key = 'BTN_SAC12')
+
+
+layout_frSAC1= [[imgSAC11,imgSAC12], [txtSAC11,txtSAC12], [btnSAC11,btnSAC12]]
+frmSAC1= sg.Frame('', layout_frSAC1,font=fontSAC11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC1')
+#######################################################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -443,7 +480,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -575,9 +612,17 @@ while True:
         if riddle_points >= 2:
             window['FRMSAA5'].update(visible= True)
         elif riddle_points <= 2 and points < 3:
-            window['FRMSAB3'].update(visible= True)
+            window['FRMSAC1'].update(visible= True)
+            window['IMG_SAC11'].update(visible=True)
+            window['TXT_SAC11'].update(visible=True)
+            window['BTN_SAC11'].update(visible=True)
+            
         elif riddle_points <= 2:
-            window['FRMSAB3'].update(visible= True)
+            window['FRMSAC1'].update(visible= True)
+            window['IMG_SAC12'].update(visible=True)
+            window['TXT_SAC12'].update(visible=True)
+            window['BTN_SAC12'].update(visible=True)
+            
             
 # If statement for the slide AA6
     elif event == 'BTN_SAA51':
@@ -605,8 +650,8 @@ while True:
         window['BTN_SAA65'].update(visible = True)
 # IF statement for the slide Bad ending
     elif event == 'BTN_SAA65':
-        window['FRMSAA6'].update(visible = False)
-        window['FRMSAB3'].update(visible = True)
+        window['FRMSAB3'].update(visible = False)
+        window['TXT_SAA63'].update(visible = True)
             
 ###################################AB branch##########################
 
@@ -639,7 +684,10 @@ while True:
         window['FRMSAB3'].update(visible= True)
 
 
-
+# If statement for the slide AC1:
+    elif event == 'BTN_SAC11':
+        window['FRMSAC1'].update(visible=False)
+        window['FRMSAB3'].update(visible=True)
 
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
