@@ -27,10 +27,10 @@ btn_math_8 = sg.Button ('20', font = font_math_1, size=(15,1), key = 'BTN_MT_8')
 btn_math_9 = sg.Button ('18', font = font_math_1, size=(15,1), key = 'BTN_MT_9')
 
 layout_fr_math_1 = [[txt_explanation_1], [txt_math_1], [txt_math_2], [txt_math_3]]
-frm_math_1 = sg.Frame('', layout_fr_math_1, visible = True, size=(1000,250), element_justification = 'l', background_color = '#4B3619', key = 'FRM_MT_1')
+frm_math_1 = sg.Frame('', layout_fr_math_1, visible = True, element_justification = 'l', background_color = '#4B3619', key = 'FRM_MT_1')
 
 layout_fr_math_2 = [[txt_explanation_2], [btn_math_1, btn_math_2, btn_math_3],[txt_empty_space], [btn_math_4, btn_math_5, btn_math_6], [txt_empty_space_1], [btn_math_7, btn_math_8, btn_math_9]]
-frm_math_2 = sg.Frame('', layout_fr_math_2, visible = True, size=(1000,250), element_justification = 'l', background_color = '#4B3619', key = 'FRM_RD_2')
+frm_math_2 = sg.Frame('', layout_fr_math_2, visible = True, size=(500,284), element_justification = 'l', background_color = '#4B3619', key = 'FRM_RD_2')
 
 ####################### Secret Question ###########################
 txt_math_4 = sg.Text ('\n\nSecret Question: Third Answer + Second Answer - First Answer = ?', font = font_math_1, background_color = '#4B3619')
