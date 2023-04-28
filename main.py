@@ -374,6 +374,7 @@ btnSAB14= sg.Button('Continue', font=fontSAB11, visible=False, key= 'BTN_SAB14')
 layout_frSAB1= [[imgSAB11,imgSAB12], [txtSAB11], [btnSAB11,btnSAB12], [txtSAB12,txtSAB13], [btnSAB13,btnSAB14]]
 frmSAB1= sg.Frame('', layout_frSAB1,font=fontSAB11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAB1')
 ############################################################################################################################
+
 #############SLIDE AB3- Bad Ending###########################################################################################################################
 fontSAB31 = ('MS Serif', 35)
 fontSAB32 = ('MS Serif', 15)
@@ -453,6 +454,50 @@ layout_frSAC1= [[imgSAC11,imgSAC12], [txtSAC11,txtSAC12], [btnSAC11,btnSAC12]]
 frmSAC1= sg.Frame('', layout_frSAC1,font=fontSAC11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC1')
 #######################################################################################################################################################
 
+######SlideAC2###############################################################################################################
+imgSAC21= sg.Image('TestImage.png')
+fontSAC21 = ("MS Serif", 12)
+fontSAC22= ("MS Serif", 35)
+
+txtSAC21= sg.Text("""
+It has now been over 30 min since I have encountered that beast. Hope swells up in
+my “Maybe that was all of them.” I continue to walk, the forest surrounding me as
+plain as ever. As I take my next step, my right foot plunges into a gooey brown
+substance. I notice that the ground in front of me has been turned into a swamp.
+It was difficult at first to see, however now I clearly see the marsh before me.
+“Uh spoke too soon, where is the next monster.” I struggle forward with each foot
+content that the beast will approach me soon enough. As I make myself towards the
+center, I hear a load crash, the trees surrounding me shake and vibrate. Above me,
+I hear the birds flying off in search of safety. I now see the monstrosity before
+me. Its giant body slithering towards me, bigger than any house I had ever seen. 
+ """,font=fontSAC21, background_color = '#4B3619')
+btnSAC21= sg.Button('Continue', font=fontSAC21, key = 'BTN_SAC21')
+
+
+layout_frSAC2= [[imgSAC21], [txtSAC21], [btnSAC21]]
+frmSAC2= sg.Frame('', layout_frSAC2,font=fontSAC21,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC2')
+############################################################################################################################################################
+
+######SlideAC3###############################################################################################################
+imgSAC31= sg.Image('TestImage.png')
+fontSAC31 = ("MS Serif", 12)
+fontSAC32= ("MS Serif", 35)
+
+txtSAC31= sg.Text("""
+The head of the giant snake like monster looms over me. I am struck by a fear I have never felt
+before there is no escape from this monster. “I am sure my younger siblings have done much to
+entertain you shishishi. I have heard their screams since you have entered this forest, do not
+think I will be so kind to you as they have. However, I am unfortunately bound by the same code
+as they are, let’s get this over with and play our game shishishi.” My heart is filled with dread
+as I stare up at the beast across me, but I don’t have much of a choice. 
+ """,font=fontSAC31, background_color = '#4B3619')
+btnSAC31= sg.Button('Play!', font=fontSAC31, key = 'BTN_SAC31')
+
+
+layout_frSAC3= [[imgSAC31], [txtSAC31], [btnSAC31]]
+frmSAC3= sg.Frame('', layout_frSAC3,font=fontSAC31,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC3')
+#################################################################################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -480,7 +525,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -688,6 +733,16 @@ while True:
     elif event == 'BTN_SAC11':
         window['FRMSAC1'].update(visible=False)
         window['FRMSAB3'].update(visible=True)
+
+# If statement for the slide AC2:
+    elif event == 'BTN_SAC12':
+        window['FRMSAC1'].update(visible=False)
+        window['FRMSAC2'].update(visible=True)
+
+# If statement for the slide AC3:
+    elif event == 'BTN_SAC21':
+        window['FRMSAC2'].update(visible=False)
+        window['FRMSAC3'].update(visible=True)
 
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
