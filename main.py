@@ -700,8 +700,9 @@ while True:
             
             
 # If statement for the slide AA6
-    elif event == 'BTN_SAA51':
+    elif event == 'BTN_SAA51' or event == 'BTN_SAC42':
         window['FRMSAA5'].update(visible= False)
+        window['FRMSAC4'].update(visible= False)
         window['FRMSAA6'].update(visible= True)
         
     elif event == 'BTN_SAA61':
@@ -724,9 +725,11 @@ while True:
         window['TXT_SAA63'].update(visible = True)
         window['BTN_SAA65'].update(visible = True)
 # IF statement for the slide Bad ending
-    elif event == 'BTN_SAA65':
-        window['FRMSAB3'].update(visible = False)
-        window['TXT_SAA63'].update(visible = True)
+    elif event == 'BTN_SAA65' or event == 'BTN_SAC41':
+        window['FRMSAA6'].update(visible = False)
+        window['FRMSAC4'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+        
             
 ###################################AB branch##########################
 
@@ -783,7 +786,7 @@ while True:
             window['TXT_SAC42'].update(visible=True)
             window['BTN_SAC42'].update(visible=True)
         else:
-            wwindow['FRMSAC3'].update(visible=False)
+            window['FRMSAC3'].update(visible=False)
             window['FRMSAC4'].update(visible=True)
             window['IMG_SAC41'].update(visible=True)
             window['TXT_SAC41'].update(visible=True)
