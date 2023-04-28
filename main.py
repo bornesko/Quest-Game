@@ -498,6 +498,36 @@ layout_frSAC3= [[imgSAC31], [txtSAC31], [btnSAC31]]
 frmSAC3= sg.Frame('', layout_frSAC3,font=fontSAC31,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC3')
 #################################################################################################################################################################################
 
+######SlideAC4###############################################################################################################
+imgSAC41= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC41')
+imgSAC42= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC42')
+fontSAC41 = ("MS Serif", 12)
+fontSAC42= ("MS Serif", 35)
+
+txtSAC41= sg.Text("""
+“Sorry little one you have come far, but this is the end.” I look up as the monster
+opens its mouth, sitting down I accept my fate, as this force of nature strikes at me.
+In a single sweep, I am no more as its teeth crush me.
+ """,font=fontSAC41, background_color = '#4B3619', visible=False, key = 'TXT_SAC41')
+btnSAC41= sg.Button('Continue', font=fontSAC41, visible=False, key = 'BTN_SAC41')
+
+txtSAC42= sg.Text("""
+“A worthy challenger, you have my respect. I wish I could have avenged my siblings, but
+I have lived a long time. I guess this is the end.” The basilisk moves away from me and
+as it does, light emits from it, shining to brightly for me to see it. The light burns
+my eyes, forcing me to shield them. As I turn back around the basilisk is no more. In its
+place, I just see a white outline with the number 1 across the ground. I hesitate for a
+bit but ultimately make my way out of the marsh and towards my goal, I can now feel the
+presence of whatever lies in the center of these woods. It is pulling me nearer, but I
+don’t know how many more obstacles I have to face. 
+""",font=fontSAC41, visible= False, background_color = '#4B3619', key = 'TXT_SAC42')
+btnSAC42= sg.Button('Head out!', font=fontSAC41, visible= False, key = 'BTN_SAC42')
+
+
+layout_frSAC4= [[imgSAC41,imgSAC42], [txtSAC41,txtSAC42], [btnSAC41,btnSAC42]]
+frmSAC4= sg.Frame('', layout_frSAC4,font=fontSAC41,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAC4')
+#########################################################################################################################################################################################
+
 #############SLIDE B1###########################################################################################################################
 fontB11 = ('MS Serif', 12) 
 imgB11 = sg.Image ('TestImage.png')
@@ -525,7 +555,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -728,6 +758,7 @@ while True:
         window['FRMSAB1'].update(visible= False)
         window['FRMSAB3'].update(visible= True)
 
+###################################AC branch##########################
 
 # If statement for the slide AC1:
     elif event == 'BTN_SAC11':
@@ -743,6 +774,22 @@ while True:
     elif event == 'BTN_SAC21':
         window['FRMSAC2'].update(visible=False)
         window['FRMSAC3'].update(visible=True)
+        import math_1
+        from math_1 import answer
+        if answer == 1:
+            window['FRMSAC3'].update(visible=False)
+            window['FRMSAC4'].update(visible=True)
+            window['IMG_SAC42'].update(visible=True)
+            window['TXT_SAC42'].update(visible=True)
+            window['BTN_SAC42'].update(visible=True)
+        else:
+            wwindow['FRMSAC3'].update(visible=False)
+            window['FRMSAC4'].update(visible=True)
+            window['IMG_SAC41'].update(visible=True)
+            window['TXT_SAC41'].update(visible=True)
+            window['BTN_SAC41'].update(visible=True)
+            
+
 
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
