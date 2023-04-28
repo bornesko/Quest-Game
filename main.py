@@ -86,7 +86,7 @@ He struts away leaving the tavern, as I look towards his direction the Bartender
 That looks like an Aeluminar summoning letter, I didn’t take you for a Knight?”. I look at the beautifully ornate letter in wonder before stuffing it into my backpack. 
 """, background_color = '#4B3619', font = fontS41, visible = True)
 btnS41 = sg.Button('Looks may deceive a person', font = fontS41, key='BTN_S41')
-btnS42 = sg.Button('A man just gave handed it to me, but maybe it will be useful later on', font = fontS41, key = 'BTN_S42')
+btnS42 = sg.Button('A man just handed it to me, but maybe it will be useful later on', font = fontS41, key = 'BTN_S42')
 txtS42 = sg.Text(
 """
 With those clothes you aren’t fooling anybody HAHAHA, well small knight if you plan on leaving today you might want to start heading out before nightfall!
@@ -345,6 +345,79 @@ layout_frSAA6= [[imgSAA61,imgSAA62], [txtSAA61,txtSAA62], [btnSAA61,btnSAA62,btn
 frmSAA6= sg.Frame('', layout_frSAA6,font=fontSAA61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA6')
 ##############################################################################################################################################
 
+######SlideAA7###############################################################################################################
+imgSAA71= sg.Image('TestImage.png')
+fontSAA71 = ("MS Serif", 12)
+fontSAA72= ("MS Serif", 35)
+
+txtSAA71= sg.Text("""
+The webs now become stronger grabbing a hold of me as I push myself forward. “Please anything but spiders,
+I hate spiders.” I say to myself breaking the webs in front of me. “There you are”, in a split second I turn
+around, but nothing there. Flaying around I look in every direction, but only empty forest lies around me.
+“I am up here!” slowly looking up I see a colossal spider hanging from a thin piece of silk. It makes its
+way down now crawling on the forest floor. It tries to circle me, but I don’t let it. “I know your silly games
+tell me the rules.” I say confidently, trying to calm the loud beating of my heart. “I hear your heart racing
+boy, fufufu. Let’s play my game you’ll have to decipher the letters that I write, they will spell one word
+each. Fail more than 4 and I assume you already know what will happen to you! I am the 26ths child of our
+great mother ### and you will bow down to me” One of the spider’s legs extends out and starts writing letters
+on the ground.
+ """,font=fontSAA71, background_color = '#4B3619')
+btnSAA71= sg.Button('Play!', font=fontSAA71, key = 'BTN_SAA71')
+
+
+
+
+layout_frSAA7= [[imgSAA71], [txtSAA71], [btnSAA71]]
+frmSAA7= sg.Frame('', layout_frSAA7,font=fontSAA71,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA7')
+###############################################################################################################################################
+
+
+######SlideAA8###############################################################################################################
+imgSAA81= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA81')
+imgSAA82= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA82')
+imgSAA83= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA83')
+fontSAA81 = ("MS Serif", 12)
+fontSAA82= ("MS Serif", 35)
+
+txtSAA81= sg.Text("""
+“What are you, how did you manage to do that!” The monster leaps towards me as all the
+others have at this point. Trusting the outcome, I stare back at it not moving a muscle.
+Before its extended leg can reach my head, it starts to contort within itself, writhing
+in pain and slashing about. I look down on it as it seems to shrink and become frail,
+drying out into a husk of its former self. Its body starts to fall apart, turning into
+dust, its movement also starts to cease. By the end, only a pile of dust in the shape of
+a 26 is left behind. “I am close now I feel it!” I think to myself, knowing I will soon
+discover the mysteries of this forest.
+ """,font=fontSAA81, background_color = '#4B3619', visible=False, key = 'TXT_SAA81')
+btnSAA81= sg.Button('Go ahead!', font=fontSAA81, visible=False, key = 'BTN_SAA81')
+
+txtSAA82= sg.Text("""
+“Fufufu another idiot.” As I try to make my escape the sharp pain at me side, forces me to
+hesitate for a moment. The spider rushes towards me, its legs surrounding me and wrapping
+me up in its powerful silky legs. As its fangs sink into my chest, I begin to lose consciousness
+and feel the life draining from my body.
+""",font=fontSAA81, visible= False, background_color = '#4B3619', key = 'TXT_SAA82')
+btnSAA82= sg.Button('Continue', font=fontSAA81, visible= False, key = 'BTN_SAA82')
+
+txtSAA83= sg.Text("""
+“I win.” The spider rushes towards me, thankfully as it is further away from, I get a head start
+in my escape. I run for my life, with every ounce of energy left I sprint across the woods. I can
+hear the spider relatively close on my trail. Fortunately, having tried to memorize the path I came
+from, I manage to run into an area with extremely low visibility. As I turn a corner into more trees,
+I dive down into a small bush. Crawling into the space and holding my breath, I hear the spider
+cursing and scrambling around the area. For what seems like eternity, I hold my breath refusing to
+utter a sound. After waiting 20 minutes since last hearing the spider, I crawl out cautiously and make
+my way forward. That incident was much to close. Unfortunately, in order to ensure that I would never
+see the spider again I take a long path to the left of this area.  
+""",font=fontSAA81, visible= False, background_color = '#4B3619', key = 'TXT_SAA83')
+btnSAA83= sg.Button('Head out!', font=fontSAA81, visible= False, key = 'BTN_SAA83')
+
+
+
+layout_frSAA8= [[imgSAA81,imgSAA82,imgSAA83], [txtSAA81,txtSAA82,txtSAA83], [btnSAA81,btnSAA82,btnSAA83]]
+frmSAA8= sg.Frame('', layout_frSAA8,font=fontSAA81,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA8')
+#########################################################################################################################################################################################
+
 ######SlideAB1###############################################################################################################
 imgSAB11= sg.Image('TestImage.png', key= 'IMG_SAB11')
 imgSAB12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB12')
@@ -431,17 +504,17 @@ btnSAC11= sg.Button('Continue', font=fontSAC11, visible=False, key = 'BTN_SAC11'
 
 txtSAC12= sg.Text("""
 The hound leaps towards me, but miraculously enough I dodge right as it descends
-upon me. In an effort to escape I slide underneath it and run towards the dense
-crop of trees. However, in a split second it is already behind me, I jump for the
-trees and as I scramble up to keep running, I hear a loud thud behind me and the
-shaking of a tree.
+upon me. With one of its heads it manages to bite at the side of my body, leaving
+a gashing wound across my ribs. In an effort to escape I slide underneath it and
+run towards the dense crop of trees. However, in a split second it is already
+behind me, I jump for thetrees and as I scramble up to keep running, I hear a
+loud thud behind me and the shaking of a tree.
 
 “You foolish oaf you’ve done it again.”
 “Idiot we should have torn you off our body a long time ago.”
 “Sorry, I didn’t meant to hit the tree.”
 I don’t take a single moment to listen to the conversation and run as fast as I can.
 “Look now he’s going to get awa…”
-
 The voices trail off in the distance as I run downhill now. For what seems like at
 least 10 min, I don’t stop running. By the end I stop to catch my breath, finally
 it seems like I am out of the danger zone, the trees around here are no longer scorched.
@@ -555,7 +628,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -730,7 +803,42 @@ while True:
         window['FRMSAC4'].update(visible = False)
         window['FRMSAB3'].update(visible = True)
         
-            
+# If statement for the slide AA7
+    elif event == 'BTN_SAA66':
+        window['FRMSAA6'].update(visible = False)
+        window['FRMSAA7'].update(visible = True)
+# If statement for the slide Word Scramble
+    elif event == 'BTN_SAA71':
+        window['FRMSAA7'].update(visible = False)
+        import word_shuffle
+        from word_shuffle import math_1_points
+        if math_1_points >= 5:
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA81'].update(visible = True)
+            window['TXT_SAA81'].update(visible = True)
+            window['BTN_SAA81'].update(visible = True)
+        elif math_1_points <= 5 and points < 3: 
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA82'].update(visible = True)
+            window['TXT_SAA82'].update(visible = True)
+            window['BTN_SAA82'].update(visible = True)
+        elif math_1_points <= 5 and riddle_points <= 2:
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA82'].update(visible = True)
+            window['TXT_SAA82'].update(visible = True)
+            window['BTN_SAA82'].update(visible = True)
+        elif math_1_points <= 5:
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA83'].update(visible = True)
+            window['TXT_SAA83'].update(visible = True)
+            window['BTN_SAA83'].update(visible = True)
+# If statement for the Slide AA8 leading to bad ending
+    elif event == 'BTN_SAA82':
+        window['FRMSAA8'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+
+
+
 ###################################AB branch##########################
 
 # If statement for the slide AB1 actions
