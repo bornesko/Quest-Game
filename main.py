@@ -222,7 +222,7 @@ frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', 
 
 ######SlideAA2###############################################################################################################
 imgSAA21= sg.Image('TestImage.png')
-imgSAA22= sg.Image('TestImage.png')
+
 fontSAA21 = ("MS Serif", 12)
 fontSAA22= ("MS Serif", 35)
 
@@ -247,7 +247,7 @@ frmSAA2= sg.Frame('', layout_frSAA2,font=fontSAA21,  element_justification='c', 
 
 ######SlideAA3###############################################################################################################
 imgSAA31= sg.Image('TestImage.png')
-imgSAA32= sg.Image('TestImage.png')
+
 fontSAA31 = ("MS Serif", 12)
 fontSAA32= ("MS Serif", 35)
 
@@ -272,6 +272,78 @@ btnSAA31= sg.Button('Play!', font=fontSAA31, key = 'BTN_SAA31')
 layout_frSAA3= [[imgSAA31], [txtSAA31], [btnSAA31]]
 frmSAA3= sg.Frame('', layout_frSAA3,font=fontSAA31,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA3')
 ###########################################################################################################################################################################################
+
+######SlideAA5###############################################################################################################
+imgSAA51= sg.Image('TestImage.png')
+fontSAA51 = ("MS Serif", 12)
+fontSAA52= ("MS Serif", 35)
+
+txtSAA51= sg.Text("""
+The hounds stare at me in terror.
+
+“You cheated!”
+
+“No one has ever beat us”
+
+“We’ll tear off your hea…”
+
+Before the final head could utter its sentence raging flames jut from the body of
+the Cerberus searing its flesh and burning it from the inside out. The hound wails
+back and forth in agony, the three heads biting and tearing at each other in confusion.
+It doesn’t take long for the screams to stop as the body is burnt to ashes leaving
+behind a pile in the shape of a 3. “Again… these numbers are important! No use staying
+here though.” I think to myself. I take a deep breath and keep walking. Whatever is
+at the center of this forest I fell drawn to it. Without looking back, I head out.
+ """,font=fontSAA51, background_color = '#4B3619')
+btnSAA51= sg.Button('On to the next obstacle', font=fontSAA51, key = 'BTN_SAA51')
+
+
+
+
+layout_frSAA5= [[imgSAA51], [txtSAA51], [btnSAA51]]
+frmSAA5= sg.Frame('', layout_frSAA5,font=fontSAA51,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA5')
+###########################################################################################################################################################################################################
+
+######SlideAA6###############################################################################################################
+imgSAA61= sg.Image('TestImage.png', key= 'IMG_SAA61')
+imgSAA62= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA62')
+fontSAA61 = ("MS Serif", 12)
+fontSAA62= ("MS Serif", 35)
+
+txtSAA61= sg.Text("""
+Walking through the woods I grow increasingly tired, it has now been quite some time
+since I entered the forest. As moonlight still blocked out traversing the area is hard.
+Maybe there is a better option here.
+ """,font=fontSAA61, background_color = '#4B3619', key = 'TXT_SAA61')
+btnSAA61= sg.Button('Look for a cozy area and camp', font=fontSAA61, key = 'BTN_SAA61')
+btnSAA62= sg.Button('Keep walking!', font=fontSAA61, key = 'BTN_SAA62')
+txtSAA62= sg.Text("""
+“Maybe it wouldn’t be too bad to get some rest.” I think to myself. I look around the
+area and come across a comfortable looking plant of sorts, the big green leaved look
+like they would make a good bed. I sit in the area and take a few moments to relax and
+reflect. After around half an hour I decide to:
+""",font=fontSAA61, visible= False, background_color = '#4B3619', key = 'TXT_SAA62')
+btnSAA63= sg.Button('Go to sleep', font=fontSAA61, visible=False, key = 'BTN_SAA63')
+btnSAA64= sg.Button('Get up and keep going again', font=fontSAA61, visible=False, key = 'BTN_SAA64')
+txtSAA63= sg.Text("""
+Those were my last moments, I never get to wake up again. I had fallen for a trap and
+while my eyes were shut, the large leaves of a giant carnivores plant encircled me. I
+become digested nutrients to one of the great creatures of the forest and this would
+be the end of my journey.
+""",font=fontSAA61, visible=False, background_color = '#4B3619', key = 'TXT_SAA63')
+btnSAA65= sg.Button('Next', font=fontSAA61, visible=False, key = 'BTN_SAA65')
+txtSAA64= sg.Text("""
+I decide to keep going forward. “There can’t be much more of this, I should almost be
+in the center of the forest.” As I walk, I realize that I must be approaching another
+obstacle. All around me are the spun webs of little forest spiders.
+""",font=fontSAA61, visible=False, background_color = '#4B3619', key = 'TXT_SAA64')
+btnSAA66= sg.Button('Keep going', visible=False, font=fontSAA61, key = 'BTN_SAA66')
+
+
+
+layout_frSAA6= [[imgSAA61,imgSAA62], [txtSAA61,txtSAA62], [btnSAA61,btnSAA62,btnSAA63,btnSAA64], [txtSAA63,txtSAA64], [btnSAA65,btnSAA66]]
+frmSAA6= sg.Frame('', layout_frSAA6,font=fontSAA61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA6')
+##############################################################################################################################################
 
 ######SlideAB1###############################################################################################################
 imgSAB11= sg.Image('TestImage.png', key= 'IMG_SAB11')
@@ -371,7 +443,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAB1, frmSAB3, frmSAB4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAB1, frmSAB3, frmSAB4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -501,10 +573,42 @@ while True:
         import riddle_1
         from riddle_1 import riddle_points
         if riddle_points >= 2:
-            window['FRMS0'].update(visible= True)
+            window['FRMSAA5'].update(visible= True)
         elif riddle_points <= 2 and points < 3:
             window['FRMSAB3'].update(visible= True)
+        elif riddle_points <= 2:
+            window['FRMSAB3'].update(visible= True)
             
+# If statement for the slide AA6
+    elif event == 'BTN_SAA51':
+        window['FRMSAA5'].update(visible= False)
+        window['FRMSAA6'].update(visible= True)
+        
+    elif event == 'BTN_SAA61':
+        window['TXT_SAA61'].update(visible = False)
+        window['TXT_SAA62'].update(visible = True)
+        window['BTN_SAA61'].update(visible = False)
+        window['BTN_SAA62'].update(visible = False)
+        window['BTN_SAA63'].update(visible = True)
+        window['BTN_SAA64'].update(visible = True)
+        window['IMG_SAA61'].update(visible = False)
+        window['IMG_SAA62'].update(visible = True)
+    
+    elif event == 'BTN_SAA62' or event == 'BTN_SAA64':
+        window['TXT_SAA64'].update(visible = True)
+        window['BTN_SAA61'].update(visible = False)
+        window['BTN_SAA66'].update(visible = True)
+        
+    elif event == 'BTN_SAA63':
+        window['BTN_SAA64'].update(visible = False)
+        window['TXT_SAA63'].update(visible = True)
+        window['BTN_SAA65'].update(visible = True)
+# IF statement for the slide Bad ending
+    elif event == 'BTN_SAA65':
+        window['FRMSAA6'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+            
+###################################AB branch##########################
 
 # If statement for the slide AB1 actions
     elif event == 'BTN_SAB11':
