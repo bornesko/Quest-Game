@@ -9,10 +9,10 @@ txt_explanation_1 = sg.Text ('Pay Close Attention!', font = font_math_1, backgro
 txt_explanation_2 = sg.Text ('You have only 1 try!', font = font_math_1, background_color = '#4B3619')
 
 ###################### Question 1 ##########################
-txt_math_1 = sg.Text ('Look at this series: 36, 34, 30, 28, 24, … What number should come next?\n\n\n', font = font_math_1, background_color = '#4B3619')
-btn_math_1 = sg.Button ('22', font = font_math_1, size=(15,1), key = 'BTN_MT_1')
-btn_math_2 = sg.Button ('18', font = font_math_1, size=(15,1), key = 'BTN_MT_2')
-btn_math_3 = sg.Button ('20', font = font_math_1, size=(15,1), key = 'BTN_MT_3')
+txt_math_1 = sg.Text ('Look at this series: 40, 36, 34, 30, 28, … What number should come next?\n\n\n', font = font_math_1, background_color = '#4B3619')
+btn_math_1 = sg.Button ('24', font = font_math_1, size=(15,1), key = 'BTN_MT_1')
+btn_math_2 = sg.Button ('20', font = font_math_1, size=(15,1), key = 'BTN_MT_2')
+btn_math_3 = sg.Button ('22', font = font_math_1, size=(15,1), key = 'BTN_MT_3')
 
 ###################### Question 2 ##########################
 txt_math_2 = sg.Text ('What is the answer of:  6/2*(1+2) = ?\n\n\n', font = font_math_1, background_color = '#4B3619')
@@ -94,7 +94,7 @@ while True:
     
     elif event == 'BTN_MT_10':
         answer = int(values['INP_MT_1'])
-        if answer == 9:
+        if answer == 1:
             sg.popup('Correct!', text_color='black', background_color = '#cba331', font = font_math_1)
         else:
             sg.popup('False!', text_color='black', background_color = '#cba331', font = font_math_1)
