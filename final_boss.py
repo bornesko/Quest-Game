@@ -285,7 +285,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('YThe arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn03_pressed == True:
