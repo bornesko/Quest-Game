@@ -168,7 +168,7 @@ while True:
             btn01_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 3:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -191,7 +191,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn02_pressed == True:
@@ -219,7 +219,7 @@ while True:
             btn02_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 48:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -240,7 +240,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn03_pressed == True:
@@ -264,7 +264,7 @@ while True:
             btn02_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 48:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -285,7 +285,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('YThe arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn03_pressed == True:
@@ -313,7 +313,7 @@ while True:
             btn03_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 73:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -332,7 +332,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn04_pressed == True:
@@ -354,7 +354,7 @@ while True:
             btn03_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 73:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -373,7 +373,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn04_pressed == True:
@@ -395,14 +395,14 @@ while True:
             btn03_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 73:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -415,7 +415,7 @@ while True:
             btn04_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 26:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -432,7 +432,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn05_pressed == True:
@@ -452,7 +452,7 @@ while True:
             btn04_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 26:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -469,7 +469,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn05_pressed == True:
@@ -489,14 +489,14 @@ while True:
             btn04_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 26:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -509,7 +509,7 @@ while True:
             btn05_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 83:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -524,7 +524,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn06_pressed == True:
@@ -542,7 +542,7 @@ while True:
             btn05_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 83:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -557,7 +557,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn06_pressed == True:
@@ -575,14 +575,14 @@ while True:
             btn05_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 83:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -595,7 +595,7 @@ while True:
             btn06_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 99:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -608,7 +608,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn07_pressed == True:
@@ -624,7 +624,7 @@ while True:
             btn06_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 99:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -637,7 +637,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn07_pressed == True:
@@ -653,14 +653,14 @@ while True:
             btn06_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 99:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -673,7 +673,7 @@ while True:
             btn07_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 35:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -684,7 +684,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn08_pressed == True:
@@ -698,7 +698,7 @@ while True:
             btn07_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 35:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -709,7 +709,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn08_pressed == True:
@@ -723,14 +723,14 @@ while True:
             btn07_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 35:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -743,7 +743,7 @@ while True:
             btn08_pressed = False
             guess_1 = int(values['SLD01'])
             if guess_1 == 56:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
@@ -752,7 +752,7 @@ while True:
                 elif btn10_pressed == True:
                     txt04.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow flies through the air, but hits a wall shattering on impact. “Damn one gone already.”', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn09_pressed == True:
@@ -763,7 +763,7 @@ while True:
             btn08_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 56:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
@@ -772,7 +772,7 @@ while True:
                 elif btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn09_pressed == True:
@@ -784,14 +784,14 @@ while True:
             btn08_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 56:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -803,14 +803,14 @@ while True:
             btn09_pressed = False
             guess_1 = int(values['SLD02'])
             if guess_1 == 1:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
                 if btn10_pressed == True:
                     txt06.update('Vampire')    
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The arrow completely misses the target and snaps in half as it hits rock.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn10_pressed == True:
@@ -820,14 +820,14 @@ while True:
             btn09_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 1:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
@@ -839,14 +839,14 @@ while True:
             btn09_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 19:
-                sg.popup('You hit the arrow!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
                 window['FRM04'].update(visible=True)
             else:
-                sg.popup('You missed!', text_color='black', background_color = '#cba331', font = font01)
+                sg.popup('The final arrow narrowly misses splintering on impact.', text_color='black', background_color = '#cba331', font = font01)
                 points_boss = int(sum(points_final)/1)
                 window['FRM03'].update(visible=False)
                 txt07.update(f'You have {points_boss} accurate shots!')
