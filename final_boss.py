@@ -37,7 +37,7 @@ the side of the cave wall in order to orientate myself. Walking down I am surrou
 a faint glint of yellow light in front of me. Calming my breath I continue walking straight forward, as I approach the light it grows brighter and brighter. Finally
 being able to see my surroundings, I see the entrance to a big cavern. As I approach it and turn to see what is inside, I eyes fall upon Drakara.
 ''', font = font01, background_color = '#4B3619')
-btn001 = sg.Button ('Enter', size = (12,3), font = font01, key = 'BTN001')
+btn001 = sg.Button ('Enter', font = font01, key = 'BTN001')
 
 layout_frm_01 = [[txt001], [btn001]]
 frm001 = sg.Frame('', layout_frm_01, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRM001')
@@ -52,7 +52,7 @@ is too old for me to understand. Its eyes filled with malice it lets out a blast
 blasts all around me and its residual heat is enough to singe my exposed skin. This creature is different without any trial or game it attacks me, remembering the arrows and bow
 on my back I stand up and get ready for my final stand.
 ''', font = font01, background_color = '#4B3619')
-btn002 = sg.Button ('ATTACK!', size = (12,3), font = font01, key = 'BTN002')
+btn002 = sg.Button ('ATTACK!', font = font01, key = 'BTN002')
 
 layout_frm_02 = [[txt002], [btn002]]
 frm002 = sg.Frame('', layout_frm_02, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRM002')
@@ -103,7 +103,7 @@ frm03 = sg.Frame('', layout_frm_3, visible = False, size=(1920,1080), element_ju
 
 ############### Frame 4 #############################
 txt07 = sg.Text('', font = ('MS Serif', 15), background_color = '#4B3619')
-btn_ex = sg.Button ('Continue', size = (12,3), font = font01, key = 'BTN_EX')
+btn_ex = sg.Button ('Continue', font = font01, key = 'BTN_EX')
 
 
 layout_frm_4 = [[txt07], [btn_ex]]
