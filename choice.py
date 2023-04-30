@@ -14,7 +14,7 @@ btn07 = sg.Button ('Fly Trap', size = (12,3) ,enable_events=True, key = 'BTN07')
 btn08 = sg.Button ('Floating Eye', size = (12,3) ,enable_events=True, key = 'BTN08')
 btn09 = sg.Button ('Goblin', size = (12,3) ,enable_events=True, key = 'BTN09')
 btn10 = sg.Button ('Ogre', size = (12,3) ,enable_events=True, key = 'BTN10')
-txt02 = sg.Text ('\n\nYou have made you choice wisely',font = font01, background_color = '#4B3619', visible = False)
+txt02 = sg.Text ('\n\nYou have made your choice',font = font01, background_color = '#4B3619', visible = False)
 btn_exit = sg.Button ('Continue', size = (12,3), visible = False, key = 'BTN_EX')
 
 layout_fr = [[img01], [txt01], [btn01, btn02, btn03, btn04, btn05], [btn06, btn07, btn08, btn09, btn10], [txt02], [btn_exit]]
