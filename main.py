@@ -39,7 +39,7 @@ btnS21= sg.Button('I don’t have so much gold on me, but I was wondering if you
 btnS22= sg.Button('I am just a boy passing by looking for adventure', font=fontS21, key = 'BTN_S22')
 txtS22= sg.Text(
     '''
-“I don’t know why so many of you youngsters which to go to that retched place nowadays, but it’s just down the road.
+“I don’t know why so many of you youngsters wish to go to that retched place nowadays, but it’s just down the road.
 I’ll get you a drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar'
 ''', font=fontS21, background_color = '#4B3619', visible= False)
 txtS23= sg.Text(
@@ -151,6 +151,197 @@ layout_frS6= [[imgS61], [txtS61], [btnS61,btnS62]]
 frmS6= sg.Frame('', layout_frS6,font=fontS61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMS6')
 ############################################################################################################################
 
+######Slide7###############################################################################################################
+imgS71= sg.Image('TestImage.png')
+fontS71 = ("MS Serif", 12)
+fontS72= ("MS Serif", 35)
+
+txtS71= sg.Text("""
+I finally make it. Having overcome the numerous obstacles in my path I finally reach the end stage. Before me lies a deep
+chasm in the ground of the forest. The entrance into this hole is bigger than the barn of my farm. Breathing in and out, I
+take my first steps resolutely and begin to approach the hole. As I get nearer, a bolder awakens near the entrance shifting
+and revealing itself to be a Stone Golem. “I have been asleep for quite some time, no one has made it this far in a long
+time.” Its words are slow and it moves its head about in a confused way. “Let’s get this over with I am sick and tired of
+your games” I shout out in anger. “Gahaha no you are mistaken, you have overcome all obstacles but one. Your final test lies
+at the bottom of this hole. It is an old story, long ago Drakara terrorized the kingdom and with her affinity for gold she
+stole and hoarded it all, killing anyone foolish enough to face her. A great council of powerful sorcerers bound her here
+deep in the Hadesvale. Centuries having passed, the spells and chains that bound her have weakened. Still now day by day
+her powers and offspring increase, the strongest of which reside in this very forest, as I am sure you already know. However,
+the sorcerers work were not in vain her offspring are still bound by their magic and so cursed with a restriction to their
+free will a so called ‘Game’. You have done well to overcome them. The great sorcerers left behind something else if the
+necessity ever arose to extinguish Drakara. Arrows bound to the blood of Drakara, I noticed as her litter was born one by
+one as they crawled from this hole the arrows took on their likeness. Each arrow bound to each creature. The sorcerers also
+left behind this bow, blessed in ancient magic , visualization of the bound number will leads to the perfect shot. You are
+worthy of having these items, choose wisely, the magic bound to them only allows you to pick three arrows.”
+ """,font=fontS71, background_color = '#4B3619')
+btnS71= sg.Button('Pick', font=fontS71, key = 'BTN_S71')
+
+
+
+
+layout_frS7= [[imgS71], [txtS71], [btnS71]]
+frmS7= sg.Frame('', layout_frS7,font=fontS71,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMS7')
+#######################################################################################################################################################################################
+
+######Slide11###############################################################################################################
+imgS111= sg.Image('TestImage.png', visible=False, key= 'IMG_S111')
+imgS112= sg.Image('TestImage.png', visible=False, key= 'IMG_S112')
+imgS113= sg.Image('TestImage.png', visible=False, key= 'IMG_S113')
+fontS111 = ("MS Serif", 12)
+fontS112= ("MS Serif", 35)
+
+txtS111= sg.Text("""
+The beast shakes flailing around, the arrows that did hit have dug deep into its body. The magical
+properties of each poisoning the beast from the inside. Not every arrow might have hit but the ones
+that did hurt it plenty. The beast shakes violently and slams its great body into the walls. Rocks
+fall from above crashing into the ground. In pain the monster turns dashing towards its hoarded
+treasure. Delirious it slams into the small cave, thereby sending deep cracks up along the wall and
+ceiling of the main cavern. Everything around me shakes and I am sure this place will collapse any
+second now.
+ """,font=fontS111, background_color = '#4B3619', visible=False, key = 'TXT_S111')
+btnS111= sg.Button('Run out and make your escape', font=fontS111, visible=False, key = 'BTN_S111')
+btnS112= sg.Button('Run towards the treasure and try to retrieve it', font=fontS111, visible=False, key = 'BTN_S112')
+
+txtS112= sg.Text("""
+As the walls rumble and the ceiling shakes, I decide to turn around and leave the treasure behind.
+Making my escape back up the tunnel I came from, dust fills my eyes and I barely manage to escae.
+Right as I dive from the cave entrance the tunnel leading into it collapses and so with it sinks
+the ground above the main cavern. It would take 10000 men 100 years to reach the treasure at the
+bottom of this self-made grave. Saddened yet relieved I turn back, noticing a pile of old rocks
+where once the golem had stood. Just as I had fulfilled my role, he had done his, now both of us
+deserved our rest. I march forward back the way I came into the forest.
+""",font=fontS111, visible= False, background_color = '#4B3619', key = 'TXT_S112')
+btnS113= sg.Button('Go back', font=fontS111, visible= False, key = 'BTN_S113')
+
+txtS113= sg.Text("""
+I dash towards the treasure, rocks crashing and slamming into the ground everywhere around me.
+As I run across the cavern, the entire ceiling starts to crumble. Reaching out I try to grab a
+handful of jewels, but as I do the entire structure crumbles, rocks crashing into me and sand
+piling on top of me. My body is buried here and so are my hopes and dreams. 
+""",font=fontS111, visible= False, background_color = '#4B3619', key = 'TXT_S113')
+btnS114= sg.Button('Continue', font=fontS111, visible= False, key = 'BTN_S114')
+
+
+
+layout_frS11= [[imgS111,imgS112,imgS113], [txtS111,txtS112,txtS113], [btnS111,btnS112,btnS113,btnS114]]
+frmS11= sg.Frame('', layout_frS11,font=fontS111,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMS11')
+###############################################################################################################################################################################
+
+######Slide12###############################################################################################################
+imgS121= sg.Image('TestImage.png', key= 'IMG_S121')
+imgS122= sg.Image('TestImage.png', visible=False, key= 'IMG_S122')
+fontS121 = ("MS Serif", 12)
+fontS122= ("MS Serif", 35)
+txtS121= sg.Text("""
+The beast roars in pain, each arrow having dealt a serious blow. The magical properties of each arrow digging
+deep and poisoning the beast from within. The mighty creature tries to flail and attack everything about, but
+ultimately succumbs to its vicious wounds. Crashing down right in front of me I see as the remainder of its life
+drains out from it. Complete silence fills the room as only I am left in it. Taking a deep breath, I head towards
+the treasure at the other end of the hall. The jewels now shining more radiant than ever I grab as many as my
+pockets will hold. With a bright smile across my face, I head back up the tunnel from where I came. 
+""",font=fontS121, background_color = '#4B3619')
+
+btnS121= sg.Button('Leave', font=fontS121, key = 'BTN_S121')
+
+txtS122= sg.Text("""
+Reaching the cool early hours above, I look around and notice a pile of rocks by the side of the entrance. It seems
+the duty of the golem had ended and a return to a long rest much deserved. I now had one final choice to make.
+""",font=fontS121, visible = False, background_color = '#4B3619', key= 'TXT_S122')
+
+btnS122= sg.Button('Journey to the kings castle and claim the prize', font=fontS121, visible = False, key = 'BTN_S122')
+btnS123= sg.Button('Head home with all the treasure I could ever need', font=fontS121, visible =False, key = 'BTN_S123')
+
+layout_frS12= [[imgS121, imgS122], [txtS121], [btnS121], [txtS122], [btnS122, btnS123]]
+frmS12= sg.Frame('', layout_frS12,font=fontS121,  element_justification='c', size=(1920,1080), visible = False,  background_color = '#4B3619', key= 'FRMS12')
+############################################################################################################################
+
+######Slide13################################################################################################################
+imgS131= sg.Image('TestImage.png')
+fontS131 = ("MS Serif", 12)
+fontS132= ("MS Serif", 35)
+txtS131= sg.Text(
+'''
+Realizing defeat I collapse to the ground, looking up as a beautiful blaze of fire engulfs me.
+Burnt to cinders not much but bone is left of my body.
+''',font=fontS131, background_color = '#4B3619')
+
+btnS131= sg.Button('Continue', font=fontS131, key = 'BTN_S131')
+
+
+
+layout_frS13= [[imgS131], [txtS131], [btnS131]]
+frmS13= sg.Frame('', layout_frS13,font=fontS131,  element_justification='c', size=(1920,1080), visible= False, background_color = '#4B3619', key= 'FRMS13')
+############################################################################################################################
+
+#############SLIDE 14_Good Ending###########################################################################################################################
+fontS141 = ('MS Serif', 35)
+fontS142 = ('MS Serif', 15)
+imgS141 = sg.Image ('TestImage.png')
+txtS141 = sg.Text(
+"""
+GOOD ENDING!
+""", background_color = '#4B3619', font = fontS141)
+txtS142 = sg.Text(
+"""
+Leaving the forest, I had no problems as no other beast hindered my way. In contrast, it seemed like nature had begun to heal, the birds
+serenading their return. As I stepped foot out of the forest, the first rays of sunlight strike my body. The beautiful orange standing as
+a symbol of my victory. Journeying to the kings castle was difficult, but reaching the final steps rewarding. With great horror and
+admiration all the lands people hear my story. For my bravery, I am awarded knighthood and elevated to a formal seat on the king’s council.
+My story lives on many years after I do and I am remembered in the annals of history as the conqueror of Hadesvale. 
+""", background_color = '#4B3619', font = fontS142)
+btnS141 = sg.Button('EXIT', font = fontS142, key='BTN_S141')
+
+
+layout_S14 = [[imgS141], [txtS141], [txtS142], [btnS141]]
+frmS14 = sg.Frame ('', layout_S14, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMS14')
+################################################################################################################################################
+
+#############SLIDE 15_HumbleEnding###########################################################################################################################
+fontS151 = ('MS Serif', 35)
+fontS152 = ('MS Serif', 15)
+imgS151 = sg.Image ('TestImage.png')
+txtS151 = sg.Text(
+"""
+HUMBLE ENDING!
+""", background_color = '#4B3619', font = fontS151)
+txtS152 = sg.Text(
+"""
+Steadfast in my choice I journey out of the forest. All around me I see as nature reclaims the evil that existed here only so recently.
+As I step out of the forest, the morning rays of sunshine strike me. Victories and filled with pride I march north not in search of glory,
+but back to my humble farm. My plundered treasure provides more than enough for myself and any generations to come. I live long after my
+death in the memories of my grandchildren not only as the man that conquered Hadesvale, but more importantly as a good grandfather.  
+""", background_color = '#4B3619', font = fontS152)
+btnS151 = sg.Button('EXIT', font = fontS142, key='BTN_S151')
+
+
+layout_S15 = [[imgS151], [txtS151], [txtS152], [btnS151]]
+frmS15 = sg.Frame ('', layout_S15, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMS15')
+################################################################################################################################################
+
+#############SLIDE 16_GreatEnding###########################################################################################################################
+fontS161 = ('MS Serif', 35)
+fontS162 = ('MS Serif', 15)
+imgS161 = sg.Image ('TestImage.png')
+txtS161 = sg.Text(
+"""
+GREAT ENDING!
+""", background_color = '#4B3619', font = fontS161)
+txtS162 = sg.Text(
+"""
+Leaving the forest it seemed like nature had begun to heal. I found no sign of any dark creature and surrounding me were the chirps of happy
+birds. As I step out of the forest, I bask in the morning rays, content with my decision. Journeying to the kings castle was difficult, but
+reaching the final steps rewarding. My story is heard by all and soon chants of victory reverberate throughout the kingdom. For my bravery,
+I am awarded knighthood and elevated to a formal seat on the king’s council. Having gone back to the forest on many expeditions the riches I
+had accumulated were put to good use. Hospitals and schools built allowed for a greater standard of living among the people. My story would
+continue to live on throughout the decades, not only as the conqueror of Hadesvale, but as a good man that did much to help the kingdoms people.    
+""", background_color = '#4B3619', font = fontS162)
+btnS161 = sg.Button('EXIT', font = fontS142, key='BTN_S161')
+
+
+layout_S16 = [[imgS161], [txtS161], [txtS162], [btnS161]]
+frmS16 = sg.Frame ('', layout_S16, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMS16')
+################################################################################################################################################
+
 ######SlideA1################################################################################################################
 imgSA11= sg.Image('TestImage.png')
 fontSA11 = ("MS Serif", 12)
@@ -185,7 +376,7 @@ btnSA21 = sg.Button('What are you?', font = fontSA21, key='BTN_SA21')
 btnSA22 = sg.Button('Get away from me!', font = fontSA21, key = 'BTN_SA22')
 txtSA22 = sg.Text(
 """
-“Hihihi, as sons and daughters of the great #### we stand guard here to await anyone foolish enough to enter this area, if you are able to beat me in
+“Hihihi, as sons and daughters of the great Drakara we stand guard here to await anyone foolish enough to enter this area, if you are able to beat me in
 a game you will progress if not I will get to eat you hihihi.”
 """, font = fontSA21, visible = False, background_color = '#4B3619')
 txtSA23 = sg.Text(
@@ -628,7 +819,7 @@ layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
 frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -700,6 +891,68 @@ while True:
     elif event == 'BTN_S51':
         window['FRMS5'].update(visible= False)
         window['FRMS6'].update(visible= True)
+        
+# If statement for the button to continue to slide 7
+    elif event == 'BTN_SAA81':
+        window['FRMSAA8'].update(visible= False)
+        window['FRMS7'].update(visible= True)
+
+# If statement for the button to continue to Pick and Final boss battle
+    elif event == 'BTN_S71':
+        window['FRMS7'].update(visible= False)
+        import final_boss
+        from final_boss import points_boss
+        if points_boss == 3:
+            window['FRMS12'].update(visible = True)
+            
+        elif points_boss == 2:
+            window['FRMS11'].update(visible = True)
+            window['IMG_S111'].update(visible = True)
+            window['TXT_S111'].update(visible = True)
+            window['BTN_S111'].update(visible = True)
+            window['BTN_S112'].update(visible = True)
+                 
+        elif points_boss <= 1:
+            window['FRMS13'].update(visible = True)
+
+    elif event == 'BTN_S111':
+        window['IMG_S111'].update(visible = False)
+        window['TXT_S111'].update(visible = False)
+        window['BTN_S111'].update(visible = False)
+        window['BTN_S112'].update(visible = False)
+        window['IMG_S112'].update(visible = True)
+        window['TXT_S112'].update(visible = True)
+        window['BTN_S113'].update(visible = True)
+    elif event == 'BTN_S112':
+        window['IMG_S111'].update(visible = False)
+        window['TXT_S111'].update(visible = False)
+        window['BTN_S111'].update(visible = False)
+        window['BTN_S112'].update(visible = False)
+        window['IMG_S113'].update(visible = True)
+        window['TXT_S113'].update(visible = True)
+        window['BTN_S114'].update(visible = True)
+    elif event == 'BTN_S121':
+        window['IMG_S121'].update(visible = False)
+        window['IMG_S122'].update(visible = True)
+        window['TXT_S122'].update(visible = True)
+        window['BTN_S122'].update(visible = True)
+        window['BTN_S123'].update(visible = True)
+    elif event == 'BTN_S131':
+        window['FRMS13'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+    elif event == 'BTN_S113':
+        window['FRMS11'].update(visible = False)
+        window['FRMS14'].update(visible = True)
+    elif event == 'BTN_S114':
+        window['FRMS11'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+    elif event == 'BTN_S123':
+        window['FRMS12'].update(visible = False)
+        window['FRMS15'].update(visible = True)
+    elif event == 'BTN_S122':
+        window['FRMS12'].update(visible = False)
+        window['FRMS16'].update(visible = True)
+    
 
 ####################If statement for the A-branch#########################################
     elif event == 'BTN_S61':
@@ -817,6 +1070,11 @@ while True:
             window['IMG_SAA81'].update(visible = True)
             window['TXT_SAA81'].update(visible = True)
             window['BTN_SAA81'].update(visible = True)
+        elif math_1_points <= 5 and points > 3 and riddle_points >= 2 :
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA83'].update(visible = True)
+            window['TXT_SAA83'].update(visible = True)
+            window['BTN_SAA83'].update(visible = True)
         elif math_1_points <= 5 and points < 3: 
             window['FRMSAA8'].update(visible = True)
             window['IMG_SAA82'].update(visible = True)
@@ -827,11 +1085,7 @@ while True:
             window['IMG_SAA82'].update(visible = True)
             window['TXT_SAA82'].update(visible = True)
             window['BTN_SAA82'].update(visible = True)
-        elif math_1_points <= 5:
-            window['FRMSAA8'].update(visible = True)
-            window['IMG_SAA83'].update(visible = True)
-            window['TXT_SAA83'].update(visible = True)
-            window['BTN_SAA83'].update(visible = True)
+       
 # If statement for the Slide AA8 leading to bad ending
     elif event == 'BTN_SAA82':
         window['FRMSAA8'].update(visible = False)
@@ -915,7 +1169,7 @@ while True:
         btnB11.update(visible = False)
         txtB13.update(visible = True)
 #End
-    elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN' or event == 'BTN_SAB31':
+    elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN' or event == 'BTN_SAB31' or event == 'BTN_S141' or event == 'BTN_S151' or event == 'BTN_S161':
         break
 
 window.close()
