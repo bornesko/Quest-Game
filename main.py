@@ -61,7 +61,7 @@ txtS31= sg.Text(
     '''Out of the corner of the room, a dark figure approaches. “Care to play a little game with me, it’s a game of luck,
 but if you win I’ll give you 1000 pieces of gold.Lose however and you must take my place in the kings draft and travel to
 Hadesvale by tonight! It’s a simple game choose a number between 1 and 10000 and if you guess the number I will write on this
-paper you’ll win”.I smirk to myself I was going to do that anyway.''', background_color = '#4B3619',font=fontS31)
+paper you’ll win”.I smirk to myself thinking "I was going to do that anyway." ''', background_color = '#4B3619',font=fontS31)
 txtS32=sg.Text('', background_color = '#4B3619', font=fontS31)
 txtS33=sg.Text('Choose your Number wisely!', background_color = '#4B3619', font=fontS31)
 inpS31= sg.Input('',size= (30,None), font=fontS31, key = 'INP_S31')
@@ -132,7 +132,7 @@ txtS52= sg.Text(
 the sun starts to set, I see the forest in the distance, a great expanse of trees covers the land for
 as far as I can see. Darkness now surrounds me, but the faint glimmer of the moon shows me the path ahead.
 As I walk past the first trees I notice the darkness is so thick that not a shred of Moonlight can pierce
-it. I shudder, but keep walking somewhere here there should be a path into the forest.''',background_color = '#4B3619', font=fontS51)
+it. I shudder, but keep walking. Somewhere here there should be a path into the forest.''',background_color = '#4B3619', font=fontS51)
 btnS51= sg.Button('Keep Searching',font=fontS51, key = 'BTN_S51')
 
 layout_frS5= [[imgS51], [txtS51], [txtS52], [btnS51]]
@@ -143,7 +143,7 @@ frmS5= sg.Frame('', layout_frS5,font=fontS51,  element_justification='c', size=(
 imgS61= sg.Image('TestImage.png')
 fontS61 = ("MS Serif", 12)
 fontS62= ("MS Serif", 35)
-txtS61= sg.Text('All of a sudden I see a dim light in the distance. Damn, the reason I left so late was so that there would be no one else. What should I do…',font=fontS61, background_color = '#4B3619')
+txtS61= sg.Text('All of a sudden I see a dim light in the distance. "Damn, the reason I left so late was so that there would be no one else. What should I do…"',font=fontS61, background_color = '#4B3619')
 btnS61= sg.Button('Run into the forest and face the unknown', font=fontS61, key = 'BTN_S61')
 btnS62= sg.Button('Confront whatever lies ahead', font=fontS61, key = 'BTN_S62')
 
@@ -793,33 +793,35 @@ frmSAC4= sg.Frame('', layout_frSAC4,font=fontSAC41,  element_justification='c', 
 #########################################################################################################################################################################################
 
 #############SLIDE B1###########################################################################################################################
-fontB11 = ('MS Serif', 12) 
-imgB11 = sg.Image ('TestImage.png')
-txtB11 = sg.Text(
+fontSB11 = ('MS Serif', 12) 
+imgSB11 = sg.Image ('TestImage.png')
+txtSB11 = sg.Text(
 """
 “You decide to stand your ground and face the person or thing approaching! My heart races, almost bursting out of my chest, as the light draws
 nearer. Suddenly, I notice the outline of the figure a WAGON! As it approaches, I see an old man sitting at the front, staring at me intensely.
 He yells out “What be your purpose wandering around these woods so late?"
-""", font = fontB11, visible = True, background_color = '#4B3619')
-btnB11 = sg.Button('I won’t lie to you Mister I have come seeking adventure and wish to find whatever lies deep in this forest', font = fontB11, key='BTN_B11')
-btnB12 = sg.Button('I come from a nearby farm, I don’t want any trouble I’ll be heading back soon', font = fontB11, key = 'BTN_B12')
-txtB12 = sg.Text(
+""", font = fontSB11, visible = True, background_color = '#4B3619')
+btnSB11 = sg.Button('I won’t lie to you Mister I have come seeking adventure and wish to find whatever lies deep in this forest', font = fontSB11, key='BTN_SB11')
+btnSB12 = sg.Button('I come from a nearby farm, I don’t want any trouble I’ll be heading back soon', font = fontSB11, key = 'BTN_SB12')
+txtSB12 = sg.Text(
 """
 Haha you are the first honest man I’ve come across in a while. I like you boy, but if you plan to enter the Woods, I would suggest following this
 path for about another 200 paces and look for a small opening in the bottom of the shrub. From there you should find a path deeper into the woods.
 I will warn you though that place is evil, not that I care I have some sheep to tend to. Farewell!
-""", font = fontB11, visible = False, background_color = '#4B3619')
-txtB13 = sg.Text(
+""", font = fontSB11, visible = False, background_color = '#4B3619')
+txtSB13 = sg.Text(
 """
 Why is he looking at me like that “Hmm if you say so boy I have no time to waste on someone like you. The man keep riding off and with a sick feeling
-in my stomach I decide to run into the forest, I no longer wanted to risk being seen on the road.
-""", font = fontB11, visible = False, background_color = '#4B3619')
+in my stomach I decide to run into the forest, I no longer want to risk being seen on the road.
+""", font = fontSB11, visible = False, background_color = '#4B3619')
+btnSB13 = sg.Button('Keep going!', font = fontSB11, visible = False, key = 'BTN_SB13')
+btnSB14 = sg.Button('Run!', font = fontSB11, visible = False, key = 'BTN_SB14')
 
-layout_B1 = [[imgB11], [txtB11], [btnB11, btnB12], [txtB12, txtB13]]
-frmB1 = sg.Frame ('', layout_B1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMB1')
+layout_SB1 = [[imgSB11], [txtSB11], [btnSB11, btnSB12], [txtSB12, txtSB13], [btnSB13,btnSB14]]
+frmSB1 = sg.Frame ('', layout_SB1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmB1]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -1159,15 +1161,32 @@ while True:
 ##############################If statement for the B-branch################################
     elif event == 'BTN_S62':
         window['FRMS6'].update(visible= False)
-        window['FRMB1'].update(visible=True)
+        window['FRMSB1'].update(visible=True)
 
 #If statement for the B-1 slide
-    elif event == 'BTN_B11':
-        btnB12.update(visible = False)
-        txtB12.update(visible = True)
-    elif event == 'BTN_B12':
-        btnB11.update(visible = False)
-        txtB13.update(visible = True)
+    elif event == 'BTN_SB11':
+        btnSB12.update(visible = False)
+        txtSB12.update(visible = True)
+        window['BTN_SB13'].update(visible= True)
+    elif event == 'BTN_SB12':
+        btnSB11.update(visible = False)
+        txtSB13.update(visible = True)
+        window['BTN_SB14'].update(visible= True)
+    elif event == 'BTN_SB14':
+        window['FRMSB1'].update(visible= False)
+        window['FRMSA1'].update(visible=True)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
 #End
     elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN' or event == 'BTN_SAB31' or event == 'BTN_S141' or event == 'BTN_S151' or event == 'BTN_S161':
         break
