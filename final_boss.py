@@ -47,7 +47,7 @@ frm001 = sg.Frame('', layout_frm_01, size=(1920,1080), element_justification = '
 txt002 = sg.Text('''
 Its grotesque shape is unlike anything I could ever imagine, far beyond the size and presence of any creature I encountered in that forest. Its flesh bound by great pillars
 of iron, its eyes open to welcome me to my doom. On the other side of it, I see a smaller cave filled to the brim with the most precious jewels and gemstones I had ever seen.
-The behemoth rises slowly and lets out a roar that shakes the walls of the cave. “Insert incomprehensible text” I think it is trying to communicate with me however, its language
+The behemoth rises slowly and lets out a roar that shakes the walls of the cave. “Zorathar natharilithas akh'zul gorgathor” I think it is trying to communicate with me however, its language
 is too old for me to understand. Its eyes filled with malice it lets out a blast of purple fire, in the mere moments I have to react I jump behind a bolder nearby. The fire
 blasts all around me and its residual heat is enough to singe my exposed skin. This creature is different without any trial or game it attacks me, remembering the arrows and bow
 on my back I stand up and get ready for my final stand.

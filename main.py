@@ -821,7 +821,45 @@ layout_SB1 = [[imgSB11], [txtSB11], [btnSB11, btnSB12], [txtSB12, txtSB13], [btn
 frmSB1 = sg.Frame ('', layout_SB1, visible = False, size=(1920,1080), element_justification = 'c', background_color = '#4B3619', key = 'FRMSB1')
 ################################################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1]]
+######SlideB2###############################################################################################################
+imgSB21= sg.Image('TestImage.png', key= 'IMG_SB21')
+imgSB22= sg.Image('TestImage.png', visible=False, key= 'IMG_SB22')
+fontSB21 = ("MS Serif", 12)
+fontSB22= ("MS Serif", 35)
+
+txtSB21= sg.Text("""
+I look down the road as the wagon rolls off into the distance. The stranger was weird, but I could tell
+he meant well. Continuing down the road, I counted my steps from the initial point. Walking next to the
+bleak forest gave me second thoughts, but nonetheless I carried on. Step 198, 199 and finally 200, as I
+looked down nothing seemed to indicate a path. Thinking I might have missed the entrance, I almost turned
+around before noticing the slightest raise in leaves at the bottom of my feet. Almost having to lie flat,
+I finally see the path into the forest. Almost crawling along the bottom of the bushes, I manage to enter
+the forest. 
+ """,font=fontSB21, background_color = '#4B3619', key = 'TXT_SB21')
+btnSB21= sg.Button('Continue into the forest', font=fontSB21, key = 'BTN_SB21')
+
+txtSB22= sg.Text("""
+I see a long perfectly cut out path into the forest. Happy with the choice I had made I walk down the path
+for what seems like 30 minutes. Finally coming to the end, I see a big log lying across what used to be
+the rest of the path. It seems this would be the end to my luxuries walk in the woods. Climbing over the
+log, the terrain becomes more difficult to traverse. I march along the forest trying to make good time however
+finding myself a bit bored as the journey becomes monotonous. Just as my mind starts to wander, I see a bright
+sparkle fall from a tree. Continuing on the sparkles become more prominent, showering me in every colour
+imaginable. “Hey there!” a voice shouts from the near distance. 
+""",font=fontSB21, visible= False, background_color = '#4B3619', key = 'TXT_SB22')
+
+btnSB22= sg.Button('Look to the side', font=fontSB21, visible=False, key = 'BTN_SB22')
+
+
+
+layout_frSB2= [[imgSB21,imgSB22], [txtSB21,txtSB22], [btnSB21,btnSB22]]
+frmSB2= sg.Frame('', layout_frSB2,font=fontSB21,  element_justification='c', size=(1920,1080), visible = False, background_color = '#4B3619', key= 'FRMSB2')
+##############################################################################################################################################
+
+
+
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -1175,9 +1213,17 @@ while True:
     elif event == 'BTN_SB14':
         window['FRMSB1'].update(visible= False)
         window['FRMSA1'].update(visible=True)
-        
-        
-        
+#If statement for the B-2 slide
+    elif event == 'BTN_SB13':
+        window['FRMSB1'].update(visible= False)
+        window['FRMSB2'].update(visible=True)
+    elif event == 'BTN_SB21':
+        window['IMG_SB21'].update(visible= False)
+        window['IMG_SB22'].update(visible=True)
+        window['TXT_SB21'].update(visible=False)    
+        window['TXT_SB22'].update(visible=True)
+        window['BTN_SB21'].update(visible=False)       
+        window['BTN_SB22'].update(visible=True)
         
         
         
