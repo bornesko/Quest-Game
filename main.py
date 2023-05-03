@@ -510,8 +510,8 @@ fontSAA62= ("MS Serif", 35)
 
 txtSAA61= sg.Text("""
 Walking through the woods I grow increasingly tired, it has now been quite some time
-since I entered the forest. As moonlight still blocked out traversing the area is hard.
-Maybe there is a better option here.
+since I entered the forest. As moonlight still blockes out any light, traversing the
+area is hard. Maybe there is a better option here.
  """,font=fontSAA61, background_color = '#4B3619', key = 'TXT_SAA61')
 btnSAA61= sg.Button('Look for a cozy area and camp', font=fontSAA61, key = 'BTN_SAA61')
 btnSAA62= sg.Button('Keep walking!', font=fontSAA61, key = 'BTN_SAA62')
