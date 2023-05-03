@@ -947,6 +947,55 @@ layout_SBA1 = [[imgSBA11], [txtSBA11], [btnSBA11]]
 frmSBA1 = sg.Frame ('', layout_SBA1, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA1')
 ##############################################################################################################################################
 
+######SlideBA2###############################################################################################################
+fontSBA21 = ('MS Serif', 12)
+imgSBA21 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+txtSBA21 = sg.Text(
+"""
+Not even reaching the knees of this monster I know that if it could and wanted my life
+would end in an instant. “Dohoho human meat, my favourite.” It points into the distance
+to an area I did not pay attention before. There I see the bodies of 3 men and 2 women,
+tied up hanging from a noose on a tree trunk. Too shocked to even utter a word I turn back
+towards the ogre like monster. “Oh I love to dry the meat out before feasting on it, but
+as you can see my stockpile is running out. Oh I would love to add you.” It slams the trunk
+in its hands into the ground. “I am sure you remember the game hangman from your childhood.
+You will get one chance to guess the word I am thinking of, the topic will be my fellow
+brothers and sisters, find the Mythical creature I am thinking of and win this game!”
+""", background_color = '#4B3619', font = fontSBA21, key = 'TXT_SBA21')
+btnSBA21 = sg.Button('Play', font = fontSBA21, key='BTN_SBA21')
+
+layout_SBA2 = [[imgSBA21], [txtSBA21], [btnSBA21]]
+frmSBA2 = sg.Frame ('', layout_SBA2, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA2')
+##############################################################################################################################################
+
+
+######SlideBA3###############################################################################################################
+fontSBA31 = ('MS Serif', 12)
+imgSBA31 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+txtSBA31 = sg.Text(
+"""
+“No wait, that can’t be I made a mistake, this doesn’t count.” The ogre roars out in a fit of rage grabbing the tree
+trunk that would have become my demise. It lifts the tree, but in that second, its skin starts to turn grey. “No, no
+not like thi…” in a matter of seconds its entire body had been turned to stone. Shocked by what I had seen I try to move
+away from the creature, but in that moment, the now giant stone sculpture shattered and crumbled down to the ground. After
+the dust had settled the giant number 35 was visible among the rocks on the ground. Now there was no doubt in my mind that
+the numbers meant something more. Determined I gather my courage and continue walking through the forest.
+""", background_color = '#4B3619', visible = False, font = fontSBA31, key = 'TXT_SBA31')
+btnSBA31 = sg.Button('Head Out', visible = False, font = fontSBA31, key='BTN_SBA31')
+imgSBA32 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBB32')
+txtSBA32 = sg.Text(
+"""
+“Dohoho, thank you for offering your body as my next sacrifice!” Fear grips me, but I try to turn and run. Unfortunately,
+the wound at my chest makes me hesitate for merely a second. That is all it takes as the giant hand reaches down, grabbing
+me and hauling me away. I try to escape and shout, but nothing helps as I am dragged away to meet the same fate as the ones
+before me.
+""", background_color = '#4B3619', visible = False, font = fontSBA31, key = 'TXT_SBA32')
+btnSBA32 = sg.Button('Continue', visible = False, font = fontSBA31, key='BTN_SBA32')
+
+layout_SBA3 = [[imgSBA31, imgSBA32], [txtSBA31, txtSBA32], [btnSBA31, btnSBA32]]
+frmSBA3 = sg.Frame ('', layout_SBA3, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA3')
+
+
 ######SlideBB1###############################################################################################################
 fontSBB11 = ('MS Serif', 12)
 imgSBB11 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
@@ -984,10 +1033,71 @@ layout_SBB2 = [[imgSBB21], [txtSBB21], [btnSBB21]]
 frmSBB2 = sg.Frame ('', layout_SBB2, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBB2')
 ##############################################################################################################################################
 
+######SlideBB3###############################################################################################################
+fontSBB31 = ('MS Serif', 12)
+imgSBB31 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+txtSBB31 = sg.Text(
+"""
+You indomitable wretch, how dare you!” The majestic wings of the creature expand to maximum length and it slings
+itself towards me. Not having time to dodge one of its large claw like appendages slashes towards me, cutting a
+deep wound into my chest. Just as this occurs, the moth shouts out in pain, jumping backwards and tearing at itself.
+In the midst of its deaths rolls I see as its body starts to rot from the outside. It stands up trying to fly away, but
+it makes it no more than 5 feet off the ground as body pieces fall off from it. In the matter of 10 seconds, its body
+transforms into a moldy goo leaving behind a horrible stench. The smell is enough to make me want to run away, but I
+notice the remains in the shape of the number 56. Even though it looks out of place, I am sure it will be important to
+remember for the rest of my journey. Relief at having survived this ordeal, I head out further into the forest towards
+what seems to be the center. 
+""", background_color = '#4B3619', visible = False, font = fontSBB31, key = 'TXT_SBB31')
+btnSBB31 = sg.Button('Go on', visible = False, font = fontSBB31, key='BTN_SBB31')
+imgSBB32 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBB32')
+txtSBB32 = sg.Text(
+"""
+“Fefefe, you tried so hard, but failed in the end.” Before I can even react, the creature expands its wings fully,
+soaring towards my direction. I try to evade, but the wings enclose around me shutting out the remaining moonlight.
+My next moments are over in an instant as the excreted acids of this monstrous creature dissolve my body.
+""", background_color = '#4B3619', visible = False, font = fontSBB31, key = 'TXT_SBB32')
+btnSBB32 = sg.Button('Continue', visible = False, font = fontSBB31, key='BTN_SBB32')
+
+layout_SBB3 = [[imgSBB31, imgSBB32], [txtSBB31, txtSBB32], [btnSBB31, btnSBB32]]
+frmSBB3 = sg.Frame ('', layout_SBB3, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBB3')
+##############################################################################################################################################
+
+######SlideBC1###############################################################################################################
+fontSBC11 = ('MS Serif', 12)
+txtSBC11 = sg.Text('“Dohoho, thank you for offering your body as my next sacrifice!”', background_color = '#4B3619', font = fontSBC11, key = 'TXT_SBC11')
+btnSBC11 = sg.Button('Run Away', font = fontSBC11, key='BTN_SBC11')
+btnSBC12 = sg.Button('Stay and Fight', font = fontSBC11, key='BTN_SBC12')
+imgSBC11 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBC11')
+imgSBC12 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBC12')
+txtSBC12 = sg.Text(
+"""
+My body seemingly moves by itself, in a split second I dash out into the woods to the side of me. I now hear the load roar
+of the ogre a few meters behind me. “That’s not fair, I won.” In the next second a thrown tree trunk explodes next to me
+blowing up a cloud of dust and sending a painful splinter across my chest. Dizziness takes over, but in the next seconds,
+I realise the situation I am in and manage to crawl into a small space between two rocks. I now hear as the ogre marches up
+to my previous location. “Noooo where are you!” It seems to be confused and soon angrily marches back up from where it came.
+Scared, but alive I decide to make my run for it now! Dashing through the woods I don’t look back as my heart races, almost
+bursting out of my chest.
+""", background_color = '#4B3619', visible = False, font = fontSBC11, key = 'TXT_SBC12')
+txtSBC13 = sg.Text(
+"""
+I decide to stay and make my stand here. I shout out at the ogre, grabbing a long branch from the ground and charging forward.
+“What?” The monster swings down its massive log, crushing me in an instant. Having not even a moment to process my death, my
+body is swung a half kilometer away from the force of the blow. 
+""", background_color = '#4B3619', visible = False, font = fontSBC11, key = 'TXT_SBC13')
+btnSBC13 = sg.Button('Run', visible = False, font = fontSBC11, key='BTN_SBC13')
+btnSBC14 = sg.Button('Continue', visible = False, font = fontSBC11, key='BTN_SBC14')
+
+
+layout_SBC1 = [[imgSBC11, imgSBC12], [txtSBC11], [btnSBC11, btnSBC12], [txtSBC12, txtSBC13], [btnSBC13, btnSBC14]]
+frmSBC1 = sg.Frame ('', layout_SBC1, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBC1')
+##############################################################################################################################################
 
 
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4, frmSBA1, frmSBB1, frmSBB2]]
+
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4, frmSBA1, frmSBA2, frmSBA3, frmSBB1, frmSBB2, frmSBB3, frmSBC1]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -1386,8 +1496,37 @@ while True:
     elif event == 'BTN_SB41':
         window['FRMSB4'].update(visible = False)
         window['FRMSBA1'].update(visible = True)
-        
     
+# If statement for change tp BA-2 slide
+    elif event == 'BTN_SBA11':
+        window['FRMSBA1'].update(visible = False)
+        window['FRMSBA2'].update(visible = True)
+
+# Hangman
+    elif event == 'BTN_SBA21':
+        import hangman
+        from hangman import guesses
+        if guesses > 0:
+            window['FRMSBA2'].update(visible = False)
+            window['FRMSBA3'].update(visible = True)
+            imgSBA31.update(visible = True)
+            txtSBA31.update(visible = True)
+            btnSBA31.update(visible = True)
+        elif guesses == 0 and points_emoji < 3:
+            window['FRMSBA2'].update(visible = False)
+            window['FRMSBA3'].update(visible = True)
+            imgSBA32.update(visible = True)
+            txtSBA32.update(visible = True)
+            btnSBA32.update(visible = True)
+        elif guesses == 0 and points_emoji >= 3:
+            window['FRMSBA2'].update(visible = False)
+            window['FRMSBC1'].update(visible = True)
+    
+    elif event == 'BTN_SBA32':
+        window['FRMSBA3'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+
+   
 # If statement for change to BB-1 slide
     elif event == 'BTN_SB42':
         window['FRMSB4'].update(visible = False)
@@ -1395,13 +1534,48 @@ while True:
 # If statement for change to BB-2 slide
     elif event == 'BTN_SBB11':
         window['FRMSBB1'].update(visible = False)
-        window['FRMSBB2'].update(visible = True)
+        window['FRMSBB2'].update(visible = True)    
 
 # Riddle second branch
     elif event == 'BTN_SBB21':
         import riddle_2
         from riddle_2 import riddle_2_points
+        if riddle_2_points >= 2:
+            window['FRMSBB2'].update(visible = False)
+            window['FRMSBB3'].update(visible = True)
+            imgSBB31.update(visible = True)
+            txtSBB31.update(visible = True)
+            btnSBB31.update(visible = True)
+        else:
+            window['FRMSBB2'].update(visible = False)
+            window['FRMSBB3'].update(visible = True)
+            imgSBB32.update(visible = True)
+            txtSBB32.update(visible = True)
+            btnSBB32.update(visible = True)
 
+# Going to path path BA
+    elif event == 'BTN_SBB31':
+        window['FRMSBB3'].update(visible = False)
+        window['FRMSBA1'].update(visible = True)
+
+# Bad Ending BB Branch
+    elif event == 'BTN_SBB32':
+        window['FRMSBB3'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+
+        
+        
+# If statmenet for BC-1 slide
+    elif event == 'BTN_SBC11':
+        btnSBC12.update(visible = False)
+        imgSBC11.update(visible = True)
+        txtSBC12.update(visible = True)
+        btnSBC13.update(visible = True)
+    elif event == 'BTN_SBC12':
+        btnSBC11.update(visible = False)
+        imgSBC12.update(visible = True)
+        txtSBC13.update(visible = True)
+        btnSBC14.update(visible = True)
         
         
         

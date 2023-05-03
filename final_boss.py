@@ -835,7 +835,7 @@ while True:
 ####################################################
 ############### 10th Frame #########################
     elif btn10_pressed == True:
-       if event == 'BTN03':
+        if event == 'BTN03':
             btn09_pressed = False
             guess_1 = int(values['SLD03'])
             if guess_1 == 19:
