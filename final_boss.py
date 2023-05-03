@@ -17,7 +17,7 @@ Cerberus - 3
 Spider - 26
 Werewolf - 48
 Fairy - 100
-Floating Eye - 56
+Moth Monster - 56
 Vampire - 19
 Goblin - 73
 Ogre - 35
@@ -159,7 +159,7 @@ while True:
             window['FRM01'].update(visible = True)
         elif btn08_pressed == True:
             window['FRM002'].update(visible = False)
-            txt02.update('Floating Eye')
+            txt02.update('Moth Monster')
             window['FRM01'].update(visible = True)    
 
 #1st Option ##############################3
@@ -185,7 +185,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -207,7 +207,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -234,7 +234,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -254,7 +254,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -279,7 +279,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -299,7 +299,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -326,7 +326,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -344,7 +344,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -367,7 +367,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -385,7 +385,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -426,7 +426,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -442,7 +442,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -463,7 +463,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -479,7 +479,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -518,7 +518,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -532,7 +532,7 @@ while True:
                 elif btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -551,7 +551,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -565,7 +565,7 @@ while True:
                 elif btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -602,7 +602,7 @@ while True:
                 if btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -614,7 +614,7 @@ while True:
                 if btn07_pressed == True:
                     txt04.update('Ogre')
                 elif btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -631,7 +631,7 @@ while True:
                 if btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -643,7 +643,7 @@ while True:
                 if btn07_pressed == True:
                     txt06.update('Ogre')
                 elif btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -678,7 +678,7 @@ while True:
                 window['FRM02'].update(visible = True)
                 points_final.append(1)
                 if btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -688,7 +688,7 @@ while True:
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
                 if btn08_pressed == True:
-                    txt04.update('Floating Eye')
+                    txt04.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt04.update('Basilisk')
                 elif btn10_pressed == True:
@@ -703,7 +703,7 @@ while True:
                 window['FRM03'].update(visible = True)
                 points_final.append(1)
                 if btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
@@ -713,7 +713,7 @@ while True:
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
                 if btn08_pressed == True:
-                    txt06.update('Floating Eye')
+                    txt06.update('Moth Monster')
                 elif btn09_pressed == True:
                     txt06.update('Basilisk')
                 elif btn10_pressed == True:
