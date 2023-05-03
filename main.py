@@ -851,15 +851,79 @@ imaginable. “Hey there!” a voice shouts from the near distance.
 btnSB22= sg.Button('Look to the side', font=fontSB21, visible=False, key = 'BTN_SB22')
 
 
-
 layout_frSB2= [[imgSB21,imgSB22], [txtSB21,txtSB22], [btnSB21,btnSB22]]
 frmSB2= sg.Frame('', layout_frSB2,font=fontSB21,  element_justification='c', size=(1920,1080), visible = False, background_color = '#4B3619', key= 'FRMSB2')
 ##############################################################################################################################################
 
+######SlideB3###############################################################################################################
+fontSB31 = ('MS Serif', 12)
+imgSB31 = sg.Image ('TestImage.png')
+txtSB31 = sg.Text(
+"""
+As I turn, my eyes refuse to believe what I see. A tiny person no bigger than my arm with a wand in hand
+stands in front of me. “You how did you make it here, I thought my path was hidden enough.” 
+""", background_color = '#4B3619', font = fontSB31)
+btnSB31 = sg.Button('What are you?', font = fontSB31, key='BTN_SB31')
+txtSB32 = sg.Text(
+"""
+“That’s rude, you should be asking who I am! Well I will tell you, I am the 100th child of the oh so great
+Drakara…uhhh being number 100 isn’t fun I’ll tell you. Never mind that, I suggest you turn around Mister,
+being in these woods is not a good idea. If my brothers or sisters find you here, you’ll be in big trouble. 
+""", background_color = '#4B3619', visible = False, font = fontSB31)
+btnSB32 = sg.Button('I am not leaving', visible = False, font = fontSB31, key='BTN_SB32')
+txtSB33 = sg.Text(
+"""
+“So stubborn, well unfortunately if that’s the case you will have to play a game with me. I don’t like doing this,
+but I have to. I will now show you a series of pictures your aim is to decipher them. I wish you luck prepare yourself!”
+""", background_color = '#4B3619', visible = False, font = fontSB31)
+btnSB33 = sg.Button('Play!', visible = False, font = fontSB31, key='BTN_SB33')
+
+layout_SB3 = [[imgSB31], [txtSB31], [btnSB31], [txtSB32], [btnSB32], [txtSB33], [btnSB33]]
+frmSB3 = sg.Frame ('', layout_SB3, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSB3')
+##############################################################################################################################################
+
+######SlideB3###############################################################################################################
+fontSB41 = ('MS Serif', 12)
+imgSB41 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+txtSB41 = sg.Text(
+"""
+“Wow you actually did it that’s impressive, great job!” The fairy looks up at me before saying
+“I think this is the end for me sadly, I still advise you to leave this forest, but if you don’t
+I hope you make it to your destination. Please above else, don’t approach any of my siblings they
+aren’t like me and failing their game will come with deadly consequences, if you do have to play
+make sure you win no matter what!” The fairy waves me goodbye with a smile, before floating away.
+As she heads off, she disintegrates before my eyes, turning into much of the same sparkly dust I
+had seen before. I run over to my little helper, but see not much more than the number 100 on the
+floor where the fairy had floated, but moments ago. However saddened I am, I take a long look at
+the number in front of me unsure what importance it might serve later. The disappearance of the
+fairy seems to have cleared a path right in front of me. My heart still heavy I head out in search
+of the next obstacle.
+""", background_color = '#4B3619', visible = False, font = fontSB41, key = 'TXT_SB41')
+
+btnSB41 = sg.Button('Go!', visible = False, font = fontSB41, key='BTN_SB41')
+
+imgSB42 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB42')
+txtSB42 = sg.Text(
+"""
+“You lost, that’s really bad and if I was anyone else you’d be in trouble now. Uhhh I won’t do anything
+to you, but you must leave now, quickly! I don’t think you will leave the forest however, please do remember
+if you encounter any and I mean of my siblings do not approach them and if they find you first, you must win
+their game no matter what!” Confused, but not wanting to argue I give my thanks, but am pushed away by the
+fairy even faster. Not knowing what I had just encountered I walk forward with the warning still fresh in my
+mind. From here on it was likely I would encounter more of these creatures, but content with my choices until
+now I walk forward into the unknown.
+""", background_color = '#4B3619', visible = False, font = fontSB41, key = 'TXT_SB42')
+
+btnSB42 = sg.Button('I am not leaving', visible = False, font = fontSB41, key='BTN_SB42')
+
+
+layout_SB4 = [[imgSB41, imgSB42], [txtSB41, txtSB42], [btnSB41, btnSB42]]
+frmSB4 = sg.Frame ('', layout_SB4, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSB4')
 
 
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2]]
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -1224,6 +1288,33 @@ while True:
         window['TXT_SB22'].update(visible=True)
         window['BTN_SB21'].update(visible=False)       
         window['BTN_SB22'].update(visible=True)
+# If statement for change to B-3 slide   
+    elif event == 'BTN_SB22':
+        window['FRMSB2'].update(visible = False)
+        window['FRMSB3'].update(visible = True)
+# If statmenets for B-3 slide
+    elif event == 'BTN_SB31':
+        txtSB32.update(visible = True)
+        btnSB32.update(visible = True)
+    elif event == 'BTN_SB32':
+        txtSB33.update(visible = True)
+        btnSB33.update(visible = True)
+# Emoji Game
+    elif event == 'BTN_SB33':
+        import emoji
+        from emoji import points_emoji
+        if points_emoji >= 3:
+            window['FRMSB3'].update(visible = False)
+            window['FRMSB4'].update(visible = True)
+            imgSB41.update(visible = True)
+            txtSB41.update(visible = True)
+            btnSB41.update(visible = True)
+        else:
+            window['FRMSB3'].update(visible = False)
+            window['FRMSB4'].update(visible = True)
+            imgSB42.update(visible = True)
+            txtSB42.update(visible = True)
+            btnSB42.update(visible = True)
         
         
         
