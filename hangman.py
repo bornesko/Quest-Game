@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 import random
 
 # The words, which are going to be present at the hangman
-list_words = ['hello']
+list_words = ['cerberus', 'minotaur', 'griffin', 'phoenix', 'pegasus']
 
 #Choosing a random word
 word_random = random.choice(list_words)
@@ -12,7 +12,7 @@ img01 = sg.Image('TestImage.png')
 font01 = ('MS Serif', 12)
 font02 = ('MS Serif', 15)
 
-guesses = 6
+guesses = 8
 
 txt_empty = sg.Text('',font = font01, background_color = '#4B3619')
 txt_empty2 = sg.Text('',font = font01, background_color = '#4B3619')

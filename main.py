@@ -956,11 +956,13 @@ while True:
         
 # If statement for slide 3 - for the different options inside the slide with the different text       
     elif event=='BTN_S31':
-        guess_number= int(values['INP_S31'])
-        if guess_number== random_number:
+        guess_number= values['INP_S31']
+        if guess_number == str(random_number):
             sg.popup("You guessed it!",text_color='black', background_color = '#cba331', font=fontS31)
             btnS31.update(visible=False)
             btnS33.update(visible=True)
+        elif guess_number == '':
+            sg.popup("You need to put a number!",text_color='black', background_color = '#cba331', font=fontS31)
         else:
             sg.popup("Wrong, good try though!:",text_color='black', background_color = '#cba331', font=fontS31)
             btnS31.update(visible=False)
