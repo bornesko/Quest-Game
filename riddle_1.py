@@ -9,8 +9,8 @@ txt_riddle_11 = sg.Text(
 "What can’t talk but will reply when spoken to?" 
 """, font = font_riddle_11, visible = True, background_color = '#4B3619')
 inp_riddle_11 = sg.Input('', size = (30,None), font = font_riddle_11, key = 'INP_RD_11')
-btn_riddle_11 = sg.Button('Check', key = 'BTN_RD_11')
-btn_riddle_12 = sg.Button('Next Question', visible = False, key = 'BTN_RD_12')
+btn_riddle_11 = sg.Button('Check',font = font_riddle_11, key = 'BTN_RD_11')
+btn_riddle_12 = sg.Button('Next Question',font = font_riddle_11, visible = False, key = 'BTN_RD_12')
 ###########################################################################
 
 ######## Question 2 #################
@@ -19,8 +19,8 @@ txt_riddle_12 = sg.Text(
 "Walk on the living, they don't even mumble. Walk on the dead, they mutter and grumble. What are they?"
 """, font = font_riddle_11, visible = False, background_color = '#4B3619')
 inp_riddle_12 = sg.Input('', size = (30,None), visible = False, font = font_riddle_11, key = 'INP_RD_12')
-btn_riddle_13 = sg.Button('Check', visible = False, key = 'BTN_RD_13')
-btn_riddle_14 = sg.Button('Next Question', visible = False, key = 'BTN_RD_14')
+btn_riddle_13 = sg.Button('Check',font = font_riddle_11, visible = False, key = 'BTN_RD_13')
+btn_riddle_14 = sg.Button('Next Question',font = font_riddle_11, visible = False, key = 'BTN_RD_14')
 ###########################################################################
 
 ######## Question 3 ###################3
@@ -29,12 +29,12 @@ txt_riddle_13 = sg.Text(
 "They come out at night without being called and are lost in the day without being stolen. What are they?"
 """, font = font_riddle_11, visible = False, background_color = '#4B3619')
 inp_riddle_13 = sg.Input('', size = (30,None), visible = False, font = font_riddle_11, key = 'INP_RD_13')
-btn_riddle_15 = sg.Button('Check', visible = False, key = 'BTN_RD_15')
+btn_riddle_15 = sg.Button('Check',font = font_riddle_11, visible = False, key = 'BTN_RD_15')
 ################################################################################
 
 txt_riddle_14 = sg.Text ('',font = font_riddle_11, visible = False, background_color = '#4B3619')
 txt_riddle_15 = sg.Text ('',font = font_riddle_11, visible = False, background_color = '#4B3619')
-btn_riddle_16 = sg.Button('Continue', visible = False, key = 'BTN_RD_16')
+btn_riddle_16 = sg.Button('Continue',font = font_riddle_11, visible = False, key = 'BTN_RD_16')
 
 
 layout_fr_riddle_1 = [[img_riddle_11], [txt_riddle_11, txt_riddle_12, txt_riddle_13, txt_riddle_14], [inp_riddle_11, inp_riddle_12, inp_riddle_13, txt_riddle_15],[btn_riddle_11, btn_riddle_12, btn_riddle_13, btn_riddle_14, btn_riddle_15, btn_riddle_16]]

@@ -67,7 +67,7 @@ list_points = []
 
 layout = [[frmSA3]]
 
-window = sg.Window('', layout).Finalize()
+window = sg.Window('', layout, element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
 
 while True:

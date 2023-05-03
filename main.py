@@ -34,18 +34,21 @@ frmS1 = sg.Frame ('', layout_frS1, size=(1920,1080), background_color = '#4B3619
 imgS21= sg.Image('TestImage.png')
 fontS21 = ("MS Serif", 12)
 fontS22= ("MS Serif", 35)
-txtS21= sg.Text('“Can I get you something, young traveler”? asks Sheamus the Bartender. On the opposite side of the bar sits a young boy dressed in plain farmers’ clothes and a bright smile on his face.', background_color = '#4B3619',font=fontS21)
+txtS21= sg.Text('''
+“Can I get you something, young traveler”? asks Sheamus the Bartender. On the opposite side of the bar sits a young boy dressed
+in plain farmers’ clothes and a bright smile on his face
+''', background_color = '#4B3619',font=fontS21)
 btnS21= sg.Button('I don’t have so much gold on me, but I was wondering if you knew the easiest way to the Hadesvale woods', font=fontS21, key = 'BTN_S21')
 btnS22= sg.Button('I am just a boy passing by looking for adventure', font=fontS21, key = 'BTN_S22')
 txtS22= sg.Text(
     '''
-“I don’t know why so many of you youngsters wish to go to that retched place nowadays, but it’s just down the road.
-I’ll get you a drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar'
+“I don’t know why so many of you youngsters wish to go to that retched place nowadays, but it’s just down the road. I’ll get you a
+drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar'
 ''', font=fontS21, background_color = '#4B3619', visible= False)
 txtS23= sg.Text(
     '''
-“Ah there’s many of you these days, I am assuming you’ll be heading to Hadesvale, well it’s just down the road.
-I’ll get you a drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar.
+“Ah there’s many of you these days, I am assuming you’ll be heading to Hadesvale, well it’s just down the road. I’ll get you a
+drink on the house young one, and we can talk about everything else later”. The bartender waddles off behind the bar.
 ''',font=fontS21,background_color = '#4B3619', visible= False )
 btnS23= sg.Button('Continue', visible= False, font=fontS21, key= 'BTN_S23')
 
@@ -58,10 +61,12 @@ imgS31= sg.Image('TestImage.png')
 fontS31 = ("MS Serif", 12)
 fontS32= ("MS Serif", 35)
 txtS31= sg.Text(
-    '''Out of the corner of the room, a dark figure approaches. “Care to play a little game with me, it’s a game of luck,
-but if you win I’ll give you 1000 pieces of gold.Lose however and you must take my place in the kings draft and travel to
-Hadesvale by tonight! It’s a simple game choose a number between 1 and 10000 and if you guess the number I will write on this
-paper you’ll win”.I smirk to myself thinking "I was going to do that anyway." ''', background_color = '#4B3619',font=fontS31)
+'''
+Out of the corner of the room, a dark figure approaches. “Care to play a little game with me, it’s a game of luck, but if you
+win I’ll give you 1000 pieces of gold.Lose however and you must take my place in the kings draft and travel to Hadesvale
+by tonight! It’s a simple game choose a number between 1 and 10000 and if you guess the number I will write on this paper
+you’ll win”.I smirk to myself thinking "I was going to do that anyway."\n
+''', background_color = '#4B3619',font=fontS31)
 txtS32=sg.Text('', background_color = '#4B3619', font=fontS31)
 txtS33=sg.Text('Choose your Number wisely!', background_color = '#4B3619', font=fontS31)
 inpS31= sg.Input('',size= (30,None), font=fontS31, key = 'INP_S31')
@@ -81,20 +86,22 @@ fontS41 = ('MS Serif', 12)
 imgS41 = sg.Image ('TestImage.png')
 txtS41 = sg.Text(
 """
-“Damn I almost had you there.” The dark figure lets out a low and maniacal laugh. “Excellent, here take this kings letter and be on your way, fool!”
-He struts away leaving the tavern, as I look towards his direction the Bartender interrupts me. “Sorry for the wait lad, here is your ale, oh what do you have in your hand.
-That looks like an Aeluminar summoning letter, I didn’t take you for a Knight?”. I look at the beautifully ornate letter in wonder before stuffing it into my backpack. 
+“Damn I almost had you there.” The dark figure lets out a low and maniacal laugh. “Excellent, here take this kings letter and be on
+your way, fool!” He struts away leaving the tavern, as I look towards his direction the Bartender interrupts me. “Sorry for the wait
+lad, here is your ale, oh what do you have in your hand. That looks like an Aeluminar summoning letter, I didn’t take you for a Knight?”.
+I look at the beautifully ornate letter in wonder before stuffing it into my backpack. 
 """, background_color = '#4B3619', font = fontS41, visible = True)
 btnS41 = sg.Button('Looks may deceive a person', font = fontS41, key='BTN_S41')
 btnS42 = sg.Button('A man just handed it to me, but maybe it will be useful later on', font = fontS41, key = 'BTN_S42')
 txtS42 = sg.Text(
 """
-With those clothes you aren’t fooling anybody HAHAHA, well small knight if you plan on leaving today you might want to start heading out before nightfall!
+With those clothes you aren’t fooling anybody HAHAHA, well small knight if you plan on leaving today you might want to start heading out
+before nightfall!
 """, background_color = '#4B3619', font = fontS41, visible = False)
 txtS43 = sg.Text(
 """
-Strange… I would be careful who I show that letter to, enemies of the kingdom lurk in every corner and only Holy knights of Aeluminar can possess items brandishing the sacred
-symbol, but enough talk if you plan on leaving today you might want to start heading out before nightfall.
+Strange… I would be careful who I show that letter to, enemies of the kingdom lurk in every corner and only Holy knights of Aeluminar can
+possess items brandishing the sacred symbol, but enough talk if you plan on leaving today you might want to start heading out before nightfall.
 """, background_color = '#4B3619', font = fontS41, visible = False)
 btnS43 = sg.Button('Head out in search of adventure!', font = fontS41, visible = False, key = 'BTN_S43')
 
@@ -128,11 +135,13 @@ fontS51 = ("MS Serif", 12)
 fontS52= ("MS Serif", 35)
 txtS51= sg.Text('', background_color = '#4B3619', font=fontS51)
 txtS52= sg.Text(
-    '''Although I had just left, the only Tavern for 100 miles there was still a long road ahead. As
-the sun starts to set, I see the forest in the distance, a great expanse of trees covers the land for
-as far as I can see. Darkness now surrounds me, but the faint glimmer of the moon shows me the path ahead.
-As I walk past the first trees I notice the darkness is so thick that not a shred of Moonlight can pierce
-it. I shudder, but keep walking. Somewhere here there should be a path into the forest.''',background_color = '#4B3619', font=fontS51)
+    '''
+Although I had just left, the only Tavern for 100 miles there was still a long road ahead. As the sun starts to set,
+I see the forest in the distance, a great expanse of trees covers the land for as far as I can see. Darkness now
+surrounds me, but the faint glimmer of the moon shows me the path ahead. As I walk past the first trees I notice the
+darkness is so thick that not a shred of Moonlight can pierce it. I shudder, but keep walking. Somewhere here there
+should be a path into the forest.
+\n''',background_color = '#4B3619', font=fontS51)
 btnS51= sg.Button('Keep Searching',font=fontS51, key = 'BTN_S51')
 
 layout_frS5= [[imgS51], [txtS51], [txtS52], [btnS51]]
@@ -175,8 +184,6 @@ left behind this bow, blessed in ancient magic , visualization of the bound numb
 worthy of having these items, choose wisely, the magic bound to them only allows you to pick three arrows.”
  """,font=fontS71, background_color = '#4B3619')
 btnS71= sg.Button('Pick', font=fontS71, key = 'BTN_S71')
-
-
 
 
 layout_frS7= [[imgS71], [txtS71], [btnS71]]
@@ -346,7 +353,8 @@ frmS16 = sg.Frame ('', layout_S16, visible = False, size=(1920,1080), element_ju
 imgSA11= sg.Image('TestImage.png')
 fontSA11 = ("MS Serif", 12)
 fontSA12= ("MS Serif", 35)
-txtSA11= sg.Text("""
+txtSA11= sg.Text(
+"""
 As I run into the forest, I don’t look back jumping past fallen branches as darkness surrounds me.
 My heart still pounding from the strange situation on the road. As I get deeper into the forest, I
 notice the ground is covered in fungi and mushrooms. The bright florescent tops start to light up
@@ -355,8 +363,9 @@ terrifying I would stay to admire the beautiful colours. As I make my way deeper
 I see a small shape in the distance, but not for long as it scurries away into the darkness. I begin
 to feel nervous, unsure if I made the correct decision entering the forest here. I see it again, but
 this time closer, the outline is about the half the size of me, but it manages to disappear again
-before I can get a good look. “Hihihih, another foolish boy stumbles into my domain.” Whatever I saw
-is now standing behind me.""",font=fontSA11, background_color = '#4B3619')
+before I can get a good look. “Hihihih, another foolish boy stumbles into my domain.” Whatever I
+saw is now standing behind me.
+""",font=fontSA11, background_color = '#4B3619')
 btnSA11= sg.Button('Turn Around', font=fontSA11, key = 'BTN_SA11')
 
 
@@ -369,15 +378,15 @@ fontSA21 = ('MS Serif', 12)
 imgSA21 = sg.Image ('TestImage.png')
 txtSA21 = sg.Text(
 """
-A grotesque half mushroom half man creature stands before me, with a distorted smile looking upon me. “Oh how lucky I am that none of my brothers
-found you first, I always knew our great mother ### loved me more.” 
+A grotesque half mushroom half man creature stands before me, with a distorted smile looking upon me. “Oh how
+lucky I am that none of my brothers found you first, I always knew our great mother Drakara loved me more.” 
 """, font = fontSA21, visible = True, background_color = '#4B3619')
 btnSA21 = sg.Button('What are you?', font = fontSA21, key='BTN_SA21')
 btnSA22 = sg.Button('Get away from me!', font = fontSA21, key = 'BTN_SA22')
 txtSA22 = sg.Text(
 """
-“Hihihi, as sons and daughters of the great Drakara we stand guard here to await anyone foolish enough to enter this area, if you are able to beat me in
-a game you will progress if not I will get to eat you hihihi.”
+“Hihihi, as sons and daughters of the great Drakara we stand guard here to await anyone foolish enough
+to enter this area, if you are able to beat me in a game you will progress if not I will get to eat you hihihi.”
 """, font = fontSA21, visible = False, background_color = '#4B3619')
 txtSA23 = sg.Text(
 """
@@ -395,17 +404,15 @@ imgSAA12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA12')
 fontSAA11 = ("MS Serif", 12)
 fontSAA12= ("MS Serif", 35)
 txtSAA11= sg.Text("""
-I won! “That’s not possible I’ve never lost before. No come here I don’t care if I’ve lost I’ll eat you anyway.”
-Suddenly the skin of the disgusting mushroom man starts to bubble and he lets out a horrifying shriek. As he steps
-closer to me, while reaching out his body starts to expand into a bubble that explodes open flinging his entrails everywhere. """,font=fontSAA11, background_color = '#4B3619', key= 'TXT_SAA11')
+I won! “That’s not possible I’ve never lost before. No come here I don’t care if I’ve lost I’ll eat you anyway.” Suddenly
+the skin of the disgusting mushroom man starts to bubble and he lets out a horrifying shriek. As he steps closer to me,
+while reaching out his body starts to expand into a bubble that explodes open flinging his entrails everywhere. """,font=fontSAA11, background_color = '#4B3619', key= 'TXT_SAA11')
 txtSAA12= sg.Text("""
 On the ground where he was standing a few seconds ago a puddle only remains with the number 83 etched into the ground.
 Hmm this seems important I had better remember it for later. With a face full of confidence, I march foreword into the
 unknown dangers ahead of me.""",font=fontSAA11, visible=False, background_color = '#4B3619', key= 'TXT_SAA12')
 btnSAA11= sg.Button('Observe', font=fontSAA11, key = 'BTN_SAA11')
 btnSAA12= sg.Button('Continue on', font=fontSAA11, visible=False, key= 'BTN_SAA12')
-
-
 
 layout_frSAA1= [[imgSAA11,imgSAA12], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA12]]
 frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA1')
@@ -919,11 +926,68 @@ btnSB42 = sg.Button('I am not leaving', visible = False, font = fontSB41, key='B
 
 layout_SB4 = [[imgSB41, imgSB42], [txtSB41, txtSB42], [btnSB41, btnSB42]]
 frmSB4 = sg.Frame ('', layout_SB4, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSB4')
+##############################################################################################################################################
+
+######SlideBA1###############################################################################################################
+fontSBA11 = ('MS Serif', 12)
+imgSBA11 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+txtSBA11 = sg.Text(
+"""
+Walking I look around not sure what lies ahead. Considering the fairy’s warning I try to navigate along the
+woods in a stealthy manner. The terrain in this area still makes getting forward difficult, but through sheer
+determination, I make good progress. Marching forward for what seems like forever I now manage to make it into
+a flatter area. However, as I pick up the pace I begin to notice that the smaller trees in this area have been
+broken down. As I examine the trunks, I confirm that no sharp object had done this and that a mighty force had
+torn the trees apart. As I make my way along the trees, I bump into what I had assumed was a rock. As the large
+creature turns around it lifts the trunk of one of the felled trees. “You woke me up!”
+""", background_color = '#4B3619', font = fontSBA11, key = 'TXT_SBA11')
+
+btnSBA11 = sg.Button('Continue', font = fontSBA11, key='BTN_SBA11')
+layout_SBA1 = [[imgSBA11], [txtSBA11], [btnSBA11]]
+frmSBA1 = sg.Frame ('', layout_SBA1, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA1')
+##############################################################################################################################################
+
+######SlideBB1###############################################################################################################
+fontSBB11 = ('MS Serif', 12)
+imgSBB11 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+txtSBB11 = sg.Text(
+"""
+On second thought, my current path does not seem optimal. Being in a rush to leave I had taken one to many
+lefts in order to avoid having to cross some large rocks in front of me. It probably would have been better
+to ask the fairy for directions, but now that option was no longer viable.  Taking a deep breath, I push
+further and further into the forest. Unsure if ever I would find my way to the center of this forest, I marsh
+down into the unknown. As I move swiftly though the trees something catches my eye. In what seems to be every
+single tree a thousand cocoons hang. Unsettled I continue to walk, but as I turn towards the right, I notice
+a single cocoon among the rest, twice as big as myself. To my immediate horror, I realize that it had already
+hatched. Fear grows inside me, but I manage to calm myself down. As I try to take my next step the sound of
+giant wings crash down behind me. 
+""", background_color = '#4B3619', font = fontSBB11, key = 'TXT_SBB11')
+
+btnSBB11 = sg.Button('Turn Around', font = fontSBB11, key='BTN_SBB11')
+layout_SBB1 = [[imgSBB11], [txtSBB11], [btnSBB11]]
+frmSBB1 = sg.Frame ('', layout_SBB1, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBB1')
+##############################################################################################################################################
+
+######SlideBB2###############################################################################################################
+fontSBB21 = ('MS Serif', 12)
+imgSBB21 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+txtSBB21 = sg.Text(
+"""
+The horrendous form of this moth like creature stares down at me, seemingly waiting for its chance to
+attack and kill me. “Fefefefe delicious pray, I haven’t had a proper snack since before my rebirth. Oh
+how I wish I could devour you this second, but both of us will have to be patient for a little bit fefefe.
+I have 3 riddles for you to solve boy, but beware miss more than one and it’s the end of the line for you!”
+""", background_color = '#4B3619', font = fontSBB21, key = 'TXT_SBB21')
+btnSBB21 = sg.Button('Play', font = fontSBB21, key='BTN_SBB21')
+
+layout_SBB2 = [[imgSBB21], [txtSBB21], [btnSBB21]]
+frmSBB2 = sg.Frame ('', layout_SBB2, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBB2')
+##############################################################################################################################################
 
 
 
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4]]
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4, frmSBA1, frmSBB1, frmSBB2]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
@@ -951,7 +1015,7 @@ while True:
         
 # If statement for the button to continue to slide 3
     elif event=='BTN_S23':
-        txtS32.update(f'My name is {character_name} and I accept your offer!')
+        txtS32.update(f'My name is {character_name} and I accept your offer!\n')
         window['FRMS2'].update(visible= False)
         
 # If statement for slide 3 - for the different options inside the slide with the different text       
@@ -991,7 +1055,7 @@ while True:
     elif event == 'BTN_S43':
         window['FRMS4'].update(visible= False)
         window['FRMS5'].update(visible= True)
-        txtS51.update(f'Brave {character_name} heads out following the directions of the path leading to the forest.')
+        txtS51.update(f'\nBrave {character_name} heads out following the directions of the path leading to the forest.')
         
 # If statement for the button to continue to slide 6
     elif event == 'BTN_S51':
@@ -1317,9 +1381,27 @@ while True:
             imgSB42.update(visible = True)
             txtSB42.update(visible = True)
             btnSB42.update(visible = True)
+
+# If statement for change to BA-1 slide
+    elif event == 'BTN_SB41':
+        window['FRMSB4'].update(visible = False)
+        window['FRMSBA1'].update(visible = True)
         
-        
-        
+    
+# If statement for change to BB-1 slide
+    elif event == 'BTN_SB42':
+        window['FRMSB4'].update(visible = False)
+        window['FRMSBB1'].update(visible = True)
+# If statement for change to BB-2 slide
+    elif event == 'BTN_SBB11':
+        window['FRMSBB1'].update(visible = False)
+        window['FRMSBB2'].update(visible = True)
+
+# Riddle second branch
+    elif event == 'BTN_SBB21':
+        import riddle_2
+        from riddle_2 import riddle_2_points
+
         
         
         
