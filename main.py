@@ -591,7 +591,7 @@ btnSAA81= sg.Button('Go ahead!', font=fontSAA81, visible=False, key = 'BTN_SAA81
 txtSAA82= sg.Text("""
 “Fufufu another idiot.” As I try to make my escape the sharp pain at me side, forces me to
 hesitate for a moment. The spider rushes towards me, its legs surrounding me and wrapping
-me up in its powerful silky legs. As its fangs sink into my chest, I begin to lose consciousness
+me up in its powerful silk. As its fangs sink into my chest, I begin to lose consciousness
 and feel the life draining from my body.
 """,font=fontSAA81, visible= False, background_color = '#4B3619', key = 'TXT_SAA82')
 btnSAA82= sg.Button('Continue', font=fontSAA81, visible= False, key = 'BTN_SAA82')
