@@ -571,7 +571,7 @@ frmSAA7= sg.Frame('', layout_frSAA7,font=fontSAA71,  element_justification='c', 
 
 ######SlideAA8###############################################################################################################
 imgSAA81= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA81')
-imgSAA82= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA82')
+imgSAA82= sg.Image('AA82.png', visible=False, key= 'IMG_SAA82')
 imgSAA83= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA83')
 fontSAA81 = ("MS Serif", 12)
 fontSAA82= ("MS Serif", 35)
