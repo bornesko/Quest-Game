@@ -503,7 +503,7 @@ frmSAA5= sg.Frame('', layout_frSAA5,font=fontSAA51,  element_justification='c', 
 
 ######SlideAA6###############################################################################################################
 imgSAA61= sg.Image('AA61.png', key= 'IMG_SAA61')
-imgSAA62= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA62')
+imgSAA62= sg.Image('AA62.png', visible=False, key= 'IMG_SAA62')
 fontSAA61 = ("MS Serif", 12)
 fontSAA62= ("MS Serif", 35)
 
@@ -516,15 +516,15 @@ btnSAA61= sg.Button('Look for a cozy area and camp', font=fontSAA61, key = 'BTN_
 btnSAA62= sg.Button('Keep walking!', font=fontSAA61, key = 'BTN_SAA62')
 txtSAA62= sg.Text("""
 “Maybe it wouldn’t be too bad to get some rest.” I think to myself. I look around the
-area and come across a comfortable looking plant of sorts, the big green leaved look
-like they would make a good bed. I sit in the area and take a few moments to relax and
+area and come across a comfortable looking plant of sorts, the big green leaves look
+like they would make a good shelter. I sit in the area and take a few moments to relax and
 reflect. After around half an hour I decide to:
 """,font=fontSAA61, visible= False, background_color = '#4B3619', key = 'TXT_SAA62')
 btnSAA63= sg.Button('Go to sleep', font=fontSAA61, visible=False, key = 'BTN_SAA63')
 btnSAA64= sg.Button('Get up and keep going again', font=fontSAA61, visible=False, key = 'BTN_SAA64')
 txtSAA63= sg.Text("""
 Those were my last moments, I never get to wake up again. I had fallen for a trap and
-while my eyes were shut, the large leaves of a giant carnivores plant encircled me. I
+while my eyes were shut, the large roots of a giant carnivores plant encircled me. I
 become digested nutrients to one of the great creatures of the forest and this would
 be the end of my journey.
 """,font=fontSAA61, visible=False, background_color = '#4B3619', key = 'TXT_SAA63')
