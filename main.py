@@ -1,10 +1,10 @@
 import PySimpleGUI as sg
 import random
 ######Slide0################################################################################################################
-imgS01=sg.Image('TestImage.png')
+imgS01=sg.Image('0.png')
 fontS01 = ("MS Serif", 12)
 fontS02= ("MS Serif", 35)
-txtS01= sg.Text('Welcome to ####', font=fontS02, background_color= '#4B3619')
+txtS01= sg.Text("Welcome to: \n 'A JOURNEY THROUGH HADESVALE'\n", font=fontS02, justification='c', background_color= '#4B3619')
 txtS02= sg.Text('Please enter your name!', font=fontS01, background_color= '#4B3619')
 inpS01= sg.Input('',size= (30,None), font=fontS01, key = 'INP_S01')
 btnS01= sg.Button('Continue',font=fontS01, key = 'BTN_S01')
@@ -13,7 +13,7 @@ frmS0= sg.Frame('', layout_frS0,font=fontS01,  element_justification='c', size=(
 ############################################################################################################################
 
 #############SLIDE 1###########################################################################################################################
-imgS11= sg.Image('TestImage.png')
+imgS11= sg.Image('1.png')
 fontS11 = ('MS Serif', 15) 
 txtS11 = sg.Text(
 """
@@ -31,7 +31,7 @@ frmS1 = sg.Frame ('', layout_frS1, size=(1920,1080), background_color = '#4B3619
 ################################################################################################################################################
 
 ######Slide2################################################################################################################
-imgS21= sg.Image('TestImage.png')
+imgS21= sg.Image('2.png')
 fontS21 = ("MS Serif", 12)
 fontS22= ("MS Serif", 35)
 txtS21= sg.Text('''
@@ -57,7 +57,7 @@ frmS2= sg.Frame('', layout_frS2,font=fontS21,  element_justification='c', size=(
 ############################################################################################################################
 
 ######Slide3################################################################################################################
-imgS31= sg.Image('TestImage.png')
+imgS31= sg.Image('3.png')
 fontS31 = ("MS Serif", 12)
 fontS32= ("MS Serif", 35)
 txtS31= sg.Text(
@@ -83,7 +83,7 @@ frmS3= sg.Frame('', layout_frS3,font=fontS31,  element_justification='c', size=(
 
 #############SLIDE 4###########################################################################################################################
 fontS41 = ('MS Serif', 12) 
-imgS41 = sg.Image ('TestImage.png')
+imgS41 = sg.Image ('4.png')
 txtS41 = sg.Text(
 """
 “Damn I almost had you there.” The dark figure lets out a low and maniacal laugh. “Excellent, here take this kings letter and be on
