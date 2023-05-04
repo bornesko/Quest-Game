@@ -601,7 +601,7 @@ txtSAA83= sg.Text("""
 in my escape. I run for my life, with every ounce of energy left I sprint across the woods. I can
 hear the spider relatively close on my trail. Fortunately, having tried to memorize the path I came
 from, I manage to run into an area with extremely low visibility. As I turn a corner into more trees,
-I dive down into a small bush. Crawling into the space and holding my breath, I hear the spider
+I dive behind a big tree. Crawling into the space and holding my breath, I hear the spider
 cursing and scrambling around the area. For what seems like eternity, I hold my breath refusing to
 utter a sound. After waiting 20 minutes since last hearing the spider, I crawl out cautiously and make
 my way forward. That incident was much to close. Unfortunately, in order to ensure that I would never
