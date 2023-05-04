@@ -560,12 +560,12 @@ each. Fail more than 4 and I assume you already know what will happen to you! I 
 great mother ### and you will bow down to me” One of the spider’s legs extends out and starts writing letters
 on the ground.
  """,font=fontSAA71, background_color = '#4B3619')
-btnSAA71= sg.Button('Play!', font=fontSAA71, key = 'BTN_SAA71')
+btnSAA71= sg.Button('Play!', font=fontSAA71, visible=False, key = 'BTN_SAA71')
+btnSAA72= sg.Button('Play!', font=fontSAA71, visible=False, key = 'BTN_SAA72')
 
 
 
-
-layout_frSAA7= [[imgSAA71], [txtSAA71], [btnSAA71]]
+layout_frSAA7= [[imgSAA71], [txtSAA71], [btnSAA71,btnSAA72]]
 frmSAA7= sg.Frame('', layout_frSAA7,font=fontSAA71,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA7')
 ###############################################################################################################################################
 
@@ -994,7 +994,117 @@ btnSBA32 = sg.Button('Continue', visible = False, font = fontSBA31, key='BTN_SBA
 
 layout_SBA3 = [[imgSBA31, imgSBA32], [txtSBA31, txtSBA32], [btnSBA31, btnSBA32]]
 frmSBA3 = sg.Frame ('', layout_SBA3, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA3')
+####################################################################################################################################################
 
+######SlideBA4###############################################################################################################
+fontSBA41 = ('MS Serif', 12)
+imgSBA41 = sg.Image ('TestImage.png')
+txtSBA41 = sg.Text(
+"""
+Only wanting to stay in this forest for as little time as possible, I rush through the trees pushing myself forward. Ever
+since I had made overcome the first obstacles, I had felt some mysterious force pushing me towards the center of the forest.
+Instead of resisting it, I now used it as a guide to push me through this nightmare. Knowing of the horrors that lie before
+me I marsh off content and ready to face them.
+
+The second I entered it I knew there was something off. This small area in the woods was much darker than the rest and all
+around me bats were fluttering. I contemplated turning around, but I knew it would take me much longer to get to the center
+if I did. Ready for whatever lies ahead I carry on, before hearing a voice directly in front of me. “You there, not another
+move!”
+""", background_color = '#4B3619', font = fontSBA41, key = 'TXT_SBA41')
+
+btnSBA41 = sg.Button('Inspect', font = fontSBA41, key='BTN_SBA41')
+
+
+layout_SBA4 = [[imgSBA41], [txtSBA41], [btnSBA41]]
+frmSBA4 = sg.Frame ('', layout_SBA4, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA4')
+##############################################################################################################################################
+
+######SlideBA5###############################################################################################################
+fontSBA51 = ('MS Serif', 12)
+imgSBA51 = sg.Image ('TestImage.png')
+txtSBA51 = sg.Text(
+"""
+I instantly recognize the armor worn by the man in front of me, an Aleuminar of the king’s guard! “Not another step.” The
+badly injured man holds a crossbow to my face. “I might be badly injured, but trust me when I say I can still kill you in
+one easy shot.” The man bends slightly coughing up blood. “Dammit, anyway not another step, how do I know I can trust you?
+If you really are a man of the kingdom prove it, I don’t know what other wretched creatures reside in this cursed forest,
+but I am sure there are those capable of mimicking humans!”
+""", background_color = '#4B3619', font = fontSBA51, key = 'TXT_SBA51')
+
+btnSBA51 = sg.Button('Show Aeluminar letter and say you are a man of the kingdom', font = fontSBA51, key='BTN_SBA51')
+btnSBA52 = sg.Button('Hide letter and say you are a man of the kingdom', font = fontSBA51, visible = False, enable_events=True, key='BTN_SBA52')
+btnSBA55 = sg.Button('Hide letter and say you are a man of the kingdom', font = fontSBA51, visible = False, enable_events=True, key='BTN_SBA55')
+
+txtSBA52 = sg.Text(
+"""
+“What? You also received one of those accursed letters, I don’t know what that foolish king is thinking. You are clearly
+no knight, I knew the king was desperate, but drafting children is ridicules. Don’t mind my manners I am sorry, as you can
+see I am quite a bit worse off than you. To be honest with you, I probably have less than an hour left. You can feel that
+energy too, right? I think we are not too far off from the center. I encountered a Vampire here, bloody monster put up a
+good fight, but I was able to kill it in the end. Weirdly a symbol appeared afterwards, the number 19 I don’t know if that
+is useful to you, but it obviously won’t do me any good.” Thankful for the advice I thank the soldier and make my way to
+the center now so very close. Regretful that I could not help him I head off now for the both of us.
+""", background_color = '#4B3619', visible=False, font = fontSBA51, key = 'TXT_SBA52')
+
+btnSBA53 = sg.Button('Go on', visible=False, font = fontSBA51, key='BTN_SBA53')
+
+txtSBA53 = sg.Text(
+"""
+“Not good enough boy. Empty your pockets right now!” Reluctantly I remove every item from my pockets. “That letter give it
+here!” Handing over the letter, the soldier opens it up and reads it up and down. “You could have stolen that from anyone,
+either way I can see that some words were accidently rubbed off. Here, fill in those words, if they don’t match the wording
+on mine by more than one word off, I’ll consider you an enemy and eliminate you right here right now!” Tossing the letter
+back to me I nervously take out my quill and start filling in the letter.
+""", background_color = '#4B3619', visible=False, font = fontSBA51, key = 'TXT_SBA53')
+
+btnSBA54 = sg.Button('Complete the letter', visible=False, font = fontSBA51, key='BTN_SBA54')
+
+
+layout_SBA5 = [[imgSBA51], [txtSBA51], [btnSBA51,btnSBA52,btnSBA55], [txtSBA52,txtSBA53], [btnSBA53,btnSBA54]]
+frmSBA5 = sg.Frame ('', layout_SBA5, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBA5')
+##############################################################################################################################################
+
+
+######SlideBA6###############################################################################################################
+imgSBA61= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA61')
+imgSBA62= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA62')
+imgSBA63= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA63')
+fontSBA61 = ("MS Serif", 12)
+fontSBA62= ("MS Serif", 35)
+
+txtSBA61= sg.Text("""
+“Good, you’ve done it boy. Sorry if I gave you a tough time, but you can’t be too trusting nowadays. As you can see I am
+in pretty bad shape, I had to fight off a vampire a little while ago, nasty bastard almost finished me off right here.
+Weirdly after I had killed him, the number 19 appeared. I don’t know if that helps you, but clearly I won’t be needing
+it for much longer.” Coughing up even more blood now the soldiers utters one last thing. “I know you can feel it too, its
+drawing us to the center, go on you’re almost there.” Thanking the soldier I continue to make my way through the forest,
+now carrying a burden for two!
+ """,font=fontSBA61, background_color = '#4B3619', visible=False, key = 'TXT_SBA61')
+btnSBA61= sg.Button('Go on', font=fontSBA61, visible=False, key = 'BTN_SBA61')
+
+txtSBA62= sg.Text("""
+“Wrong answers monster.” The soldier lets loose a bolt, with every ounce of energy left I jump to the right. The bolt
+flies through the air and stabs the side of my body. As the soldier reloads his crossbow, I grab my bag and run away. A
+few meters away through the trees, another bolt comes flying through, crashing into the tree in front of me. This proved
+more than enough motivation, to get out of this area as fast as possible.
+
+As I walk through the forest, I finally get my heartbeat under control again. Confident in my abilities I walk forward
+into the unknown.
+""",font=fontSBA61, visible= False, background_color = '#4B3619', key = 'TXT_SBA62')
+btnSBA62= sg.Button('Continue', font=fontSAA81, visible= False, key = 'BTN_SBA62')
+
+txtSBA63= sg.Text("""
+“Wrong answers monster.” The soldier fires his bolt. I try to dodge, but my wound aches, stopping me from fully dodging.
+The bolt flies straight through my head, with impeccable aim. I collapse to the ground regretfully having only made it
+this far. 
+""",font=fontSBA61, visible= False, background_color = '#4B3619', key = 'TXT_SBA63')
+btnSBA63= sg.Button('Continue', font=fontSBA61, visible= False, key = 'BTN_SBA63')
+
+
+
+layout_frSBA6= [[imgSBA61,imgSBA62,imgSBA63], [txtSBA61,txtSBA62,txtSBA63], [btnSBA61,btnSBA62,btnSBA63]]
+frmSBA6= sg.Frame('', layout_frSBA6,font=fontSBA61,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSBA6')
+#########################################################################################################################################################################################
 
 ######SlideBB1###############################################################################################################
 fontSBB11 = ('MS Serif', 12)
@@ -1093,14 +1203,83 @@ layout_SBC1 = [[imgSBC11, imgSBC12], [txtSBC11], [btnSBC11, btnSBC12], [txtSBC12
 frmSBC1 = sg.Frame ('', layout_SBC1, size=(1920,1080), element_justification = 'c', visible = False, background_color = '#4B3619', key = 'FRMSBC1')
 ##############################################################################################################################################
 
+######SlideBC2###############################################################################################################
+imgSBC21= sg.Image('TestImage.png')
+fontSBC21 = ("MS Serif", 12)
+fontSBC22= ("MS Serif", 35)
+
+txtSBC21= sg.Text("""
+Once I finally make it quite a distance away, I collapse to my knees, barely able to breathe. My heart continues to beat
+non-stop, it’s now that I decide to rest for a little bit to catch my breath. This does not last long however, as I force
+myself to continue. Having come this far I refuse to die this easily! As I continue moving forward, I feel the force at
+the center of this forest pulling me towards it. It is here that I seem to enter another area, surrounding me are big holes
+in the ground. Hesitantly I move forward, looking side to side and ensuring that nothing sneaks up on me. As I cross the
+holes, I see the dark depth down into them. They seem to be constructed by something and not natural. Trying to move as
+swiftly as possible, I maneuver myself between them, almost seeing the other side of this area, when a shadowy figure
+emerges from a hole directly in front of me. 
+ """,font=fontSBC21, background_color = '#4B3619')
+btnSBC21= sg.Button('Prepare yourself', font=fontSBC21, key = 'BTN_SBC21')
+
+
+layout_frSBC2= [[imgSBC21], [txtSBC21], [btnSBC21]]
+frmSBC2= sg.Frame('', layout_frSBC2,font=fontSBC21,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSBC2')
+#############################################################################################################################################################################
+
+######SlideBC3###############################################################################################################
+imgSBC31= sg.Image('TestImage.png')
+fontSBC31 = ("MS Serif", 12)
+fontSBC32= ("MS Serif", 35)
+
+txtSBC31= sg.Text("""
+“You are already surrounded kahaha, anyone that enters my area can never escape. My beautiful tunnels are all connected
+and no matter where you are, I will find you kahah! We are going to play a little game now. I present to you 3 riddles,
+fail more than one and you’ll be mine boy!”
+ """,font=fontSBC31, background_color = '#4B3619')
+btnSBC31= sg.Button('Play!', font=fontSBC31, key = 'BTN_SBC31')
+
+
+layout_frSBC3= [[imgSBC31], [txtSBC31], [btnSBC31]]
+frmSBC3= sg.Frame('', layout_frSBC3,font=fontSBC31,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSBC3')
+############################################################################################################################################
+
+######SlideBC4###############################################################################################################
+imgSBC41= sg.Image('TestImage.png', visible=False, key= 'IMG_SBC41')
+imgSBC42= sg.Image('TestImage.png', visible=False, key= 'IMG_SBC42')
+fontSBC41 = ("MS Serif", 12)
+fontSBC42= ("MS Serif", 35)
+txtSBC41= sg.Text("""
+“No this isn’t how it was supposed to go, come here.” The goblin lunges itself towards me, its eyes bloodshot
+in a ferocious rage. Although now those eyes burst open with plant like roots and stems growing out of them.
+“No not like this please mother help me!” The stems now burst out of other areas of the goblins body, tearing
+at its flesh and growing into a tree. The screams die out and where the goblin had stood, only a few seconds
+ago a tree now stood with its branches twisted into the number 73. Another one of those numbers and probably
+another piece of this puzzle!
+""",font=fontSBC41, visible=False, background_color = '#4B3619', key= 'TXT_SBC41')
+txtSBC42= sg.Text("""
+“Kahah it’s over for you now boy.” The goblin rushes toward me, I turn and try to run away from this place.
+I run faster than ever before, thinking that the goblin would have no chance of catching up. However, in the
+next moment the monster emerges from a hole in front of me brandishing a long saber. As I am unable to turn
+in time, its long blade thrusts forward cutting my head clean off. As my eyelids fall shut the last thing I
+see are the steps of the goblin walking towards me.
+""",font=fontSBC41, visible=False, background_color = '#4B3619', key= 'TXT_SBC42')
+
+btnSBC41= sg.Button('Head out', font=fontSBC41, visible=False, key = 'BTN_SBC41')
+btnSBC42= sg.Button('Continue', font=fontSBC41, visible=False, key = 'BTN_SBC42')
 
 
 
+layout_frSBC4= [[imgSBC41,imgSBC42], [txtSBC41,txtSBC42], [btnSBC41,btnSBC42]]
+frmSBC4= sg.Frame('', layout_frSBC4,font=fontSBC41,  element_justification='c', size=(1920,1080), visible=False,  background_color = '#4B3619', key= 'FRMSBC4')
+############################################################################################################################
 
-layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4, frmSBA1, frmSBA2, frmSBA3, frmSBB1, frmSBB2, frmSBB3, frmSBC1]]
+
+layout = [[frmS0, frmS1, frmS2, frmS3, frmS4, frmS4_win, frmS5, frmS6, frmS7, frmS11, frmS12, frmS13, frmS14, frmS15, frmS16, frmSA1, frmSA2, frmSAA1, frmSAA2, frmSAA3, frmSAA5, frmSAA6, frmSAA7, frmSAA8, frmSAB1, frmSAB3, frmSAB4, frmSAC1, frmSAC2, frmSAC3, frmSAC4, frmSB1, frmSB2, frmSB3, frmSB4, frmSBA1, frmSBA2, frmSBA3, frmSBA4, frmSBA5, frmSBA6, frmSBB1, frmSBB2, frmSBB3, frmSBC1, frmSBC2, frmSBC3, frmSBC4]]
 
 window = sg.Window('Quest Game', layout,  element_justification='c', background_color = '#4B3619').Finalize()
 window.Maximize()
+
+btn1_pressed=False
+btn2_pressed=False
 
 while True:
     event, values = window.read()
@@ -1256,6 +1435,8 @@ while True:
 # Import triva A3 
     elif event == 'BTN_SA23':
         window['FRMSA2'].update(visible = False)
+        btnSAA71.update(visible = True)
+        btnSBA55.update(visible = True)
         import trivia_A3
         from trivia_A3 import points
         if points < 3:
@@ -1330,6 +1511,7 @@ while True:
         window['BTN_SAA64'].update(visible = False)
         window['TXT_SAA63'].update(visible = True)
         window['BTN_SAA65'].update(visible = True)
+        
 # IF statement for the slide Bad ending
     elif event == 'BTN_SAA65' or event == 'BTN_SAC41':
         window['FRMSAA6'].update(visible = False)
@@ -1340,6 +1522,9 @@ while True:
     elif event == 'BTN_SAA66':
         window['FRMSAA6'].update(visible = False)
         window['FRMSAA7'].update(visible = True)
+    
+    
+    
 # If statement for the slide Word Scramble
     elif event == 'BTN_SAA71':
         window['FRMSAA7'].update(visible = False)
@@ -1365,12 +1550,32 @@ while True:
             window['IMG_SAA82'].update(visible = True)
             window['TXT_SAA82'].update(visible = True)
             window['BTN_SAA82'].update(visible = True)
+        
+    elif event == 'BTN_SAA72':
+        window['FRMSAA7'].update(visible = False)
+        import word_shuffle
+        from word_shuffle import math_1_points
+        if math_1_points >= 5:
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA81'].update(visible = True)
+            window['TXT_SAA81'].update(visible = True)
+            window['BTN_SAA81'].update(visible = True)
+        elif math_1_points <= 5 and trivia_1_points <3:
+            window['FRMSAA8'].update(visible = True)
+            window['IMG_SAA82'].update(visible = True)
+            window['TXT_SAA82'].update(visible = True)
+            window['BTN_SAA82'].update(visible = True)
+            
        
+           
 # If statement for the Slide AA8 leading to bad ending
     elif event == 'BTN_SAA82':
         window['FRMSAA8'].update(visible = False)
         window['FRMSAB3'].update(visible = True)
-
+        
+    elif event == 'BTN_SAA83':
+        window['FRMSAA8'].update(visible = False)
+        window['FRMSBA4'].update(visible = True)
 
 
 ###################################AB branch##########################
@@ -1477,6 +1682,8 @@ while True:
         btnSB33.update(visible = True)
 # Emoji Game
     elif event == 'BTN_SB33':
+        btnSAA72.update(visible = True)
+        btnSBA52.update(visible = True)
         import emoji
         from emoji import points_emoji
         if points_emoji >= 3:
@@ -1525,6 +1732,93 @@ while True:
     elif event == 'BTN_SBA32':
         window['FRMSBA3'].update(visible = False)
         window['FRMSAB3'].update(visible = True)
+# If statement for Slide BA4
+    elif event == 'BTN_SBA31':
+        window['FRMSBA3'].update(visible = False)
+        window['FRMSBA4'].update(visible = True)
+        
+# If statement for Slide BA5
+    elif event == 'BTN_SBA41':
+        window['FRMSBA4'].update(visible = False)
+        window['FRMSBA5'].update(visible = True)
+        
+    elif event == 'BTN_SBA51':
+        window['BTN_SBA52'].update(visible = False)
+        window['TXT_SBA52'].update(visible = True)
+        window['BTN_SBA53'].update(visible = True)
+        
+    elif event == 'BTN_SBA52':
+        btn1_pressed = True
+        window['BTN_SBA51'].update(visible = False)
+        window['TXT_SBA53'].update(visible = True)
+        window['BTN_SBA54'].update(visible = True)
+    elif event == 'BTN_SBA55':
+        btn2_pressed = True
+        window['BTN_SBA51'].update(visible = False)
+        window['TXT_SBA53'].update(visible = True)
+        window['BTN_SBA54'].update(visible = True)
+        
+        
+    elif event == 'BTN_SBA53':
+        window['FRMSBA5'].update(visible = False)
+        window['FRMS7'].update(visible = True)
+    elif event == 'BTN_SBA54':
+        window['FRMSBA5'].update(visible = False)
+        if btn1_pressed == True:
+            import trivia_2
+            from trivia_2 import trivia_1_points
+            if trivia_1_points >= 3:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA61'].update(visible = True)
+                window['TXT_SBA61'].update(visible = True)
+                window['BTN_SBA61'].update(visible = True)
+            elif trivia_1_points <= 3 and points_emoji >= 3 and guesses>0:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA62'].update(visible = True)
+                window['TXT_SBA62'].update(visible = True)
+                window['BTN_SBA62'].update(visible = True)
+            elif trivia_1_points <= 3 and points_emoji <= 3:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA63'].update(visible = True)
+                window['TXT_SBA63'].update(visible = True)
+                window['BTN_SBA63'].update(visible = True)
+            elif trivia_1_points <= 3 and guesses==0:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA63'].update(visible = True)
+                window['TXT_SBA63'].update(visible = True)
+                window['BTN_SBA63'].update(visible = True)
+            elif trivia_1_points <=3 and math_1_points < 5:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA63'].update(visible = True)
+                window['TXT_SBA63'].update(visible = True)
+                window['BTN_SBA63'].update(visible = True)
+        elif btn2_pressed == True:
+            import trivia_2
+            from trivia_2 import trivia_1_points
+            if trivia_1_points >= 3:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA61'].update(visible = True)
+                window['TXT_SBA61'].update(visible = True)
+                window['BTN_SBA61'].update(visible = True)
+            elif trivia_1_points <=3 and math_1_points < 5:
+                window['FRMSBA6'].update(visible = True)
+                window['IMG_SBA63'].update(visible = True)
+                window['TXT_SBA63'].update(visible = True)
+                window['BTN_SBA63'].update(visible = True)
+     
+            
+    elif event == 'BTN_SBA63':
+        window['FRMSBA6'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+        
+    elif event == 'BTN_SBA61':
+        window['FRMSBA6'].update(visible = False)
+        window['FRMS7'].update(visible = True)
+        
+    elif event == 'BTN_SBA62':
+        window['FRMSBA6'].update(visible = False)
+        window['FRMSAA6'].update(visible = True)
+        
 
    
 # If statement for change to BB-1 slide
@@ -1576,12 +1870,50 @@ while True:
         imgSBC12.update(visible = True)
         txtSBC13.update(visible = True)
         btnSBC14.update(visible = True)
+    elif event == 'BTN_SBC14':
+        window['FRMSBC1'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+# If statement for BC-2 slide
+    elif event == 'BTN_SBC13':
+        window['FRMSBC1'].update(visible = False)
+        window['FRMSBC2'].update(visible = True)
         
-        
-        
-        
-        
+#If statement for the BC-3 slide
+    elif event == 'BTN_SBC21':
+        window['FRMSBC2'].update(visible = False)
+        window['FRMSBC3'].update(visible = True)
+#If statement for the BC-game slide
+    elif event == 'BTN_SBC31':
+        window['FRMSBC3'].update(visible = False)
+        import math_2
+        from math_2 import math_2_points
+        if math_2_points >= 2:
+            window['FRMSBC4'].update(visible = True)
+            window['IMG_SBC41'].update(visible = True)
+            window['TXT_SBC41'].update(visible = True)
+            window['BTN_SBC41'].update(visible = True)
+        else:
+            window['FRMSBC4'].update(visible = True)
+            window['IMG_SBC42'].update(visible = True)
+            window['TXT_SBC42'].update(visible = True)
+            window['BTN_SBC42'].update(visible = True)
 
+#If statement for the BC-4 slide
+    elif event == 'BTN_SBC42':
+        window['FRMSBC4'].update(visible = False)
+        window['FRMSAB3'].update(visible = True)
+        
+    elif event == 'BTN_SBC41':
+        window['FRMSBC4'].update(visible = False)
+        window['FRMSBA4'].update(visible = True)
+            
+            
+            
+            
+            
+            
+            
+            
 #End
     elif event == sg.WIN_CLOSED or event == 'BTN_S41_WIN' or event == 'BTN_SAB31' or event == 'BTN_S141' or event == 'BTN_S151' or event == 'BTN_S161':
         break
