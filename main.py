@@ -64,7 +64,7 @@ txtS31= sg.Text(
 '''
 Out of the corner of the room, a dark figure approaches. “Care to play a little game with me, it’s a game of luck, but if you
 win I’ll give you 1000 pieces of gold.Lose however and you must take my place in the kings draft and travel to Hadesvale
-by tonight! It’s a simple game choose a number between 1 and 10000 and if you guess the number I will write on this paper
+by tonight! It’s a simple game choose a number between 1 and 100 and if you guess the number I will write on this paper
 you’ll win”.I smirk to myself thinking "I was going to do that anyway."\n
 ''', background_color = '#4B3619',font=fontS31)
 txtS32=sg.Text('', background_color = '#4B3619', font=fontS31)
@@ -75,7 +75,7 @@ btnS31= sg.Button('PLAY!', font=fontS31, key = 'BTN_S31')
 btnS32= sg.Button('Continue', font=fontS31, visible= False, key = 'BTN_S32')
 btnS33= sg.Button('Continue', font=fontS31, visible= False, key = 'BTN_S33')
 
-random_number= random.randint(1,1)
+random_number= random.randint(1,100)
 
 layout_frS3= [[imgS31], [txtS31], [txtS32], [txtS33], [inpS31], [btnS31,btnS32,btnS33]]
 frmS3= sg.Frame('', layout_frS3,font=fontS31,  element_justification='c', size=(1920,1080), background_color = '#4B3619', key= 'FRMS3')
@@ -112,7 +112,7 @@ frmS4 = sg.Frame ('', layout_S4, size=(1920,1080), element_justification = 'c', 
 #############SLIDE 4_WIN###########################################################################################################################
 fontS41_win = ('MS Serif', 35)
 fontS42_win = ('MS Serif', 15)
-imgS41_win = sg.Image ('TestImage.png')
+imgS41_win = sg.Image ('4_win.png')
 txtS41_win = sg.Text(
 """
 LUCKY ENDING!
@@ -130,7 +130,7 @@ frmS4_win = sg.Frame ('', layout_S4_win, visible = False, size=(1920,1080), elem
 ################################################################################################################################################
 
 ######Slide5################################################################################################################
-imgS51= sg.Image('TestImage.png')
+imgS51= sg.Image('5.png')
 fontS51 = ("MS Serif", 12)
 fontS52= ("MS Serif", 35)
 txtS51= sg.Text('', background_color = '#4B3619', font=fontS51)
@@ -149,7 +149,7 @@ frmS5= sg.Frame('', layout_frS5,font=fontS51,  element_justification='c', size=(
 ############################################################################################################################
 
 ######Slide6################################################################################################################
-imgS61= sg.Image('TestImage.png')
+imgS61= sg.Image('6.png')
 fontS61 = ("MS Serif", 12)
 fontS62= ("MS Serif", 35)
 txtS61= sg.Text('All of a sudden I see a dim light in the distance. "Damn, the reason I left so late was so that there would be no one else. What should I do…"',font=fontS61, background_color = '#4B3619')
@@ -161,7 +161,7 @@ frmS6= sg.Frame('', layout_frS6,font=fontS61,  element_justification='c', size=(
 ############################################################################################################################
 
 ######Slide7###############################################################################################################
-imgS71= sg.Image('TestImage.png')
+imgS71= sg.Image('7.png')
 fontS71 = ("MS Serif", 12)
 fontS72= ("MS Serif", 35)
 
@@ -191,9 +191,9 @@ frmS7= sg.Frame('', layout_frS7,font=fontS71,  element_justification='c', size=(
 #######################################################################################################################################################################################
 
 ######Slide11###############################################################################################################
-imgS111= sg.Image('TestImage.png', visible=False, key= 'IMG_S111')
-imgS112= sg.Image('TestImage.png', visible=False, key= 'IMG_S112')
-imgS113= sg.Image('TestImage.png', visible=False, key= 'IMG_S113')
+imgS111= sg.Image('111.png', visible=False, key= 'IMG_S111')
+imgS112= sg.Image('112.png', visible=False, key= 'IMG_S112')
+imgS113= sg.Image('113.png', visible=False, key= 'IMG_S113')
 fontS111 = ("MS Serif", 12)
 fontS112= ("MS Serif", 35)
 
@@ -235,8 +235,8 @@ frmS11= sg.Frame('', layout_frS11,font=fontS111,  element_justification='c', siz
 ###############################################################################################################################################################################
 
 ######Slide12###############################################################################################################
-imgS121= sg.Image('TestImage.png', key= 'IMG_S121')
-imgS122= sg.Image('TestImage.png', visible=False, key= 'IMG_S122')
+imgS121= sg.Image('121.png', key= 'IMG_S121')
+imgS122= sg.Image('122.png', visible=False, key= 'IMG_S122')
 fontS121 = ("MS Serif", 12)
 fontS122= ("MS Serif", 35)
 txtS121= sg.Text("""
@@ -263,7 +263,7 @@ frmS12= sg.Frame('', layout_frS12,font=fontS121,  element_justification='c', siz
 ############################################################################################################################
 
 ######Slide13################################################################################################################
-imgS131= sg.Image('TestImage.png')
+imgS131= sg.Image('13.png')
 fontS131 = ("MS Serif", 12)
 fontS132= ("MS Serif", 35)
 txtS131= sg.Text(
@@ -350,7 +350,7 @@ frmS16 = sg.Frame ('', layout_S16, visible = False, size=(1920,1080), element_ju
 ################################################################################################################################################
 
 ######SlideA1################################################################################################################
-imgSA11= sg.Image('TestImage.png')
+imgSA11= sg.Image('A1.png')
 fontSA11 = ("MS Serif", 12)
 fontSA12= ("MS Serif", 35)
 txtSA11= sg.Text(
@@ -375,7 +375,7 @@ frmSA1= sg.Frame('', layout_frSA1,font=fontSA11,  element_justification='c', siz
 
 #############SLIDE A2###########################################################################################################################
 fontSA21 = ('MS Serif', 12) 
-imgSA21 = sg.Image ('TestImage.png')
+imgSA21 = sg.Image ('A2.png')
 txtSA21 = sg.Text(
 """
 A grotesque half mushroom half man creature stands before me, with a distorted smile looking upon me. “Oh how
@@ -399,8 +399,7 @@ frmSA2 = sg.Frame ('', layout_frSA2, visible = False, size=(1920,1080), element_
 ################################################################################################################################################
 
 ######SlideAA1###############################################################################################################
-imgSAA11= sg.Image('TestImage.png', key= 'IMG_SAA11')
-imgSAA12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA12')
+imgSAA11= sg.Image('AA1.png', key= 'IMG_SAA11')
 fontSAA11 = ("MS Serif", 12)
 fontSAA12= ("MS Serif", 35)
 txtSAA11= sg.Text("""
@@ -414,12 +413,12 @@ unknown dangers ahead of me.""",font=fontSAA11, visible=False, background_color 
 btnSAA11= sg.Button('Observe', font=fontSAA11, key = 'BTN_SAA11')
 btnSAA12= sg.Button('Continue on', font=fontSAA11, visible=False, key= 'BTN_SAA12')
 
-layout_frSAA1= [[imgSAA11,imgSAA12], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA12]]
+layout_frSAA1= [[imgSAA11], [txtSAA11], [btnSAA11], [txtSAA12], [btnSAA12]]
 frmSAA1= sg.Frame('', layout_frSAA1,font=fontSAA11,  element_justification='c', size=(1920,1080), visible=False, background_color = '#4B3619', key= 'FRMSAA1')
 ############################################################################################################################
 
 ######SlideAA2###############################################################################################################
-imgSAA21= sg.Image('TestImage.png')
+imgSAA21= sg.Image('AA2.png')
 
 fontSAA21 = ("MS Serif", 12)
 fontSAA22= ("MS Serif", 35)
@@ -444,7 +443,7 @@ frmSAA2= sg.Frame('', layout_frSAA2,font=fontSAA21,  element_justification='c', 
 
 
 ######SlideAA3###############################################################################################################
-imgSAA31= sg.Image('TestImage.png')
+imgSAA31= sg.Image('AA3.png')
 
 fontSAA31 = ("MS Serif", 12)
 fontSAA32= ("MS Serif", 35)
@@ -472,7 +471,7 @@ frmSAA3= sg.Frame('', layout_frSAA3,font=fontSAA31,  element_justification='c', 
 ###########################################################################################################################################################################################
 
 ######SlideAA5###############################################################################################################
-imgSAA51= sg.Image('TestImage.png')
+imgSAA51= sg.Image('AA5.png')
 fontSAA51 = ("MS Serif", 12)
 fontSAA52= ("MS Serif", 35)
 
@@ -503,7 +502,7 @@ frmSAA5= sg.Frame('', layout_frSAA5,font=fontSAA51,  element_justification='c', 
 ###########################################################################################################################################################################################################
 
 ######SlideAA6###############################################################################################################
-imgSAA61= sg.Image('TestImage.png', key= 'IMG_SAA61')
+imgSAA61= sg.Image('AA61.png', key= 'IMG_SAA61')
 imgSAA62= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA62')
 fontSAA61 = ("MS Serif", 12)
 fontSAA62= ("MS Serif", 35)
@@ -1450,8 +1449,6 @@ while True:
 # If statement for the slide AA1 actions
     elif event == 'BTN_SAA11':
         window['TXT_SAA12'].update(visible= True)
-        window['IMG_SAA11'].update(visible= False)
-        window['IMG_SAA12'].update(visible= True)
         window['BTN_SAA12'].update(visible= True)
 
 
