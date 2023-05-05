@@ -1241,8 +1241,8 @@ frmSBC3= sg.Frame('', layout_frSBC3,font=fontSBC31,  element_justification='c', 
 ############################################################################################################################################
 
 ######SlideBC4###############################################################################################################
-imgSBC41= sg.Image('TestImage.png', visible=False, key= 'IMG_SBC41')
-imgSBC42= sg.Image('TestImage.png', visible=False, key= 'IMG_SBC42')
+imgSBC41= sg.Image('BC41.png', visible=False, key= 'IMG_SBC41')
+imgSBC42= sg.Image('BC42.png', visible=False, key= 'IMG_SBC42')
 fontSBC41 = ("MS Serif", 12)
 fontSBC42= ("MS Serif", 35)
 txtSBC41= sg.Text("""
@@ -1250,7 +1250,7 @@ txtSBC41= sg.Text("""
 in a ferocious rage. Although now those eyes burst open with plant like roots and stems growing out of them.
 “No not like this please mother help me!” The stems now burst out of other areas of the goblins body, tearing
 at its flesh and growing into a tree. The screams die out and where the goblin had stood, only a few seconds
-ago a tree now stood with its branches twisted into the number 73. Another one of those numbers and probably
+ago a tree now stood with its branches twisted into the number 8. Another one of those numbers and probably
 another piece of this puzzle!
 """,font=fontSBC41, visible=False, background_color = '#4B3619', key= 'TXT_SBC41')
 txtSBC42= sg.Text("""
