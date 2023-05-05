@@ -667,15 +667,14 @@ frmSAB3 = sg.Frame ('', layout_SAB3, size=(1920,1080), element_justification = '
 
 ######SlideAB4###############################################################################################################
 imgSAB41= sg.Image('TestImage.png', key= 'IMG_SAB41')
-imgSAB42= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB42')
 fontSAB41 = ("MS Serif", 12)
 fontSAB42= ("MS Serif", 35)
 txtSAB41= sg.Text("""
 “No!!! you fool” The enraged werewolf leaps at me with bloodshot eyes. However, before it reaches me the
 ground beneath it breaks open pulling it deep into the ground! “No no I almost had him it’s not fair.” His
 claws grab onto the ground, but as he is pulled deeper his claws are thrust with him into the depths. His
-shrieks echo in the night until everything falls silent. I slowly make my way up to the hole. The outline
-forms the number 48. I will try to remember that for later, but for now, I want to leave this place as fast
+shrieks echo in the night until everything falls silent. I slowly make my way up to the hole. Inside of it I see the outline
+of the number 48. I will try to remember that for later, but for now, I want to leave this place as fast
 as possible.   """,font=fontSAB41, background_color = '#4B3619')
 
 btnSAB41= sg.Button('Continue on', font=fontSAB41, key = 'BTN_SAB41')
