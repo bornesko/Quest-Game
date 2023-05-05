@@ -570,9 +570,9 @@ frmSAA7= sg.Frame('', layout_frSAA7,font=fontSAA71,  element_justification='c', 
 
 
 ######SlideAA8###############################################################################################################
-imgSAA81= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA81')
+imgSAA81= sg.Image('AA81.png', visible=False, key= 'IMG_SAA81')
 imgSAA82= sg.Image('AA82.png', visible=False, key= 'IMG_SAA82')
-imgSAA83= sg.Image('TestImage.png', visible=False, key= 'IMG_SAA83')
+imgSAA83= sg.Image('AA83.png', visible=False, key= 'IMG_SAA83')
 fontSAA81 = ("MS Serif", 12)
 fontSAA82= ("MS Serif", 35)
 
@@ -616,8 +616,8 @@ frmSAA8= sg.Frame('', layout_frSAA8,font=fontSAA81,  element_justification='c', 
 #########################################################################################################################################################################################
 
 ######SlideAB1###############################################################################################################
-imgSAB11= sg.Image('TestImage.png', key= 'IMG_SAB11')
-imgSAB12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAB12')
+imgSAB11= sg.Image('AB11.png', key= 'IMG_SAB11')
+imgSAB12= sg.Image('AB12.png', visible=False, key= 'IMG_SAB12')
 fontSAB11 = ("MS Serif", 12)
 fontSAB12= ("MS Serif", 35)
 txtSAB11= sg.Text("""
@@ -648,7 +648,7 @@ frmSAB1= sg.Frame('', layout_frSAB1,font=fontSAB11,  element_justification='c', 
 #############SLIDE AB3- Bad Ending###########################################################################################################################
 fontSAB31 = ('MS Serif', 35)
 fontSAB32 = ('MS Serif', 15)
-imgSAB31 = sg.Image ('TestImage.png')
+imgSAB31 = sg.Image ('AB3.png')
 txtSAB31 = sg.Text(
 """
 BAD ENDING!

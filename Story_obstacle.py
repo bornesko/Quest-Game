@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 #############SLIDE AB2###########################################################################################################################
 fontSAB21 = ('MS Serif', 35)
 fontSAB22 = ('MS Serif', 12)
-imgSAB21 = sg.Image ('TestImage.png')
+imgSAB21 = sg.Image ('AB2.png')
 txtSAB21 = sg.Text("""
 The figure lets out a roar and sprints towards me, in a split second before I can even process
 my next actions it stands before me. Looking down at me it growls “Fresh flesh, what a delicacy.
