@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-img01 = sg.Image('TestImage.png')
+img01 = sg.Image('BC3.png')
 font01 = ('MS Serif', 12)
 font02 = ('MS Serif', 20)
 

@@ -44,7 +44,7 @@ shuffled_word_7 = ''.join(random.sample(random_word_7, len(random_word_7)))
 shuffled_word_8 = ''.join(random.sample(random_word_8, len(random_word_8)))
 
 
-img_jmb_1 = sg.Image ('TestImage.png')
+img_jmb_1 = sg.Image ('AA7.png')
 font_jmb_1 = ('MS Serif', 12)
 
 ################## Question 1 ############################

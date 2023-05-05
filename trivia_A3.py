@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 #############Slide A3###########################################################################################################################
 fontSA31 = ('MS Serif', 12) 
-imgSA31 = sg.Image ('TestImage.png')
+imgSA31 = sg.Image ('A2.png')
 
 txtSA30 = sg.Text('Here is how this will go, I will ask you four questions and if you can answer three of them correctly, you win!', font = fontSA31, visible = True, background_color = '#4B3619')
 

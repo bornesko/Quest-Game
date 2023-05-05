@@ -666,7 +666,7 @@ frmSAB3 = sg.Frame ('', layout_SAB3, size=(1920,1080), element_justification = '
 ################################################################################################################################################
 
 ######SlideAB4###############################################################################################################
-imgSAB41= sg.Image('TestImage.png', key= 'IMG_SAB41')
+imgSAB41= sg.Image('AB4.png', key= 'IMG_SAB41')
 fontSAB41 = ("MS Serif", 12)
 fontSAB42= ("MS Serif", 35)
 txtSAB41= sg.Text("""
@@ -687,8 +687,8 @@ frmSAB4= sg.Frame('', layout_frSAB4,font=fontSAB41,  element_justification='c', 
 ############################################################################################################################
 
 ######SlideAC1###############################################################################################################
-imgSAC11= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC11')
-imgSAC12= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC12')
+imgSAC11= sg.Image('AC11.png', visible=False, key= 'IMG_SAC11')
+imgSAC12= sg.Image('AC12.png', visible=False, key= 'IMG_SAC12')
 fontSAC11 = ("MS Serif", 12)
 fontSAC12= ("MS Serif", 35)
 
@@ -703,7 +703,7 @@ The hound leaps towards me, but miraculously enough I dodge right as it descends
 upon me. With one of its heads it manages to bite at the side of my body, leaving
 a gashing wound across my ribs. In an effort to escape I slide underneath it and
 run towards the dense crop of trees. However, in a split second it is already
-behind me, I jump for thetrees and as I scramble up to keep running, I hear a
+behind me, I jump for the trees and as I scramble up to keep running, I hear a
 loud thud behind me and the shaking of a tree.
 
 “You foolish oaf you’ve done it again.”
@@ -724,7 +724,7 @@ frmSAC1= sg.Frame('', layout_frSAC1,font=fontSAC11,  element_justification='c', 
 #######################################################################################################################################################
 
 ######SlideAC2###############################################################################################################
-imgSAC21= sg.Image('TestImage.png')
+imgSAC21= sg.Image('AC2.png')
 fontSAC21 = ("MS Serif", 12)
 fontSAC22= ("MS Serif", 35)
 
@@ -748,7 +748,7 @@ frmSAC2= sg.Frame('', layout_frSAC2,font=fontSAC21,  element_justification='c', 
 ############################################################################################################################################################
 
 ######SlideAC3###############################################################################################################
-imgSAC31= sg.Image('TestImage.png')
+imgSAC31= sg.Image('AC3.png')
 fontSAC31 = ("MS Serif", 12)
 fontSAC32= ("MS Serif", 35)
 
@@ -768,8 +768,8 @@ frmSAC3= sg.Frame('', layout_frSAC3,font=fontSAC31,  element_justification='c', 
 #################################################################################################################################################################################
 
 ######SlideAC4###############################################################################################################
-imgSAC41= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC41')
-imgSAC42= sg.Image('TestImage.png', visible=False, key= 'IMG_SAC42')
+imgSAC41= sg.Image('AC3.png', visible=False, key= 'IMG_SAC41')
+imgSAC42= sg.Image('AC42.png', visible=False, key= 'IMG_SAC42')
 fontSAC41 = ("MS Serif", 12)
 fontSAC42= ("MS Serif", 35)
 
@@ -799,7 +799,7 @@ frmSAC4= sg.Frame('', layout_frSAC4,font=fontSAC41,  element_justification='c', 
 
 #############SLIDE B1###########################################################################################################################
 fontSB11 = ('MS Serif', 12) 
-imgSB11 = sg.Image ('TestImage.png')
+imgSB11 = sg.Image ('B1.png')
 txtSB11 = sg.Text(
 """
 “You decide to stand your ground and face the person or thing approaching! My heart races, almost bursting out of my chest, as the light draws
@@ -827,8 +827,8 @@ frmSB1 = sg.Frame ('', layout_SB1, visible = False, size=(1920,1080), element_ju
 ################################################################################################################################################
 
 ######SlideB2###############################################################################################################
-imgSB21= sg.Image('TestImage.png', key= 'IMG_SB21')
-imgSB22= sg.Image('TestImage.png', visible=False, key= 'IMG_SB22')
+imgSB21= sg.Image('B1.png', key= 'IMG_SB21')
+imgSB22= sg.Image('B2.png', visible=False, key= 'IMG_SB22')
 fontSB21 = ("MS Serif", 12)
 fontSB22= ("MS Serif", 35)
 
@@ -862,7 +862,7 @@ frmSB2= sg.Frame('', layout_frSB2,font=fontSB21,  element_justification='c', siz
 
 ######SlideB3###############################################################################################################
 fontSB31 = ('MS Serif', 12)
-imgSB31 = sg.Image ('TestImage.png')
+imgSB31 = sg.Image ('B3.png')
 txtSB31 = sg.Text(
 """
 As I turn, my eyes refuse to believe what I see. A tiny person no bigger than my arm with a wand in hand
@@ -889,7 +889,7 @@ frmSB3 = sg.Frame ('', layout_SB3, size=(1920,1080), element_justification = 'c'
 
 ######SlideB3###############################################################################################################
 fontSB41 = ('MS Serif', 12)
-imgSB41 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+imgSB41 = sg.Image ('B4.png', visible = False, key = 'IMG_SB41')
 txtSB41 = sg.Text(
 """
 “Wow you actually did it that’s impressive, great job!” The fairy looks up at me before saying
@@ -907,7 +907,7 @@ of the next obstacle.
 
 btnSB41 = sg.Button('Go!', visible = False, font = fontSB41, key='BTN_SB41')
 
-imgSB42 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB42')
+imgSB42 = sg.Image ('B4.png', visible = False, key = 'IMG_SB42')
 txtSB42 = sg.Text(
 """
 “You lost, that’s really bad and if I was anyone else you’d be in trouble now. Uhhh I won’t do anything
@@ -928,14 +928,14 @@ frmSB4 = sg.Frame ('', layout_SB4, size=(1920,1080), element_justification = 'c'
 
 ######SlideBA1###############################################################################################################
 fontSBA11 = ('MS Serif', 12)
-imgSBA11 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+imgSBA11 = sg.Image ('BA1.png', key = 'IMG_SBA1')
 txtSBA11 = sg.Text(
 """
 Walking I look around not sure what lies ahead. Considering the fairy’s warning I try to navigate along the
 woods in a stealthy manner. The terrain in this area still makes getting forward difficult, but through sheer
 determination, I make good progress. Marching forward for what seems like forever I now manage to make it into
 a flatter area. However, as I pick up the pace I begin to notice that the smaller trees in this area have been
-broken down. As I examine the trunks, I confirm that no sharp object had done this and that a mighty force had
+cut down. As I examine the trunks, I confirm that no sharp object had done this and that a mighty force had
 torn the trees apart. As I make my way along the trees, I bump into what I had assumed was a rock. As the large
 creature turns around it lifts the trunk of one of the felled trees. “You woke me up!”
 """, background_color = '#4B3619', font = fontSBA11, key = 'TXT_SBA11')
@@ -947,7 +947,7 @@ frmSBA1 = sg.Frame ('', layout_SBA1, size=(1920,1080), element_justification = '
 
 ######SlideBA2###############################################################################################################
 fontSBA21 = ('MS Serif', 12)
-imgSBA21 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+imgSBA21 = sg.Image ('BA2.png', key = 'IMG_SBA1')
 txtSBA21 = sg.Text(
 """
 Not even reaching the knees of this monster I know that if it could and wanted my life
@@ -969,7 +969,7 @@ frmSBA2 = sg.Frame ('', layout_SBA2, size=(1920,1080), element_justification = '
 
 ######SlideBA3###############################################################################################################
 fontSBA31 = ('MS Serif', 12)
-imgSBA31 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+imgSBA31 = sg.Image ('BA31.png', visible = False, key = 'IMG_SB41')
 txtSBA31 = sg.Text(
 """
 “No wait, that can’t be I made a mistake, this doesn’t count.” The ogre roars out in a fit of rage grabbing the tree
@@ -980,7 +980,7 @@ the dust had settled the giant number 35 was visible among the rocks on the grou
 the numbers meant something more. Determined I gather my courage and continue walking through the forest.
 """, background_color = '#4B3619', visible = False, font = fontSBA31, key = 'TXT_SBA31')
 btnSBA31 = sg.Button('Head Out', visible = False, font = fontSBA31, key='BTN_SBA31')
-imgSBA32 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBB32')
+imgSBA32 = sg.Image ('BA32.png', visible = False, key = 'IMG_SBB32')
 txtSBA32 = sg.Text(
 """
 “Dohoho, thank you for offering your body as my next sacrifice!” Fear grips me, but I try to turn and run. Unfortunately,
@@ -996,7 +996,7 @@ frmSBA3 = sg.Frame ('', layout_SBA3, size=(1920,1080), element_justification = '
 
 ######SlideBA4###############################################################################################################
 fontSBA41 = ('MS Serif', 12)
-imgSBA41 = sg.Image ('TestImage.png')
+imgSBA41 = sg.Image ('BA4.png')
 txtSBA41 = sg.Text(
 """
 Only wanting to stay in this forest for as little time as possible, I rush through the trees pushing myself forward. Ever
@@ -1004,7 +1004,7 @@ since I had made overcome the first obstacles, I had felt some mysterious force 
 Instead of resisting it, I now used it as a guide to push me through this nightmare. Knowing of the horrors that lie before
 me I marsh off content and ready to face them.
 
-The second I entered it I knew there was something off. This small area in the woods was much darker than the rest and all
+The second I entered it I knew there was something off. This small area in the woods was much quieter than the rest and all
 around me bats were fluttering. I contemplated turning around, but I knew it would take me much longer to get to the center
 if I did. Ready for whatever lies ahead I carry on, before hearing a voice directly in front of me. “You there, not another
 move!”
@@ -1019,7 +1019,7 @@ frmSBA4 = sg.Frame ('', layout_SBA4, size=(1920,1080), element_justification = '
 
 ######SlideBA5###############################################################################################################
 fontSBA51 = ('MS Serif', 12)
-imgSBA51 = sg.Image ('TestImage.png')
+imgSBA51 = sg.Image ('BA5.png')
 txtSBA51 = sg.Text(
 """
 I instantly recognize the armor worn by the man in front of me, an Aleuminar of the king’s guard! “Not another step.” The
@@ -1064,9 +1064,9 @@ frmSBA5 = sg.Frame ('', layout_SBA5, size=(1920,1080), element_justification = '
 
 
 ######SlideBA6###############################################################################################################
-imgSBA61= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA61')
-imgSBA62= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA62')
-imgSBA63= sg.Image('TestImage.png', visible=False, key= 'IMG_SBA63')
+imgSBA61= sg.Image('BA5.png', visible=False, key= 'IMG_SBA61')
+imgSBA62= sg.Image('BA6.png', visible=False, key= 'IMG_SBA62')
+imgSBA63= sg.Image('BA6.png', visible=False, key= 'IMG_SBA63')
 fontSBA61 = ("MS Serif", 12)
 fontSBA62= ("MS Serif", 35)
 
@@ -1106,7 +1106,7 @@ frmSBA6= sg.Frame('', layout_frSBA6,font=fontSBA61,  element_justification='c', 
 
 ######SlideBB1###############################################################################################################
 fontSBB11 = ('MS Serif', 12)
-imgSBB11 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+imgSBB11 = sg.Image ('BB1.png', key = 'IMG_SBA1')
 txtSBB11 = sg.Text(
 """
 On second thought, my current path does not seem optimal. Being in a rush to leave I had taken one to many
@@ -1127,7 +1127,7 @@ frmSBB1 = sg.Frame ('', layout_SBB1, size=(1920,1080), element_justification = '
 
 ######SlideBB2###############################################################################################################
 fontSBB21 = ('MS Serif', 12)
-imgSBB21 = sg.Image ('TestImage.png', key = 'IMG_SBA1')
+imgSBB21 = sg.Image ('BB2.png', key = 'IMG_SBA1')
 txtSBB21 = sg.Text(
 """
 The horrendous form of this moth like creature stares down at me, seemingly waiting for its chance to
@@ -1143,7 +1143,7 @@ frmSBB2 = sg.Frame ('', layout_SBB2, size=(1920,1080), element_justification = '
 
 ######SlideBB3###############################################################################################################
 fontSBB31 = ('MS Serif', 12)
-imgSBB31 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SB41')
+imgSBB31 = sg.Image ('BB31.png', visible = False, key = 'IMG_SB41')
 txtSBB31 = sg.Text(
 """
 You indomitable wretch, how dare you!” The majestic wings of the creature expand to maximum length and it slings
@@ -1157,7 +1157,7 @@ remember for the rest of my journey. Relief at having survived this ordeal, I he
 what seems to be the center. 
 """, background_color = '#4B3619', visible = False, font = fontSBB31, key = 'TXT_SBB31')
 btnSBB31 = sg.Button('Go on', visible = False, font = fontSBB31, key='BTN_SBB31')
-imgSBB32 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBB32')
+imgSBB32 = sg.Image ('BB31.png', visible = False, key = 'IMG_SBB32')
 txtSBB32 = sg.Text(
 """
 “Fefefe, you tried so hard, but failed in the end.” Before I can even react, the creature expands its wings fully,
@@ -1175,8 +1175,8 @@ fontSBC11 = ('MS Serif', 12)
 txtSBC11 = sg.Text('“Dohoho, thank you for offering your body as my next sacrifice!”', background_color = '#4B3619', font = fontSBC11, key = 'TXT_SBC11')
 btnSBC11 = sg.Button('Run Away', font = fontSBC11, key='BTN_SBC11')
 btnSBC12 = sg.Button('Stay and Fight', font = fontSBC11, key='BTN_SBC12')
-imgSBC11 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBC11')
-imgSBC12 = sg.Image ('TestImage.png', visible = False, key = 'IMG_SBC12')
+imgSBC11 = sg.Image ('BC1.png', visible = False, key = 'IMG_SBC11')
+imgSBC12 = sg.Image ('BC1.png', visible = False, key = 'IMG_SBC12')
 txtSBC12 = sg.Text(
 """
 My body seemingly moves by itself, in a split second I dash out into the woods to the side of me. I now hear the load roar
@@ -1202,7 +1202,7 @@ frmSBC1 = sg.Frame ('', layout_SBC1, size=(1920,1080), element_justification = '
 ##############################################################################################################################################
 
 ######SlideBC2###############################################################################################################
-imgSBC21= sg.Image('TestImage.png')
+imgSBC21= sg.Image('BC2.png')
 fontSBC21 = ("MS Serif", 12)
 fontSBC22= ("MS Serif", 35)
 
@@ -1224,7 +1224,7 @@ frmSBC2= sg.Frame('', layout_frSBC2,font=fontSBC21,  element_justification='c', 
 #############################################################################################################################################################################
 
 ######SlideBC3###############################################################################################################
-imgSBC31= sg.Image('TestImage.png')
+imgSBC31= sg.Image('BC3.png')
 fontSBC31 = ("MS Serif", 12)
 fontSBC32= ("MS Serif", 35)
 

@@ -312,7 +312,7 @@ while True:
         if event == 'BTN01':
             btn03_pressed = False
             guess_1 = int(values['SLD01'])
-            if guess_1 == 73:
+            if guess_1 == 8:
                 sg.popup('The arrow flies through the air seemingly magically hitting its target. With a supernatural force, it pierces deep into the dragon, forcing a piercing screech out of the beast.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM01'].update(visible = False)
                 window['FRM02'].update(visible = True)
@@ -353,7 +353,7 @@ while True:
         elif event == 'BTN02':
             btn03_pressed = False
             guess_1 = int(values['SLD02'])
-            if guess_1 == 73:
+            if guess_1 == 8:
                 sg.popup('The arrow soars puncturing its target and burrowing deep into its flesh. Its wailing screams rattle the walls once more.', text_color='black', background_color = '#cba331', font = font01)
                 window['FRM02'].update(visible = False)
                 window['FRM03'].update(visible = True)
@@ -394,7 +394,7 @@ while True:
         elif event == 'BTN03':
             btn03_pressed = False
             guess_1 = int(values['SLD03'])
-            if guess_1 == 73:
+            if guess_1 == 8:
                 sg.popup('The final arrow lands striking right in the center of the devil. It erupts in a roar, painfully thrashing about.', text_color='black', background_color = '#cba331', font = font01)
                 points_final.append(1)
                 points_boss = int(sum(points_final)/1)

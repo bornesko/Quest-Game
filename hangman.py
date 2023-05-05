@@ -7,7 +7,7 @@ list_words = ['cerberus', 'minotaur', 'griffin', 'phoenix', 'pegasus']
 #Choosing a random word
 word_random = random.choice(list_words)
 
-img01 = sg.Image('TestImage.png')
+img01 = sg.Image('BA2.png')
 
 font01 = ('MS Serif', 12)
 font02 = ('MS Serif', 15)

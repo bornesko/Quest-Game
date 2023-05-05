@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-img_riddle_11 = sg.Image ('TestImage.png')
+img_riddle_11 = sg.Image ('AA3.png')
 font_riddle_11 = ('MS Serif', 12)
 
 ####### Question 1 ##############

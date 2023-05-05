@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 
 font01 = ('MS Serif', 12)
-img_main = sg.Image('TestImage.png')
+img_main = sg.Image('B3.png')
 
 ############### First Question #######################
 txt01 = sg.Text ('\nLet us see if you can guess this one:', font = font01, background_color = '#4B3619')

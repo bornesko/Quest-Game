@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-img_math_1 = sg.Image ('TestImage.png')
+img_math_1 = sg.Image ('AC3.png')
 font_math_1 = ('MS Serif', 12)
 
 txt_empty_space = sg.Text ('\n', background_color = '#4B3619')
