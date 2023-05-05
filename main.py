@@ -193,7 +193,7 @@ frmS7= sg.Frame('', layout_frS7,font=fontS71,  element_justification='c', size=(
 ######Slide11###############################################################################################################
 imgS111= sg.Image('111.png', visible=False, key= 'IMG_S111')
 imgS112= sg.Image('112.png', visible=False, key= 'IMG_S112')
-imgS113= sg.Image('113.png', visible=False, key= 'IMG_S113')
+imgS113= sg.Image('112.png', visible=False, key= 'IMG_S113')
 fontS111 = ("MS Serif", 12)
 fontS112= ("MS Serif", 35)
 
@@ -283,7 +283,7 @@ frmS13= sg.Frame('', layout_frS13,font=fontS131,  element_justification='c', siz
 #############SLIDE 14_Good Ending###########################################################################################################################
 fontS141 = ('MS Serif', 35)
 fontS142 = ('MS Serif', 15)
-imgS141 = sg.Image ('TestImage.png')
+imgS141 = sg.Image ('14.png')
 txtS141 = sg.Text(
 """
 GOOD ENDING!
@@ -306,7 +306,7 @@ frmS14 = sg.Frame ('', layout_S14, visible = False, size=(1920,1080), element_ju
 #############SLIDE 15_HumbleEnding###########################################################################################################################
 fontS151 = ('MS Serif', 35)
 fontS152 = ('MS Serif', 15)
-imgS151 = sg.Image ('TestImage.png')
+imgS151 = sg.Image ('15.png')
 txtS151 = sg.Text(
 """
 HUMBLE ENDING!
@@ -328,7 +328,7 @@ frmS15 = sg.Frame ('', layout_S15, visible = False, size=(1920,1080), element_ju
 #############SLIDE 16_GreatEnding###########################################################################################################################
 fontS161 = ('MS Serif', 35)
 fontS162 = ('MS Serif', 15)
-imgS161 = sg.Image ('TestImage.png')
+imgS161 = sg.Image ('16.png')
 txtS161 = sg.Text(
 """
 GREAT ENDING!
